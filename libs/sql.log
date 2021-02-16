@@ -1,0 +1,3 @@
+07.02.2021 02:34:38 | @_!%ST6 | FR        
+SELECT * FROM messages  WHERE ms_code <> 3 AND (ms_station = [@_!%ST6        ] OR ms_hotcode <> '          ') INTO CURSOR _5Z505IUYA NOFILTER
+
