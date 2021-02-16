@@ -1,0 +1,23 @@
+CodePage=1252
+Path=Data
+CATMAN=OFF
+COLLATE=MACHINE
+TITLE="© by Schlingmeier + Partner KG"
+RESOURCE=OFF
+NULLDISPLAY=
+_BROWSER = ""
+_BUILDER = ""
+_FOXREF = ""
+_CONVERTER = ""
+_COVERAGE
+_GALLERY = ""
+_GENGRAPH = ""
+_GENHTML = ""
+_GENMENU = ""
+_GENPD = ""
+_GENSCRN = ""
+_GENXTAB = ""
+_TASKPANE = ""
+_TOOLBOX = ""
+_TRANSPORT = ""
+_WIZARD = ""

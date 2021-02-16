@@ -1,0 +1,159 @@
+SCCTEXT Version 4.1
+LI_ALANG C(3,0),LI_ATTCAHM M(4,0),LI_ATTPDF L(1,0),LI_BASEDON C(8,0),LI_BATCH C(30,0),LI_BUILDNG L(1,0),LI_CUSTOM L(1,0),LI_DDELINK N(1,0),LI_DDEMCRO C(20,0),LI_DELAYMM L(1,0),LI_DIALOG L(1,0),LI_DOTFILE C(30,0),LI_EMAIL L(1,0),LI_EMHEA1 M(4,0),LI_EMHEA10 M(4,0),LI_EMHEA11 M(4,0),LI_EMHEA2 M(4,0),LI_EMHEA3 M(4,0),LI_EMHEA4 M(4,0),LI_EMHEA5 M(4,0),LI_EMHEA6 M(4,0),LI_EMHEA7 M(4,0),LI_EMHEA8 M(4,0),LI_EMHEA9 M(4,0),LI_ETSAVDC L(1,0),LI_EXPATH C(254,0),LI_EXPFILE C(100,0),LI_EXPFNOD L(1,0),LI_EXPMAIL C(254,0),LI_EXPSEND L(1,0),LI_EXPTYPE C(3,0),LI_EXTRA C(10,0),LI_FILTER C(100,0),LI_FORMS C(254,0),LI_FRX C(30,0),LI_HIDE L(1,0),LI_INDEX C(100,0),LI_LANG1 C(50,0),LI_LANG10 C(50,0),LI_LANG11 C(50,0),LI_LANG2 C(50,0),LI_LANG3 C(50,0),LI_LANG4 C(50,0),LI_LANG5 C(50,0),LI_LANG6 C(50,0),LI_LANG7 C(50,0),LI_LANG8 C(50,0),LI_LANG9 C(50,0),LI_LETTYPE N(1,0),LI_LEXPTYP N(1,0),LI_LICENSE C(10,0),LI_LIID I(4,0),LI_LISTID C(8,0),LI_MAINSRV L(1,0),LI_MAXDEF1 C(40,0),LI_MAXDEF2 C(40,0),LI_MAXDEF3 C(40,0),LI_MAXDEF4 C(40,0),LI_MEMO M(4,0),LI_MENU N(2,0),LI_MINDEF1 C(40,0),LI_MINDEF2 C(40,0),LI_MINDEF3 C(40,0),LI_MINDEF4 C(40,0),LI_OPERAT1 N(1,0),LI_OPERAT2 N(1,0),LI_OPERAT3 N(1,0),LI_OPERAT4 N(1,0),LI_ORDER I(4,0),LI_OUTFILE C(12,0),LI_OUTPUT N(1,0),LI_PICSQL1 M(4,0),LI_PICSQL2 M(4,0),LI_PICSQL3 M(4,0),LI_PICSQL4 M(4,0),LI_PICT1 C(20,0),LI_PICT2 C(20,0),LI_PICT3 C(20,0),LI_PICT4 C(20,0),LI_POSTPRO C(80,0),LI_PREPROC C(80,0),LI_RESLET L(1,0),LI_RPTGRP C(20,0),LI_SAVERES L(1,0),LI_SQL M(4,0),LI_TYPE1 N(1,0),LI_TYPE2 N(1,0),LI_TYPE3 N(1,0),LI_TYPE4 N(1,0),LI_USRGRP C(30,0),LI_WHEN C(40,0),P1_LANG1 C(20,0),P1_LANG10 C(20,0),P1_LANG11 C(20,0),P1_LANG2 C(20,0),P1_LANG3 C(20,0),P1_LANG4 C(20,0),P1_LANG5 C(20,0),P1_LANG6 C(20,0),P1_LANG7 C(20,0),P1_LANG8 C(20,0),P1_LANG9 C(20,0),P2_LANG1 C(20,0),P2_LANG10 C(20,0),P2_LANG11 C(20,0),P2_LANG2 C(20,0),P2_LANG3 C(20,0),P2_LANG4 C(20,0),P2_LANG5 C(20,0),P2_LANG6 C(20,0),P2_LANG7 C(20,0),P2_LANG8 C(20,0),P2_LANG9 C(20,0),P3_LANG1 C(20,0),P3_LANG10 C(20,0),P3_LANG11 C(20,0),P3_LANG2 C(20,0),P3_LANG3 C(20,0),P3_LANG4 C(20,0),P3_LANG5 C(20,0),P3_LANG6 C(20,0),P3_LANG7 C(20,0),P3_LANG8 C(20,0),P3_LANG9 C(20,0),P4_LANG1 C(20,0),P4_LANG10 C(20,0),P4_LANG11 C(20,0),P4_LANG2 C(20,0),P4_LANG3 C(20,0),P4_LANG4 C(20,0),P4_LANG5 C(20,0),P4_LANG6 C(20,0),P4_LANG7 C(20,0),P4_LANG8 C(20,0),P4_LANG9 C(20,0)
+1250
+
+[1 RECORD]
+[LI_ALANG]    
+[START LI_ATTCAHM]
+[END LI_ATTCAHM]
+[LI_ATTPDF] .F.
+[LI_BASEDON]         
+[LI_BATCH]                               
+[LI_BUILDNG] .T.
+[LI_CUSTOM] .T.
+[LI_DDELINK] 0
+[LI_DDEMCRO]                     
+[LI_DELAYMM] .F.
+[LI_DIALOG] .F.
+[LI_DOTFILE]                               
+[LI_EMAIL] .F.
+[START LI_EMHEA1]
+[END LI_EMHEA1]
+[START LI_EMHEA10]
+[END LI_EMHEA10]
+[START LI_EMHEA11]
+[END LI_EMHEA11]
+[START LI_EMHEA2]
+[END LI_EMHEA2]
+[START LI_EMHEA3]
+[END LI_EMHEA3]
+[START LI_EMHEA4]
+[END LI_EMHEA4]
+[START LI_EMHEA5]
+[END LI_EMHEA5]
+[START LI_EMHEA6]
+[END LI_EMHEA6]
+[START LI_EMHEA7]
+[END LI_EMHEA7]
+[START LI_EMHEA8]
+[END LI_EMHEA8]
+[START LI_EMHEA9]
+[END LI_EMHEA9]
+[LI_ETSAVDC] .F.
+[LI_EXPATH]                                                                                                                                                                                                                                                               
+[LI_EXPFILE]                                                                                                     
+[LI_EXPFNOD] .F.
+[LI_EXPMAIL]                                                                                                                                                                                                                                                               
+[LI_EXPSEND] .F.
+[LI_EXPTYPE]    
+[LI_EXTRA]           
+[LI_FILTER]                                                                                                     
+[LI_FORMS]                                                                                                                                                                                                                                                               
+[LI_FRX] FCX5000.FRX                   
+[LI_HIDE] .F.
+[LI_INDEX]                                                                                                     
+[LI_LANG1] Umsatzstatistik Gesamtjahr                        
+[LI_LANG10] Umsatzstatistik Gesamtjahr                        
+[LI_LANG11] Umsatzstatistik Gesamtjahr                        
+[LI_LANG2] Umsatzstatistik Gesamtjahr                        
+[LI_LANG3] Umsatzstatistik Gesamtjahr                        
+[LI_LANG4] Umsatzstatistik Gesamtjahr                        
+[LI_LANG5] Umsatzstatistik Gesamtjahr                        
+[LI_LANG6] Umsatzstatistik Gesamtjahr                        
+[LI_LANG7] Umsatzstatistik Gesamtjahr                        
+[LI_LANG8] Umsatzstatistik Gesamtjahr                        
+[LI_LANG9] Umsatzstatistik Gesamtjahr                        
+[LI_LETTYPE] 0
+[LI_LEXPTYP] 0
+[LI_LICENSE]           
+[LI_LIID] 1141
+[LI_LISTID] FCX5000 
+[LI_MAINSRV] .F.
+[LI_MAXDEF1] g_SysDate+7                             
+[LI_MAXDEF2]                                         
+[LI_MAXDEF3] 9                                       
+[LI_MAXDEF4]                                         
+[START LI_MEMO]
+[END LI_MEMO]
+[LI_MENU] 5
+[LI_MINDEF1] g_SysDate                               
+[LI_MINDEF2] .T.                                     
+[LI_MINDEF3] 0                                       
+[LI_MINDEF4]                                         
+[LI_OPERAT1] 2
+[LI_OPERAT2] 1
+[LI_OPERAT3] 2
+[LI_OPERAT4] 0
+[LI_ORDER] 0
+[LI_OUTFILE]             
+[LI_OUTPUT] 1
+[START LI_PICSQL1]
+[END LI_PICSQL1]
+[START LI_PICSQL2]
+[END LI_PICSQL2]
+[START LI_PICSQL3]
+[END LI_PICSQL3]
+[START LI_PICSQL4]
+[END LI_PICSQL4]
+[LI_PICT1]                     
+[LI_PICT2]                     
+[LI_PICT3]                     
+[LI_PICT4]                     
+[LI_POSTPRO]                                                                                 
+[LI_PREPROC] FCX5000(.F.,'RT',.T.,'AV_DATE>=G_SYSDATE')                                      
+[LI_RESLET] .F.
+[LI_RPTGRP]                     
+[LI_SAVERES] .F.
+[START LI_SQL]
+SELECT * FROM PreProc ORDER BY pp_code[END LI_SQL]
+[LI_TYPE1] 3
+[LI_TYPE2] 4
+[LI_TYPE3] 2
+[LI_TYPE4] 0
+[LI_USRGRP]                               
+[LI_WHEN]                                         
+[P1_LANG1] Date                
+[P1_LANG10]                     
+[P1_LANG11]                     
+[P1_LANG2] Datum               
+[P1_LANG3] Datum               
+[P1_LANG4] Date                
+[P1_LANG5] Date                
+[P1_LANG6] Datum               
+[P1_LANG7] Date                
+[P1_LANG8] Date                
+[P1_LANG9] Date                
+[P2_LANG1]                     
+[P2_LANG10]                     
+[P2_LANG11]                     
+[P2_LANG2]                     
+[P2_LANG3]                     
+[P2_LANG4]                     
+[P2_LANG5]                     
+[P2_LANG6]                     
+[P2_LANG7]                     
+[P2_LANG8]                     
+[P2_LANG9]                     
+[P3_LANG1]                     
+[P3_LANG10]                     
+[P3_LANG11]                     
+[P3_LANG2]                     
+[P3_LANG3]                     
+[P3_LANG4]                     
+[P3_LANG5]                     
+[P3_LANG6]                     
+[P3_LANG7]                     
+[P3_LANG8]                     
+[P3_LANG9]                     
+[P4_LANG1]                     
+[P4_LANG10]                     
+[P4_LANG11]                     
+[P4_LANG2]                     
+[P4_LANG3]                     
+[P4_LANG4]                     
+[P4_LANG5]                     
+[P4_LANG6]                     
+[P4_LANG7]                     
+[P4_LANG8]                     
+[P4_LANG9]                     
+[EOF]

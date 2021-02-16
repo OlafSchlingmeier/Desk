@@ -1,0 +1,6 @@
+ PARAMETER pnPix
+* RETURN pnPix/FONTMETRIC(6)
+RETURN pnPix/6
+
+ENDFUNC
+*

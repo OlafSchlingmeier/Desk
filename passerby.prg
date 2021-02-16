@@ -1,0 +1,506 @@
+*Program: passerby.prg
+PROCEDURE PostPasserby
+ PARAMETER ctYpe
+ *****************************************
+ IF g_lBillMode
+      DO PasserbyPost IN ProcBill WITH cType
+      RETURN
+ ENDIF
+ *****************************************
+ PRIVATE luSeaddress
+ PRIVATE luSereservat
+ PRIVATE lvOuchervalid
+ PRIVATE nnEwrow, ndIffamt
+ PRIVATE cfXp, cnAme
+ PRIVATE lpRint, lopendrawer
+ PRIVATE lcReditnote, laSktype, llEdger, naDdressid
+ PRIVATE nsElectedbutton
+ PRIVATE ALL LIKE l_*
+ PRIVATE a_Struct
+ IF (PCOUNT()==0)
+      ctYpe = ""
+ ENDIF
+ IF  .NOT. usErpid()
+      RETURN
+ ENDIF
+ lcReditnote = .F.
+ l_Row = 1.75
+ l_Col = 2
+ l_Vat = "m.Ps_Vat"
+ l_Balance = 0
+ l_Settled = .F.
+ l_Copies = 1
+ lopendrawer=.f.
+ l_Oldarea = SELECT()
+ l_Oldrec = RECNO("Post")
+ naDdressid = 0
+ IF (WVISIBLE("wPostPass"))
+      = alErt(GetLangText("PASSERBY","TA_ALREADYOPEN")+"!")
+ ELSE
+      IF (WEXIST ('FAddressMask') AND _screen.activeform.name = 'FAddressMask')
+           LOCAL rcno_
+           SET DATASESSION TO _screen.activeform.DataSessionId
+           rcno_ = RECNO("Address")
+           SET DATASESSION TO 1
+           SELECT saddress
+           GOTO rcno_
+      endif
+      luSeaddress = (UPPER(ALIAS())=="SADDRESS")
+      luSereservat = (ctYpe=="RES")
+      SELECT poSt
+      = AFIELDS(a_Struct)
+      nnEwrow = ALEN(a_Struct, 1)+1
+      DIMENSION a_Struct[nnEwrow, ALEN(a_Struct, 2)]
+      a_Struct[nnEwrow, 1] = 'PS_EURO'
+      a_Struct[nnEwrow, 2] = 'B'
+      a_Struct[nnEwrow, 3] = 8
+      a_Struct[nnEwrow, 4] = 6
+      FOR l_M = 5 TO 16
+           a_Struct[nnEwrow, l_M] = a_Struct(1,l_M)
+      ENDFOR
+      IF paRam.pa_currloc<>0
+           nnEwrow = ALEN(a_Struct, 1)+1
+           DIMENSION a_Struct[nnEwrow, ALEN(a_Struct, 2)]
+           a_Struct[nnEwrow, 1] = 'PS_LOCAL'
+           a_Struct[nnEwrow, 2] = 'B'
+           a_Struct[nnEwrow, 3] = 8
+           a_Struct[nnEwrow, 4] = 6
+           FOR l_M = 5 TO 16
+                a_Struct[nnEwrow, l_M] = a_Struct(1,l_M)
+           ENDFOR
+      ENDIF
+      CREATE CURSOR Query FROM ARRAY a_Struct
+      l_Passdbf = DBF()
+      SELECT quEry
+      INDEX ON STR(ps_paynum, 3)+STR(ps_artinum) TAG taG1
+      SET ORDER IN "Query" TO 1
+      SET RELATION TO quEry.ps_artinum INTO arTicle
+      SET RELATION ADDITIVE TO quEry.ps_paynum INTO paYmetho
+      SCATTER BLANK MEMVAR
+      DEFINE WINDOW wpOstpass FROM 0, 0 TO 16, IIF(g_Nscreenmode==1, 100, 127) FONT "Arial", 10 NOCLOSE NOZOOM TITLE chIldtitle(GetLangText("PASSERBY","TW_POSTPASS")) NOMDI DOUBLE
+      MOVE WINDOW wpOstpass CENTER
+      ACTIVATE WINDOW wpOstpass
+      IF (luSeaddress)
+           = txTpanel(0.5,l_Col,90,coMpanyname("sAddress")+"/"+ guEstname("sAddress"),80,"IB")
+      ENDIF
+      IF (luSereservat)
+           = txTpanel(0.5,l_Col,90,coMpanyname("Address")+"/"+ guEstname("Address"),80,"IB")
+      ENDIF
+      l_Txtsize = 10
+      l_To = l_Col+l_Txtsize
+      = txTpanel(l_Row,l_Col,l_To,GetLangText("PASSERBY","T_ARTINUM"),l_Txtsize)
+      l_Col = l_Col+l_Txtsize+1
+      l_Txtsize = 10
+      l_To = l_To+l_Txtsize+1
+      = txTpanel(l_Row,l_Col,l_To,GetLangText("PASSERBY","T_UNITS"),l_Txtsize)
+      l_Col = l_Col+l_Txtsize+1
+      l_Txtsize = 12
+      l_To = l_To+l_Txtsize+1
+      = txTpanel(l_Row,l_Col,l_To,GetLangText("PASSERBY","T_PRICE"),l_Txtsize)
+      l_Col = l_Col+l_Txtsize+1
+      l_Txtsize = IIF(g_Nscreenmode==1, 17, 25)
+      l_To = l_To+l_Txtsize+1
+      = txTpanel(l_Row,l_Col,l_To,GetLangText("PASSERBY","T_DEFAULT"),l_Txtsize)
+      l_Col = l_Col+l_Txtsize+1
+      l_Txtsize = IIF(g_Nscreenmode==1, 17, 25)
+      l_To = l_To+l_Txtsize+1
+      = txTpanel(l_Row,l_Col,l_To,GetLangText("PASSERBY","T_CUSTOM"),l_Txtsize)
+      l_Col = l_Col+l_Txtsize+1
+      l_Txtsize = IIF(g_Nscreenmode==1, 17, 25)
+      l_To = l_To+l_Txtsize+1
+      = txTpanel(l_Row,l_Col,l_To,GetLangText("PASSERBY","T_SUPPLEM"),l_Txtsize)
+      = txTpanel(12,2,12,GetLangText("PASSERBY","T_BALANCE"),10)
+      l_Row = 2
+      DO WHILE (.T.)
+           l_Lang = SPACE(25)
+           l_Vatnum = 0
+           l_Vatpct = 0
+           l_Vatnum2 = 0
+           l_Vatpct2 = 0
+           l_VatTyp2 = ""
+           l_Artitype = 0
+           l_Col = 2
+           l_Row = l_Row+1
+           nsElectedbutton = 1
+           DO coMposting IN NewPost WITH l_Balance, "wPostPass"
+           IF (LASTKEY()=27 .OR. M.ps_artinum==0)
+                EXIT
+           ELSE
+                IF (luSereservat)
+                     M.ps_reserid = reServat.rs_reserid
+                     M.ps_origid = reServat.rs_reserid
+                     naDdressid = reServat.rs_addrid
+                ELSE
+                     M.ps_reserid = 0.100
+                     M.ps_origid = 0.100
+                ENDIF
+                M.ps_window = 1
+                M.ps_date = sySdate()
+                M.ps_time = TIME()
+                M.ps_amount = M.ps_price*M.ps_units
+                M.ps_userid = cuSerid
+                M.ps_cashier = g_Cashier
+                IF (luSeaddress)
+                     M.ps_addrid = saDdress.ad_addrid
+                     naDdressid = saDdress.ad_addrid
+                ENDIF
+                LOCAL l_cVatMacro1, l_cVatMacro2
+                l_cVatMacro1 = "m.ps_vat"+LTRIM(STR(l_Vatnum))
+                l_cVatMacro2 = "m.ps_vat"+LTRIM(STR(l_Vatnum2))
+                IF param.pa_exclvat
+                     IF UPPER(ALLTRIM(l_VatTyp2)) <> "PP"
+                          &l_cVatMacro1 = m.ps_amount * (l_VatPct / 100)
+                          IF UPPER(ALLTRIM(l_VatTyp2)) <> "BT"
+                               IF paRam.pa_compvat
+                                    &l_cVatMacro2 = (m.ps_amount + &l_cVatMacro1) * (l_VatPct2 / 100)
+                               ELSE
+                                    &l_cVatMacro2 = m.ps_amount * (l_VatPct2 / 100)
+                               ENDIF
+                          ELSE
+                               &l_cVatMacro2 = l_VatPct2
+                          ENDIF
+                     ELSE
+                          LOCAL l_nPurchasePrice
+                          l_nPurchasePrice = DbLookup("article","tag1",m.ps_artinum,"ar_pprice")
+                          IF (m.ps_amount-l_nPurchasePrice) > 0
+                               &l_cVatMacro2 = (m.ps_amount-l_nPurchasePrice) * (l_VatPct2 / (100-l_VatPct2))
+                          ENDIF
+                          &l_cVatMacro1 = (m.ps_amount+&l_cVatMacro2) * (l_VatPct / 100)
+                     ENDIF
+                ELSE
+                     &l_cVatMacro1 = m.ps_amount * ( 1 - (100 / (100 + l_VatPct)))
+                     DO CASE
+                          CASE UPPER(ALLTRIM(l_VatTyp2)) == "PP"
+                               LOCAL l_nPurchasePrice
+                               l_nPurchasePrice = DbLookup("article","tag1",m.ps_artinum,"ar_pprice")
+                               IF (m.ps_amount-l_nPurchasePrice-&l_cVatMacro1) > 0
+                                    &l_cVatMacro2 = (m.ps_amount-l_nPurchasePrice-&l_cVatMacro1) * (l_VatPct2 / 100)
+                               ENDIF
+                          CASE UPPER(ALLTRIM(l_VatTyp2)) == "BT"
+                               &l_cVatMacro2 = l_VatPct2
+                          OTHERWISE
+                               &l_cVatMacro2 = m.ps_amount * ( 1 - (100 / (100 + l_VatPct2)))
+                     ENDCASE
+                ENDIF
+                M.ps_postid = neXtid('Post')
+                INSERT INTO Query FROM MEMVAR
+                IF paRam.pa_exclvat
+                     l_Balance = l_Balance+ROUND(M.ps_amount+M.ps_vat1+M.ps_vat2+M.ps_vat3+M.ps_vat4+M.ps_vat5+ ;
+                                 M.ps_vat6+M.ps_vat7+M.ps_vat8+M.ps_vat9, paRam.pa_currdec)
+                ELSE
+                     l_Balance = l_Balance+M.ps_amount
+                ENDIF
+                IF (arTicle.ar_stckctl)
+                     REPLACE arTicle.ar_stckcur WITH arTicle.ar_stckcur - M.ps_units
+                ENDIF
+           ENDIF
+      ENDDO
+      if lopendrawer
+           =drwopen()
+      endif
+      RELEASE WINDOW wpOstpass
+      = chIldtitle("")
+      l_Row = 1.75
+      l_Col = 2
+      IF (l_Balance<>0)
+           l_Settled = .F.
+           lcReditnote = (l_Balance<0)
+           SELECT quEry
+           SCATTER BLANK MEMVAR
+           DEFINE WINDOW wpAypass FROM 0.000, 0.000 TO 16, IIF(g_Nscreenmode==1, 100, 122) FONT "Arial", 10 ;
+                  NOCLOSE NOZOOM TITLE chIldtitle(GetLangText("PASSERBY","TW_PAYPASS")) NOMDI DOUBLE
+           MOVE WINDOW wpAypass CENTER
+           ACTIVATE WINDOW wpAypass
+           IF (luSeaddress)
+                = txTpanel(0.5,l_Col,90,coMpanyname("sAddress")+"/"+guEstname("sAddress"),80,"IB")
+           ENDIF
+           IF (luSereservat)
+                = txTpanel(0.5,l_Col,90,coMpanyname("Address")+"/"+guEstname("Address"),80,"IB")
+           ENDIF
+           DO coMpayscreen IN ChkOut2
+           l_Row = 2
+           DO WHILE (.T.)
+                l_Defunits = 0.00
+                DO coMpayget IN NewPay WITH l_Balance, "wPayPass", "", naDdressid
+                IF LASTKEY()==27 .OR. M.ps_paynum==0
+                     LOOP
+                ELSE
+                     l_Copies = MAX(l_Copies, paYmetho.pm_copy)
+                     *
+                     if !lopendrawer
+                          lopendrawer = paymetho.pm_opendrw
+                     endif
+                     l_Saveunits = M.ps_units
+                     IF M.ps_units>0 .AND.  .NOT. EMPTY(paYmetho.pm_addamnt)
+                          M.ps_units = M.ps_units+paYmetho.pm_addamnt
+                     ENDIF
+                     IF (M.ps_units>0)
+                          DO CASE
+                               CASE paYmetho.pm_paytyp==5
+                                    IF (.NOT. EMPTY(paYmetho.pm_addpct))
+                                         M.ps_units = (paYmetho.pm_addpct*M.ps_units/100)*-1
+                                    ENDIF
+                               CASE  .NOT. EMPTY(paYmetho.pm_addpct)
+                                    M.ps_units = M.ps_units+(paYmetho.pm_addpct*M.ps_units/100)
+                          ENDCASE
+                     ENDIF
+                     IF (luSereservat)
+                          M.ps_reserid = reServat.rs_reserid
+                          M.ps_origid = reServat.rs_reserid
+                     ELSE
+                          M.ps_reserid = 0.100
+                          M.ps_origid = 0.100
+                     ENDIF
+                     M.ps_window = 1
+                     M.ps_date = sySdate()
+                     M.ps_time = TIME()
+                     M.ps_amount = -ROUND(M.ps_units*paYmetho.pm_calcrat, 2)
+                     M.ps_userid = cuSerid
+                     M.ps_cashier = g_Cashier
+                     IF (luSeaddress)
+                          M.ps_addrid = saDdress.ad_addrid
+                     ENDIF
+                     M.ps_currtxt = ''
+                     = cuRrcnv(M.ps_paynum,M.ps_units,0,0,@M.ps_currtxt)
+                     M.ps_postid = neXtid('Post')
+                     INSERT INTO Query FROM MEMVAR
+                     IF l_Defunits=M.ps_units
+                          ndIffamt = roUndit(M.ps_reserid,M.ps_window,l_Balance,M.ps_units,paYmetho.pm_calcrat,'','Query')
+                     ELSE
+                          ndIffamt = 0.00
+                     ENDIF
+                     l_Balance = ROUND(l_Balance+M.ps_amount+ndIffamt,paRam.pa_currdec)
+                     IF M.ps_units>0 .AND.  .NOT. (l_Saveunits==M.ps_units)
+                          l_Diffamount = -M.ps_amount - l_Saveunits*paymetho.pm_calcrat
+                          M.ps_paynum = 0
+                          M.ps_supplem = ""
+                          M.ps_units = 1.00
+                          M.ps_price = ROUND(l_Diffamount,param.pa_currdec)
+                          M.ps_amount = M.ps_units*M.ps_price
+                          M.ps_artinum = paYmetho.pm_addarti
+                          IF (luSeaddress)
+                               M.ps_addrid = saDdress.ad_addrid
+                          ENDIF
+                          l_vatnum=0
+                          l_vatpct=0
+                          l_vatnum2=0
+                          l_vatpct2=0
+                          DO sarticle in particle
+                          cvAtmacro1 = "m.ps_vat"+LTRIM(STR(l_Vatnum))
+                          &cVATMacro1 = m.ps_amount * ( 1 - (100 / (100 + l_VatPct)))
+                          cvAtmacro2 = "m.ps_vat"+LTRIM(STR(l_Vatnum2))
+                          &cVATMacro2 = m.ps_amount *  (1 - (100 / (100 + l_VatPct2)))
+                          IF (param.pa_exclvat)
+                               m.ps_price = m.ps_price - ;
+                                    ROUND(&cvatmacro1,param.pa_currdec) - ;
+                                    ROUND(&cvatmacro2,param.pa_currdec)
+                               m.ps_amount = m.ps_amount - ;
+                                    ROUND(&cvatmacro1,param.pa_currdec) - ;
+                                    ROUND(&cvatmacro2,param.pa_currdec)
+                          ENDIF
+                          M.ps_postid = neXtid('Post')
+                          INSERT INTO Query FROM MEMVAR
+                          IF (param.pa_exclvat)
+                              l_Balance = ROUND(l_Balance+M.ps_amount+ ;
+                                 ROUND(&cvatmacro1,param.pa_currdec)+ ;
+                                 ROUND(&cvatmacro2,param.pa_currdec),param.pa_currdec)
+                          ELSE
+                              l_Balance = ROUND(l_Balance+M.ps_amount,param.pa_currdec)
+                          ENDIF
+                     ENDIF
+                ENDIF
+                IF ROUND(l_Balance, paRam.pa_currdec)=0.00
+                     l_Settled = .T.
+                     EXIT
+                ENDIF
+           ENDDO
+           if lopendrawer
+                =drwopen()
+           endif
+           RELEASE WINDOW wpAypass
+           = chIldtitle("")
+      ENDIF
+      IF (l_Settled)
+           lpRint = yeSno(GetLangText("PASSERBY","TA_PRINTBILL")+"?")
+           llEdger = (paYmetho.pm_paytyp=4)
+           laSktype = (lpRint .AND. luSeaddress)
+           LOCAL l_nAmount
+           SELECT query
+           DO BillAmount IN ProcBill WITH l_nAmount
+           g_Billnum = geTbill(laSktype,llEdger,lcReditnote,.F.,query.ps_reserid,query.ps_addrid,l_nAmount,"PASSERBY")
+           g_Billname = ''
+           REPLACE ps_ifc WITH g_Billnum ALL FOR ps_paynum>0
+           REPLACE ALL ps_billnum WITH g_Billnum
+           IF paRam.pa_currloc<>0
+                REPLACE ps_local WITH inLocal(ps_amount) ALL FOR ps_artinum>0
+           ELSE
+                REPLACE ps_euro WITH euRo(ps_amount) ALL FOR ps_artinum>0
+           ENDIF
+           GOTO TOP IN quEry
+           IF lpRint
+                DO prIntpassbill WITH l_Copies
+           ENDIF
+           IF  .NOT. EMPTY(paRam.pa_fiscprt)
+                cfXp = 'FP'+TRIM(paRam.pa_fiscprt)+'.FXP'
+                IF luSeaddress
+                     cnAme = TRIM(adDress.ad_title)+" "+TRIM(adDress.ad_fname)+" "+TRIM(flIp(adDress.ad_lname))
+                ELSE
+                     cnAme = GetLangText("PASSERBY","TXT_PASSERBY")
+                ENDIF
+                IF FILE(cfXp)
+                     cfXp = 'FP'+TRIM(paRam.pa_fiscprt)
+                     do &cFxp with 'PRINT', m.ps_reserid, 1, cName, g_BillNum, 'Query'
+                ENDIF
+           ENDIF
+      ENDIF
+      lvOucherused = .F.
+      SELECT quEry
+      GOTO TOP
+      DO WHILE ( .NOT. EOF())
+           IF (arTicle.ar_artityp==4)
+                lvOucherused = lvOucherused .OR. voUcher("Query")
+           ENDIF
+           SELECT quEry
+           SKIP 1
+      ENDDO
+      DO prIntthevoucher IN Voucher
+      SELECT poSt
+      APPEND FROM (l_Passdbf)
+      SELECT quEry
+      SET RELATION TO
+      USE
+      GOTO l_Oldrec IN "post"
+      SELECT (l_Oldarea)
+ ENDIF
+ RETURN
+ENDPROC
+*
+PROCEDURE PrintPassBill
+ PARAMETER p_Copies, lp_lPreview, lp_leInvoice, lp_lHistoryBill
+ PRIVATE ALL LIKE l_*
+ PRIVATE ctMpfrx, ctMpfrt, lBillHistory, lFromPostCxl
+ LOCAL ARRAY l_aReportHeader(7)
+ LOCAL l_cOldTmpFrx, l_nRecNoLists
+
+ STORE "" TO l_cArPayDescriptionText, l_cArPayDiscountText
+
+ l_Frx = gcReportdir+"Bill1.frx"
+ IF  .NOT. FILE(l_Frx)
+      IF lp_leInvoice
+           WAIT l_Frx + ": FILE NOT FOUND" WINDOW NOWAIT
+      ELSE
+           AlErt(l_Frx,"FILE NOT FOUND")
+      ENDIF
+      RETURN
+ ENDIF
+ ctMpfrx = ''
+ ctMpfrt = ''
+ IF  .NOT. chEcklayout(l_Frx,@ctMpfrx,@ctMpfrt)
+      RETURN
+ ENDIF
+ =SEEK(Query.ps_reserid, "reservat", "tag1")
+ l_Langdbf = STRTRAN(UPPER(l_Frx), '.FRX', '.DBF')
+ IF FILE(l_Langdbf)
+      USE SHARED NOUPDATE (l_Langdbf) ALIAS rePtext IN 0
+ ENDIF
+ g_Rptlngnr = g_Langnum
+ g_Rptlng = g_Language
+ DO BillArPaymentDetails IN ProcBill WITH l_cArPayDescriptionText, l_cArPayDiscountText, quEry.ps_addrid
+ STORE .F. TO lBillHistory, lFromPostCxl
+
+ * Prepare address details in variables, which can be used in report
+ SELECT adDress
+ = SEEK(quEry.ps_addrid)
+ SELECT quEry
+ GOTO TOP IN "query"
+ 
+ DO BillReportHeader IN ProcBill WITH .F., 1, l_aReportHeader
+ l_cTitle = l_aReportHeader(1)
+ l_cDepartment = l_aReportHeader(2)
+ l_cName = l_aReportHeader(3)
+ l_cStreet1 = l_aReportHeader(4)
+ l_cStreet2 = l_aReportHeader(5)
+ l_cCity = l_aReportHeader(6)
+ l_cCountry = l_aReportHeader(7)
+
+ _screen.oGlobal.oBill.nAddrId = adDress.ad_addrid
+ _screen.oGlobal.oBill.nApId = 0
+ _screen.oGlobal.oBill.nReserId = 0.100
+ _screen.oGlobal.oBill.nWindow = 0
+ _screen.oGlobal.oBill.cArtForClause = "1=1"
+ _screen.oGlobal.oBill.cProformaInvoiceNo = ""
+ _screen.oGlobal.oBill.SetElPaySlip(g_Billnum, lp_lHistoryBill)
+ 
+ FOR l_I = 1 TO p_Copies
+      SELECT quEry
+      GOTO TOP IN "query"
+      WAIT WINDOW NOWAIT "Printing "+LTRIM(STR(l_I))+"..."
+      SELECT adDress
+      = SEEK(quEry.ps_addrid)
+      SELECT quEry
+      IF g_Demo OR glTraining
+           REPORT FORM (ctMpfrx) HEADING REPLICATE(UPPER(gcApplication)+" DEMO VERSION... ", 3) TO PRINTER NOCONSOLE
+           DO seTstatus IN Setup
+      ELSE
+           l_cOldTmpFrx = ""
+           l_nRecNoLists = 0
+           IF l_I = 2 AND NOT EMPTY(_screen.oGlobal.oParam.pa_bilcopy)
+                l_nRecNoLists = RECNO("lists")
+                IF DLocate("lists", "li_frx = " + SqlCnv(ALLTRIM(_screen.oGlobal.oParam.pa_bilcopy)+".FRX")) AND ;
+                          FILE(ADDBS(gcReportdir)+ALLTRIM(_screen.oGlobal.oParam.pa_bilcopy)+".FRX")
+                     l_cOldTmpFrx = ctMpfrx
+                     ctMpfrx = ADDBS(gcReportdir)+ALLTRIM(_screen.oGlobal.oParam.pa_bilcopy)+".FRX"
+                ELSE
+                     GO l_nRecNoLists IN lists
+                ENDIF
+           ENDIF
+           IF l_I > 1 AND NOT EMPTY(param2.pa_copylng)
+                DO PBSetReportLanguage IN prntbill WITH param2.pa_copylng
+           ENDIF
+           _screen.oGlobal.oBill.lActive = .T.
+           PrintReport(ctMpfrx,,,,"ZUGFERD",,"Query")
+           IF NOT lp_leInvoice
+                IF g_debug OR lp_lPreview
+                     LOCAL loSession, lnRetVal, l_lAutoYield, loXFF, loExtensionHandler, loPreview
+                     IF g_lUseNewRepPreview
+                          loSession=EVALUATE([xfrx("XFRX#LISTENER")])
+                          lnRetVal = loSession.SetParams("",,,,,,"XFF") && no name = just in memory
+                          IF lnRetVal = 0
+                               l_lAutoYield = _vfp.AutoYield
+                               _vfp.AutoYield = .T.
+                               REPORT FORM (ctMpfrx) OBJECT loSession
+                               loXFF = loSession.oxfDocument 
+                               _vfp.AutoYield = l_lAutoYield
+                               loExtensionHandler = CREATEOBJECT("MyExtensionHandler")
+                               loExtensionHandler.lNoListsTable = .T.
+                               loExtensionHandler.curData = "Query"
+                               loPreview = CREATEOBJECT("frmMpPreviewerDesk")
+                               loPreview.setExtensionHandler(loExtensionHandler)
+                               loPreview.PreviewXFF(loXFF)
+                               loPreview.show(1)
+                               loExtensionHandler = .NULL.
+                          ENDIF
+                     ELSE
+                          REPORT FORM (ctMpfrx) PREVIEW NOCONSOLE
+                     ENDIF
+                ELSE
+                     REPORT FORM (ctMpfrx) TO PRINTER PROMPT NOCONSOLE
+                ENDIF
+           ENDIF
+           IF l_I = 2 AND NOT EMPTY(_screen.oGlobal.oParam.pa_bilcopy) AND NOT EMPTY(l_cOldTmpFrx)
+                ctMpfrx = l_cOldTmpFrx
+                GO l_nRecNoLists IN lists
+           ENDIF
+           _screen.oGlobal.oBill.lActive = .F.
+           DO seTstatus IN Setup
+      ENDIF
+      WAIT CLEAR
+ ENDFOR
+ _screen.oGlobal.oBill.nAddrId = 0
+ _screen.oGlobal.oBill.ResetElPaySlip()
+ = dcLose('RepText')
+ = fiLedelete(ctMpfrx)
+ = fiLedelete(ctMpfrt)
+ RETURN
+ENDPROC
+*

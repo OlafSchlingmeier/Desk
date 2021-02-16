@@ -1,0 +1,142 @@
+
+--------------------------------------------------
+15.05.2020 18:42:06|Started|exjmavs Version:1.18|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.F.
+15.05.2020 18:42:06|SETTINGS|FirmaId:6|ObjektId:5|ObjektIdFromRoomTable:.F.|userfield_room_objektid:|KurVerwaltungId:0|checkreservationfrom:30|sendtotalresamount:Nein|pdfsavefolder:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF|
+15.05.2020 18:42:06|SETTINGS|userfield_meldescheinnr:rs_usrres0|userfield_kategorie_person:rs_usrres1|userfield_kfz:|userfield_group:|standardkategorie:|
+15.05.2020 18:42:06|SETTINGS|reslovetimeout:30|connecttimeout:60|sendtimeout:120|recivetimeout:120|
+15.05.2020 18:42:06|In Kategorien section no kategories found. Try to receive kategories from AVS server.
+15.05.2020 18:42:16|HTTP Connect|Status:404|StatusText:Not Found|ReadyState:4
+15.05.2020 18:42:16|Failed to receive kategories from AVS server.
+15.05.2020 18:42:16|Start SQL SELECT for reservation with ReserId 2766,100.
+15.05.2020 18:42:16|Finished SQL SELECT for reservations.
+15.05.2020 18:42:16|Found in reservat 1 and in histres 0 reservations.
+
+--------------------------------------------------
+15.05.2020 18:45:25|Started|exjmavs Version:1.18|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.F.
+15.05.2020 18:45:58|SETTINGS|FirmaId:6|ObjektId:5|ObjektIdFromRoomTable:.F.|userfield_room_objektid:|KurVerwaltungId:0|checkreservationfrom:30|sendtotalresamount:Nein|pdfsavefolder:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF|
+
+--------------------------------------------------
+15.05.2020 18:53:09|Started|exjmavs Version:1.18|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.F.
+15.05.2020 18:53:09|SETTINGS|FirmaId:6|ObjektId:5|ObjektIdFromRoomTable:.F.|userfield_room_objektid:|KurVerwaltungId:0|checkreservationfrom:30|sendtotalresamount:Nein|pdfsavefolder:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF|
+15.05.2020 18:53:09|SETTINGS|userfield_meldescheinnr:rs_usrres6|userfield_kategorie_person:rs_usrres5|userfield_kfz:|userfield_group:|standardkategorie:|
+15.05.2020 18:53:09|SETTINGS|reslovetimeout:30|connecttimeout:60|sendtimeout:120|recivetimeout:120|
+
+--------------------------------------------------
+15.05.2020 18:55:02|Started|exjmavs Version:1.18|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.T.
+15.05.2020 18:55:02|SETTINGS|FirmaId:6|ObjektId:5|ObjektIdFromRoomTable:.F.|userfield_room_objektid:|KurVerwaltungId:0|checkreservationfrom:30|sendtotalresamount:Nein|pdfsavefolder:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF|
+15.05.2020 18:55:02|SETTINGS|userfield_meldescheinnr:rs_usrres6|userfield_kategorie_person:rs_usrres5|userfield_kfz:|userfield_group:|standardkategorie:|
+15.05.2020 18:55:02|SETTINGS|reslovetimeout:30|connecttimeout:60|sendtimeout:120|recivetimeout:120|
+15.05.2020 18:55:16|In Kategorien section no kategories found. Try to receive kategories from AVS server.
+15.05.2020 18:55:16|HTTP Connect|Status:200|StatusText:OK|ReadyState:4
+15.05.2020 18:55:16|Send:OK|fehler code:10001|fehler beschreibung:ConfigurationLists-Abfrage erfolgreich
+15.05.2020 18:55:16|Added Kategorie: Erwachsener|EW|2
+15.05.2020 18:55:16|Added Kategorie: Kind|KI|3
+15.05.2020 18:55:16|Added Kategorie: Jugendlicher|JU|4
+15.05.2020 18:55:16|Added Kategorie: Geschäftsreisender|GR|5
+15.05.2020 18:55:16|Added Kategorie: Behinderung|B|1
+15.05.2020 18:55:16|Added Kategorie: Begleitperson|BP|6
+15.05.2020 18:55:16|Added Kategorie: Schwerbesch. 100%|SB|7
+15.05.2020 18:55:16|Added Kategorie: Sonderarrangement|SA|10
+15.05.2020 18:55:16|Start SQL SELECT for reservation with ReserId 2766,100.
+15.05.2020 18:55:16|Finished SQL SELECT for reservations.
+15.05.2020 18:55:16|Found in reservat 1 and in histres 0 reservations.
+15.05.2020 18:55:22|HTTP Connect|Status:200|StatusText:OK|ReadyState:4
+15.05.2020 18:55:22|Send:OK|fehler code:10001|fehler beschreibung:Meldeschein-Buchen erfolgreich
+15.05.2020 18:55:22|Meldeschein Nr. 8 written to reservat ReserId 2766,100
+15.05.2020 18:55:22|MeldescheinPrint: Found Meldeschein Nr. 8 PDF for ReserId 2766,100
+15.05.2020 18:55:22|HTTP Connect|Status:200|StatusText:OK|ReadyState:4
+15.05.2020 18:55:22|PDF:OK|fehler code:10001|fehler beschreibung:Meldescheine-Drucken erfolgreich
+15.05.2020 18:55:22|Saved Meldeschein Nr. 8 for ReserId 2766,100 to:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF\2766.100-2-AANONLI.PDF
+15.05.2020 18:55:22|Finished sending.
+15.05.2020 18:55:30|Exit.
+--------------------------------------------------
+
+--------------------------------------------------
+15.05.2020 19:07:54|Started|exjmavs Version:1.18|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.T.
+15.05.2020 19:07:54|SETTINGS|FirmaId:6|ObjektId:5|ObjektIdFromRoomTable:.F.|userfield_room_objektid:|KurVerwaltungId:0|checkreservationfrom:30|sendtotalresamount:Nein|pdfsavefolder:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF|
+15.05.2020 19:07:54|SETTINGS|userfield_meldescheinnr:rs_usrres6|userfield_kategorie_person:rs_usrres5|userfield_kfz:|userfield_group:|standardkategorie:|
+15.05.2020 19:07:54|SETTINGS|reslovetimeout:30|connecttimeout:60|sendtimeout:120|recivetimeout:120|
+
+--------------------------------------------------
+15.05.2020 19:09:10|Started|exjmavs Version:1.18|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.T.
+15.05.2020 19:09:10|SETTINGS|FirmaId:6|ObjektId:5|ObjektIdFromRoomTable:.F.|userfield_room_objektid:|KurVerwaltungId:0|checkreservationfrom:30|sendtotalresamount:Nein|pdfsavefolder:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF|
+15.05.2020 19:09:10|SETTINGS|userfield_meldescheinnr:rs_usrres6|userfield_kategorie_person:rs_usrres5|userfield_kfz:|userfield_group:|standardkategorie:|
+15.05.2020 19:09:10|SETTINGS|reslovetimeout:30|connecttimeout:60|sendtimeout:120|recivetimeout:120|
+15.05.2020 19:09:34|Start SQL SELECT for reservation with ReserId 2766,100.
+15.05.2020 19:09:34|Finished SQL SELECT for reservations.
+15.05.2020 19:09:34|Found in reservat 1 and in histres 0 reservations.
+15.05.2020 19:09:36|Aborting because user manualy cancelled from guests form. Finished.
+15.05.2020 19:09:38|Exit.
+--------------------------------------------------
+
+--------------------------------------------------
+15.05.2020 19:11:00|Started|exjmavs Version:1.18|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.T.
+15.05.2020 19:11:00|SETTINGS|FirmaId:6|ObjektId:5|ObjektIdFromRoomTable:.F.|userfield_room_objektid:|KurVerwaltungId:0|checkreservationfrom:30|sendtotalresamount:Nein|pdfsavefolder:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF|
+15.05.2020 19:11:00|SETTINGS|userfield_meldescheinnr:rs_usrres6|userfield_kategorie_person:rs_usrres5|userfield_kfz:|userfield_group:|standardkategorie:|
+15.05.2020 19:11:00|SETTINGS|reslovetimeout:30|connecttimeout:60|sendtimeout:120|recivetimeout:120|
+
+--------------------------------------------------
+15.05.2020 19:12:20|Started|exjmavs Version:1.18|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.T.
+15.05.2020 19:12:20|SETTINGS|FirmaId:6|ObjektId:5|ObjektIdFromRoomTable:.F.|userfield_room_objektid:|KurVerwaltungId:0|checkreservationfrom:30|sendtotalresamount:Nein|pdfsavefolder:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF|
+15.05.2020 19:12:20|SETTINGS|userfield_meldescheinnr:rs_usrres6|userfield_kategorie_person:rs_usrres5|userfield_kfz:|userfield_group:|standardkategorie:|
+15.05.2020 19:12:20|SETTINGS|reslovetimeout:30|connecttimeout:60|sendtimeout:120|recivetimeout:120|
+15.05.2020 19:12:24|Start SQL SELECT for reservation with ReserId 2766,100.
+15.05.2020 19:12:24|Finished SQL SELECT for reservations.
+15.05.2020 19:12:24|Found in reservat 1 and in histres 0 reservations.
+15.05.2020 19:12:28|HTTP Connect|Status:200|StatusText:OK|ReadyState:4
+15.05.2020 19:12:28|holeMeldeschein:OK|fehler code:10001|fehler beschreibung:Meldeschein-Holen erfolgreich
+
+--------------------------------------------------
+15.05.2020 19:26:14|Started|exjmavs Version:1.18|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.T.
+15.05.2020 19:26:14|SETTINGS|FirmaId:|ObjektId:5|ObjektIdFromRoomTable:.F.|userfield_room_objektid:|KurVerwaltungId:|checkreservationfrom:30|sendtotalresamount:Nein|pdfsavefolder:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF|
+15.05.2020 19:26:14|SETTINGS|userfield_meldescheinnr:rs_usrres6|userfield_kategorie_person:rs_usrres5|userfield_kfz:|userfield_group:|standardkategorie:|
+15.05.2020 19:26:14|SETTINGS|reslovetimeout:30|connecttimeout:60|sendtimeout:120|recivetimeout:120|
+15.05.2020 19:26:14|Start SQL SELECT for reservation with ReserId 2766,100.
+15.05.2020 19:26:14|Finished SQL SELECT for reservations.
+15.05.2020 19:26:14|Found in reservat 1 and in histres 0 reservations.
+15.05.2020 19:26:17|HTTP Connect|Status:200|StatusText:OK|ReadyState:4
+15.05.2020 19:26:17|holeMeldeschein:OK|fehler code:10001|fehler beschreibung:Meldeschein-Holen erfolgreich
+
+--------------------------------------------------
+15.05.2020 19:27:47|Started|exjmavs Version:1.18|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.T.
+15.05.2020 19:27:47|SETTINGS|FirmaId:|ObjektId:5|ObjektIdFromRoomTable:.F.|userfield_room_objektid:|KurVerwaltungId:|checkreservationfrom:30|sendtotalresamount:Nein|pdfsavefolder:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF|
+15.05.2020 19:27:47|SETTINGS|userfield_meldescheinnr:rs_usrres6|userfield_kategorie_person:rs_usrres5|userfield_kfz:|userfield_group:|standardkategorie:|
+15.05.2020 19:27:47|SETTINGS|reslovetimeout:30|connecttimeout:60|sendtimeout:120|recivetimeout:120|
+15.05.2020 19:27:47|Start SQL SELECT for reservation with ReserId 2766,100.
+15.05.2020 19:27:47|Finished SQL SELECT for reservations.
+15.05.2020 19:27:47|Found in reservat 1 and in histres 0 reservations.
+15.05.2020 19:27:50|HTTP Connect|Status:200|StatusText:OK|ReadyState:4
+15.05.2020 19:27:50|holeMeldeschein:OK|fehler code:10001|fehler beschreibung:Meldeschein-Holen erfolgreich
+15.05.2020 19:28:19|HTTP Connect|Status:200|StatusText:OK|ReadyState:4
+15.05.2020 19:28:19|Send:OK|fehler code:10001|fehler beschreibung:Meldeschein-Buchen erfolgreich
+15.05.2020 19:28:19|MeldescheinPrint: Found Meldeschein Nr. 8 PDF for ReserId 2766,100
+15.05.2020 19:28:19|HTTP Connect|Status:200|StatusText:OK|ReadyState:4
+15.05.2020 19:28:19|PDF:OK|fehler code:10001|fehler beschreibung:Meldescheine-Drucken erfolgreich
+15.05.2020 19:28:19|Saved Meldeschein Nr. 8 for ReserId 2766,100 to:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF\2766.100-2-AANONLI.PDF
+15.05.2020 19:28:19|Finished sending.
+15.05.2020 19:28:24|Exit.
+--------------------------------------------------
+
+--------------------------------------------------
+18.05.2020 21:49:50|Started|exjmavs Version:1.19|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.T.
+
+--------------------------------------------------
+18.05.2020 21:52:21|Started|exjmavs Version:1.19|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.T.
+
+--------------------------------------------------
+18.05.2020 22:26:42|Started|exjmavs Version:1.19|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.T.
+18.05.2020 22:26:42|SETTINGS|FirmaId:|ObjektId:5|ObjektIdFromRoomTable:.F.|userfield_room_objektid:|KurVerwaltungId:|checkreservationfrom:30|sendtotalresamount:Nein|pdfsavefolder:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF|
+18.05.2020 22:26:42|SETTINGS|userfield_meldescheinnr:rs_usrres6|userfield_kategorie_person:rs_usrres5|userfield_kfz:|userfield_group:|standardkategorie:|
+18.05.2020 22:26:42|SETTINGS|reslovetimeout:30|connecttimeout:60|sendtimeout:120|recivetimeout:120|
+18.05.2020 22:26:42|Start SQL SELECT for reservation with ReserId 2766,100.
+18.05.2020 22:26:42|Finished SQL SELECT for reservations.
+18.05.2020 22:26:42|Found in reservat 1 and in histres 0 reservations.
+18.05.2020 22:26:44|Aborting because user manualy cancelled from guests form. Finished.
+18.05.2020 22:26:47|Exit.
+--------------------------------------------------
+
+--------------------------------------------------
+18.05.2020 22:28:36|Started|exjmavs Version:1.19|Hotel date:20.04.2020|PC:@_!%ST6|Buildings:.T.
+18.05.2020 22:29:57|SETTINGS|FirmaId:|ObjektId:5|ObjektIdFromRoomTable:.F.|userfield_room_objektid:|KurVerwaltungId:|checkreservationfrom:30|sendtotalresamount:Nein|pdfsavefolder:F:\DEV\CODE\VFP\CITADEL\DESK\MELDESCHEINEPDF|
+18.05.2020 22:29:57|SETTINGS|userfield_meldescheinnr:rs_usrres6|userfield_kategorie_person:rs_usrres5|userfield_kfz:|userfield_group:|standardkategorie:|
+18.05.2020 22:29:57|SETTINGS|reslovetimeout:30|connecttimeout:60|sendtimeout:120|recivetimeout:120|

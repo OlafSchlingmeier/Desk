@@ -1,0 +1,617 @@
+15.05.2020 18:42:06|REQUEST
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.avs.meldeschein.de/ns/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:configuration-lists>
+         <identifikation>
+            <erzeugung>2020-04-20</erzeugung>
+            <schnittstelle>CITADEL</schnittstelle>
+            <kurverwaltung>0</kurverwaltung>
+            <verarbeitung>CONFIG-L-KAT</verarbeitung>
+         </identifikation>
+      </ns:configuration-lists>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------------------
+15.05.2020 18:55:16|REQUEST
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.avs.meldeschein.de/ns/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:configuration-lists>
+         <identifikation>
+            <erzeugung>2020-04-20</erzeugung>
+            <schnittstelle>CITADEL</schnittstelle>
+            <kurverwaltung>0</kurverwaltung>
+            <verarbeitung>CONFIG-L-KAT</verarbeitung>
+         </identifikation>
+      </ns:configuration-lists>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------------------
+15.05.2020 18:55:16|RESPONSE
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns0:configuration-lists xmlns:ns0="http://www.avs.meldeschein.de/ns/">
+            <identifikation>
+                <erzeugung>2010-12-21</erzeugung>
+                <schnittstelle>CITADEL</schnittstelle>
+                <kurverwaltung>0</kurverwaltung>
+                <verarbeitung>CONFIG-L-KAT</verarbeitung>
+                <version>3.25.5</version>
+            </identifikation>
+            <fehlermeldungen>
+                <fehler>
+                    <code>10001</code>
+                    <beschreibung>ConfigurationLists-Abfrage erfolgreich</beschreibung>
+                </fehler>
+            </fehlermeldungen>
+            <konfigliste>
+                <konfigdatensatz>
+                    <id>2</id>
+                    <text1>Erwachsener</text1>
+                    <text2>EW</text2>
+                </konfigdatensatz>
+                <konfigdatensatz>
+                    <id>3</id>
+                    <text1>Kind</text1>
+                    <text2>KI</text2>
+                </konfigdatensatz>
+                <konfigdatensatz>
+                    <id>4</id>
+                    <text1>Jugendlicher</text1>
+                    <text2>JU</text2>
+                </konfigdatensatz>
+                <konfigdatensatz>
+                    <id>5</id>
+                    <text1>Geschäftsreisender</text1>
+                    <text2>GR</text2>
+                </konfigdatensatz>
+                <konfigdatensatz>
+                    <id>1</id>
+                    <text1>Behinderung</text1>
+                    <text2>B</text2>
+                </konfigdatensatz>
+                <konfigdatensatz>
+                    <id>6</id>
+                    <text1>Begleitperson</text1>
+                    <text2>BP</text2>
+                </konfigdatensatz>
+                <konfigdatensatz>
+                    <id>7</id>
+                    <text1>Schwerbesch. 100%</text1>
+                    <text2>SB</text2>
+                </konfigdatensatz>
+                <konfigdatensatz>
+                    <id>10</id>
+                    <text1>Sonderarrangement</text1>
+                    <text2>SA</text2>
+                </konfigdatensatz>
+            </konfigliste>
+        </ns0:configuration-lists>
+    </S:Body>
+</S:Envelope>
+
+--------------------------------------------------
+15.05.2020 18:55:22|REQUEST
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.avs.meldeschein.de/ns/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:meldescheine>
+         <identifikation>
+              <erzeugung>2020-04-20</erzeugung>
+              <schnittstelle>CITADEL</schnittstelle>
+              <kurverwaltung>0</kurverwaltung>
+              <verarbeitung>BUCHEN</verarbeitung>
+         </identifikation>
+         <ns:meldeschein>
+              <buchungsnummer>CI-4012</buchungsnummer>
+              
+              <firmaid>6</firmaid>
+              <objektid>1</objektid>
+              <anreise>2020-04-20</anreise>
+              <abreise>2020-04-21</abreise>
+              <kategorieid>2</kategorieid>
+              <anredeid>1</anredeid>
+              <name>Aanonli</name>
+              <vorname>Stale</vorname>
+              <strasse>Sagveien 1</strasse>
+              <plz>1414</plz>
+              <ort>Trollĺsen</ort>
+              <landid>1</landid>
+              
+              
+
+
+              
+         </ns:meldeschein>
+      </ns:meldescheine>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------------------
+15.05.2020 18:55:22|RESPONSE
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns0:meldescheine xmlns:ns0="http://www.avs.meldeschein.de/ns/">
+            <identifikation>
+                <erzeugung>2012-06-16</erzeugung>
+                <schnittstelle>CITADEL</schnittstelle>
+                <kurverwaltung>0</kurverwaltung>
+                <verarbeitung>BUCHEN</verarbeitung>
+                <version>3.21.PD.5</version>
+            </identifikation>
+            <fehlermeldungen>
+                <fehler>
+                    <code>10001</code>
+                    <beschreibung>Meldeschein-Buchen erfolgreich</beschreibung>
+                </fehler>
+            </fehlermeldungen>
+            <ns0:meldeschein>
+                <buchungsnummer>CI-1481</buchungsnummer>
+                <meldescheinnummer>8</meldescheinnummer>
+                <firmaid>6</firmaid>
+                <objektid>5</objektid>
+                <anreise>2012-06-05</anreise>
+                <abreise>2012-06-06</abreise>
+                <kategorieid>3</kategorieid>
+                <anredeid>1</anredeid>
+                <name>Zderic6</name>
+                <vorname>Pera6</vorname>
+                <strasse>Perina 1</strasse>
+                <plz>1100</plz>
+                <ort>Kabul</ort>
+                <landid>1</landid>
+                <land>
+                    <land-id>1</land-id>
+                    <land-iso>DE</land-iso>
+                </land>
+                <betrag>2.2</betrag>
+                <abrechnungstatusid>1</abrechnungstatusid>
+            </ns0:meldeschein>
+        </ns0:meldescheine>
+    </S:Body>
+</S:Envelope>
+
+--------------------------------------------------
+15.05.2020 18:55:22|REQUEST
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.avs.meldeschein.de/ns/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:druckeMeldescheineRequest>
+         <identifikation>
+            <erzeugung>2020-04-20</erzeugung>
+            <schnittstelle>CITADEL</schnittstelle>
+            <kurverwaltung>0</kurverwaltung>
+            <verarbeitung>MS-DRUCKEN</verarbeitung>
+         </identifikation>
+         <meldeschein>
+            <meldescheinnummer>8</meldescheinnummer>
+         </meldeschein>
+      </ns:druckeMeldescheineRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------------------
+15.05.2020 18:55:22|RESPONSE
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns0:druckeMeldescheineResponse xmlns:ns0="http://www.avs.meldeschein.de/ns/">
+            <version>3.21.PD.5</version>
+            <fehlermeldungen>
+                <fehler>
+                    <code>10001</code>
+                    <beschreibung>Meldescheine-Drucken erfolgreich</beschreibung>
+                </fehler>
+            </fehlermeldungen>
+            <ms-pdf>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cmNlcyAzIDAgUgovQ29udGVudHMgNSAwIFIKPj4KZW5kb2JqCjcgMCBvYmoKPDwgL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9OYW1lIC9GMQovQmFzZUZvbnQgL0hlbHZldGljYQovRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyA+PgplbmRvYmoKOCAwIG9iago8PCAvVHlwZSAvRm9udAovU3VidHlwZSAvVHlwZTEKL05hbWUgL0YzCi9CYXNlRm9udCAvSGVsdmV0aWNhLUJvbGQKL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgPj4KZW5kb2JqCjEgMCBvYmoKPDwgL1R5cGUgL1BhZ2VzCi9Db3VudCAxCi9LaWRzIFs2IDAgUiBdID4+CmVuZG9iagoyIDAgb2JqCjw8IC9UeXBlIC9DYXRhbG9nCi9QYWdlcyAxIDAgUgogPj4KZW5kb2JqCjMgMCBvYmoKPDwgCi9Gb250IDw8IC9GMSA3IDAgUiAvRjMgOCAwIFIgPj4gCi9Qcm9jU2V0IFsgL1BERiAvSW1hZ2VDIC9UZXh0IF0gPj4gCmVuZG9iagp4cmVmCjAgOQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDY1NTYgMDAwMDAgbiAKMDAwMDAwNjYxNCAwMDAwMCBuIAowMDAwMDA2NjY0IDAwMDAwIG4gCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2NSAwMDAwMCBuIAowMDAwMDA2MjMxIDAwMDAwIG4gCjAwMDAwMDYzMzcgMDAwMDAgbiAKMDAwMDAwNjQ0NCAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9TaXplIDkKL1Jvb3QgMiAwIFIKL0luZm8gNCAwIFIKPj4Kc3RhcnR4cmVmCjY3NTIKJSVFT0YK</ms-pdf>
+        </ns0:druckeMeldescheineResponse>
+    </S:Body>
+</S:Envelope>
+
+--------------------------------------------------
+15.05.2020 19:12:28|REQUEST
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.avs.meldeschein.de/ns/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:holeMeldeschein>
+         <identifikation>
+            <erzeugung>2020-04-20</erzeugung>
+            <schnittstelle>CITADEL</schnittstelle>
+            <kurverwaltung>0</kurverwaltung>
+            <verarbeitung>MS-HOLEN</verarbeitung>
+         </identifikation>
+         <anfragedaten>
+            <buchungsnummer>CI-4012</buchungsnummer>
+         </anfragedaten>
+      </ns:holeMeldeschein>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+--------------------------------------------------
+15.05.2020 19:12:28|RESPONSE
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns0:holeMeldeschein xmlns:ns0="http://www.avs.meldeschein.de/ns/">
+            <identifikation>
+                <erzeugung>2012-07-26</erzeugung>
+                <schnittstelle>CITADEL</schnittstelle>
+                <kurverwaltung>0</kurverwaltung>
+                <verarbeitung>MS-HOLEN</verarbeitung>
+                <version>3.21.PD.5</version>
+            </identifikation>
+            <anfragedaten>
+                <buchungsnummer>CI-1364</buchungsnummer>
+            </anfragedaten>
+            <fehlermeldungen>
+                <fehler>
+                    <code>10001</code>
+                    <beschreibung>Meldeschein-Holen erfolgreich</beschreibung>
+                </fehler>
+            </fehlermeldungen>
+            <ns0:meldeschein>
+                <buchungsnummer>CI-1364</buchungsnummer>
+                <meldescheinnummer>83439</meldescheinnummer>
+                <firmaid>6</firmaid>
+                <objektid>5</objektid>
+                <anreise>2012-07-26</anreise>
+                <abreise>2012-07-29</abreise>
+                <kategorieid>3</kategorieid>
+                <anredeid>1</anredeid>
+                <name>Schwarzzenögerü</name>
+                <vorname>Markuß</vorname>
+                <strasse>Überöß Str.</strasse>
+                <plz>11000</plz>
+                <ort>Ubankovgrad</ort>
+                <landid>1</landid>
+                <land>
+                    <land-id>1</land-id>
+                    <land-iso>DE</land-iso>
+                </land>
+                <betrag>19.8</betrag>
+                <abrechnungstatusid>2</abrechnungstatusid>
+                <begleitperson>
+                    <personid>87853</personid>
+                    <anredeid>1</anredeid>
+                    <name>Schwarzzenögerü</name>
+                    <vorname>Markuß</vorname>
+                    <kategorieid>3</kategorieid>
+                    <anreise>2012-07-26</anreise>
+                    <abreise>2012-07-29</abreise>
+                    <betrag>6.6</betrag>
+                </begleitperson>
+                <begleitperson>
+                    <personid>87854</personid>
+                    <anredeid>1</anredeid>
+                    <name>Schwarzzenögerü</name>
+                    <vorname>Markuß</vorname>
+                    <kategorieid>3</kategorieid>
+                    <anreise>2012-07-26</anreise>
+                    <abreise>2012-07-29</abreise>
+                    <betrag>6.6</betrag>
+                </begleitperson>
+            </ns0:meldeschein>
+        </ns0:holeMeldeschein>
+    </S:Body>
+</S:Envelope>
+
+--------------------------------------------------
+15.05.2020 19:26:17|REQUEST
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.avs.meldeschein.de/ns/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:holeMeldeschein>
+         <identifikation>
+            <erzeugung>2020-04-20</erzeugung>
+            <schnittstelle>CITADEL</schnittstelle>
+            <kurverwaltung></kurverwaltung>
+            <verarbeitung>MS-HOLEN</verarbeitung>
+         </identifikation>
+         <anfragedaten>
+            <buchungsnummer>CI-4012</buchungsnummer>
+         </anfragedaten>
+      </ns:holeMeldeschein>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+--------------------------------------------------
+15.05.2020 19:26:17|RESPONSE
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns0:holeMeldeschein xmlns:ns0="http://www.avs.meldeschein.de/ns/">
+            <identifikation>
+                <erzeugung>2012-07-26</erzeugung>
+                <schnittstelle>CITADEL</schnittstelle>
+                <kurverwaltung>0</kurverwaltung>
+                <verarbeitung>MS-HOLEN</verarbeitung>
+                <version>3.21.PD.5</version>
+            </identifikation>
+            <anfragedaten>
+                <buchungsnummer>CI-1364</buchungsnummer>
+            </anfragedaten>
+            <fehlermeldungen>
+                <fehler>
+                    <code>10001</code>
+                    <beschreibung>Meldeschein-Holen erfolgreich</beschreibung>
+                </fehler>
+            </fehlermeldungen>
+            <ns0:meldeschein>
+                <buchungsnummer>CI-1364</buchungsnummer>
+                <meldescheinnummer>83439</meldescheinnummer>
+                <firmaid>6</firmaid>
+                <objektid>5</objektid>
+                <anreise>2012-07-26</anreise>
+                <abreise>2012-07-29</abreise>
+                <kategorieid>3</kategorieid>
+                <anredeid>1</anredeid>
+                <name>Schwarzzenögerü</name>
+                <vorname>Markuß</vorname>
+                <strasse>Überöß Str.</strasse>
+                <plz>11000</plz>
+                <ort>Ubankovgrad</ort>
+                <landid>1</landid>
+                <land>
+                    <land-id>1</land-id>
+                    <land-iso>DE</land-iso>
+                </land>
+                <betrag>19.8</betrag>
+                <abrechnungstatusid>2</abrechnungstatusid>
+                <begleitperson>
+                    <personid>87853</personid>
+                    <anredeid>1</anredeid>
+                    <name>Schwarzzenögerü</name>
+                    <vorname>Markuß</vorname>
+                    <kategorieid>3</kategorieid>
+                    <anreise>2012-07-26</anreise>
+                    <abreise>2012-07-29</abreise>
+                    <betrag>6.6</betrag>
+                </begleitperson>
+                <begleitperson>
+                    <personid>87854</personid>
+                    <anredeid>1</anredeid>
+                    <name>Schwarzzenögerü</name>
+                    <vorname>Markuß</vorname>
+                    <kategorieid>3</kategorieid>
+                    <anreise>2012-07-26</anreise>
+                    <abreise>2012-07-29</abreise>
+                    <betrag>6.6</betrag>
+                </begleitperson>
+            </ns0:meldeschein>
+        </ns0:holeMeldeschein>
+    </S:Body>
+</S:Envelope>
+
+--------------------------------------------------
+15.05.2020 19:27:50|REQUEST
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.avs.meldeschein.de/ns/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:holeMeldeschein>
+         <identifikation>
+            <erzeugung>2020-04-20</erzeugung>
+            <schnittstelle>CITADEL</schnittstelle>
+            <kurverwaltung></kurverwaltung>
+            <verarbeitung>MS-HOLEN</verarbeitung>
+         </identifikation>
+         <anfragedaten>
+            <buchungsnummer>CI-4012</buchungsnummer>
+         </anfragedaten>
+      </ns:holeMeldeschein>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+--------------------------------------------------
+15.05.2020 19:27:50|RESPONSE
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns0:holeMeldeschein xmlns:ns0="http://www.avs.meldeschein.de/ns/">
+            <identifikation>
+                <erzeugung>2012-07-26</erzeugung>
+                <schnittstelle>CITADEL</schnittstelle>
+                <kurverwaltung>0</kurverwaltung>
+                <verarbeitung>MS-HOLEN</verarbeitung>
+                <version>3.21.PD.5</version>
+            </identifikation>
+            <anfragedaten>
+                <buchungsnummer>CI-1364</buchungsnummer>
+            </anfragedaten>
+            <fehlermeldungen>
+                <fehler>
+                    <code>10001</code>
+                    <beschreibung>Meldeschein-Holen erfolgreich</beschreibung>
+                </fehler>
+            </fehlermeldungen>
+            <ns0:meldeschein>
+                <buchungsnummer>CI-1364</buchungsnummer>
+                <meldescheinnummer>83439</meldescheinnummer>
+                <firmaid>6</firmaid>
+                <objektid>5</objektid>
+                <anreise>2012-07-26</anreise>
+                <abreise>2012-07-29</abreise>
+                <kategorieid>3</kategorieid>
+                <anredeid>1</anredeid>
+                <name>Schwarzzenögerü</name>
+                <vorname>Markuß</vorname>
+                <strasse>Überöß Str.</strasse>
+                <plz>11000</plz>
+                <ort>Ubankovgrad</ort>
+                <landid>1</landid>
+                <land>
+                    <land-id>1</land-id>
+                    <land-iso>DE</land-iso>
+                </land>
+                <betrag>19.8</betrag>
+                <abrechnungstatusid>2</abrechnungstatusid>
+                <begleitperson>
+                    <personid>87853</personid>
+                    <anredeid>1</anredeid>
+                    <name>Schwarzzenögerü</name>
+                    <vorname>Markuß</vorname>
+                    <kategorieid>3</kategorieid>
+                    <anreise>2012-07-26</anreise>
+                    <abreise>2012-07-29</abreise>
+                    <betrag>6.6</betrag>
+                </begleitperson>
+                <begleitperson>
+                    <personid>87854</personid>
+                    <anredeid>1</anredeid>
+                    <name>Schwarzzenögerü</name>
+                    <vorname>Markuß</vorname>
+                    <kategorieid>3</kategorieid>
+                    <anreise>2012-07-26</anreise>
+                    <abreise>2012-07-29</abreise>
+                    <betrag>6.6</betrag>
+                </begleitperson>
+            </ns0:meldeschein>
+        </ns0:holeMeldeschein>
+    </S:Body>
+</S:Envelope>
+
+--------------------------------------------------
+15.05.2020 19:28:19|REQUEST
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.avs.meldeschein.de/ns/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:meldescheine>
+         <identifikation>
+              <erzeugung>2020-04-20</erzeugung>
+              <schnittstelle>CITADEL</schnittstelle>
+              <kurverwaltung>44</kurverwaltung>
+              <verarbeitung>BUCHEN</verarbeitung>
+         </identifikation>
+         <ns:meldeschein>
+              <buchungsnummer>CI-4012</buchungsnummer>
+              <meldescheinnummer>8</meldescheinnummer>
+              <firmaid>33</firmaid>
+              <objektid>1</objektid>
+              <anreise>2020-04-20</anreise>
+              <abreise>2020-04-21</abreise>
+              <kategorieid>2</kategorieid>
+              <anredeid>1</anredeid>
+              <name>Aanonli</name>
+              <vorname>Stale</vorname>
+              <strasse>Sagveien 1</strasse>
+              <plz>1414</plz>
+              <ort>Trollĺsen</ort>
+              <landid>1</landid>
+              
+              
+
+
+              
+         </ns:meldeschein>
+      </ns:meldescheine>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------------------
+15.05.2020 19:28:19|RESPONSE
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns0:meldescheine xmlns:ns0="http://www.avs.meldeschein.de/ns/">
+            <identifikation>
+                <erzeugung>2012-06-16</erzeugung>
+                <schnittstelle>CITADEL</schnittstelle>
+                <kurverwaltung>0</kurverwaltung>
+                <verarbeitung>BUCHEN</verarbeitung>
+                <version>3.21.PD.5</version>
+            </identifikation>
+            <fehlermeldungen>
+                <fehler>
+                    <code>10001</code>
+                    <beschreibung>Meldeschein-Buchen erfolgreich</beschreibung>
+                </fehler>
+            </fehlermeldungen>
+            <ns0:meldeschein>
+                <buchungsnummer>CI-1481</buchungsnummer>
+                <meldescheinnummer>9</meldescheinnummer>
+                <firmaid>6</firmaid>
+                <objektid>5</objektid>
+                <anreise>2012-06-05</anreise>
+                <abreise>2012-06-06</abreise>
+                <kategorieid>3</kategorieid>
+                <anredeid>1</anredeid>
+                <name>Zderic6</name>
+                <vorname>Pera6</vorname>
+                <strasse>Perina 1</strasse>
+                <plz>1100</plz>
+                <ort>Kabul</ort>
+                <landid>1</landid>
+                <land>
+                    <land-id>1</land-id>
+                    <land-iso>DE</land-iso>
+                </land>
+                <betrag>2.2</betrag>
+                <abrechnungstatusid>1</abrechnungstatusid>
+            </ns0:meldeschein>
+        </ns0:meldescheine>
+    </S:Body>
+</S:Envelope>
+
+--------------------------------------------------
+15.05.2020 19:28:19|REQUEST
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.avs.meldeschein.de/ns/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:druckeMeldescheineRequest>
+         <identifikation>
+            <erzeugung>2020-04-20</erzeugung>
+            <schnittstelle>CITADEL</schnittstelle>
+            <kurverwaltung>44</kurverwaltung>
+            <verarbeitung>MS-DRUCKEN</verarbeitung>
+         </identifikation>
+         <meldeschein>
+            <meldescheinnummer>8</meldescheinnummer>
+         </meldeschein>
+      </ns:druckeMeldescheineRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------------------
+15.05.2020 19:28:19|RESPONSE
+--------------------------------------------------
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <S:Body>
+        <ns0:druckeMeldescheineResponse xmlns:ns0="http://www.avs.meldeschein.de/ns/">
+            <version>3.21.PD.5</version>
+            <fehlermeldungen>
+                <fehler>
+                    <code>10001</code>
+                    <beschreibung>Meldescheine-Drucken erfolgreich</beschreibung>
+                </fehler>
+            </fehlermeldungen>
+            <ms-pdf>JVBERi0xLjMKJaqrrK0KNCAwIG9iago8PCAvVHlwZSAvSW5mbwovUHJvZHVjZXIgKG51bGwpID4+CmVuZG9iago1IDAgb2JqCjw8IC9MZW5ndGggNjA5MiAvRmlsdGVyIC9GbGF0ZURlY29kZSAKID4+CnN0cmVhbQp4nK1cW48dx3F+318xeZMAc9T3i94im6aYQEJsURGQyDCW5CG5yO7K3osJ6tfnq75UV8+cFR1kSIA8852aruq6d/ec+ebVxVd/tIu2q1pevbtQ9N+bC7W8v9CLwl+9OL9ab5eY42qcXl7dLP/9xfMvl78sr/6t3JrrnZ08+VXZBPKwJpMqufmdUV8uz0xMoP3iZ6PKlVOeLunfsGrDQ+rtkDrk1Vg7j/n66v5pIXSyuCPOd4CLZNRpTVqt80uE4Ck10v843V0GyOh9IBH/6+3p7upNeOLG6NcYLN94dXs55qqfuCf4NdjGTGsltPPvl68fr39DFxkz246QrNe23fP81cXfYb8XF1mtsNkSvV5jzMsNbBzXpC0j14tagzPLx+WHiz9dfPOKefCdZg2gKyy+e7x/ON19uHy83/LZDgtGTq1W+6cZjXs3lLjX+39OyHGrkPLZ5fXDMyng3y9i9V4H781gcGFsmpDrgejQkLi5/nDx08XthV5V4f2MPszDvsG4EJv+xkIjruCIwQZFOMho3gpiJL0mhT+4uB4XWuOK/1PMmuKR9OXKvW51fGv/nFYdkyJh3fS5jvEOuvt/cuabbi78aniA/lnwbJR75ChZ/Ooz/pQRQvk+CG792z1yFP/A+r+BqwxbxJ0twpPIUbJEYZck7JJ2dok7u8SD7ZJXzXbJQud5Z5FOuUeOkkUjbbBitOaL63ExmDPxGegwgUwVxQgH4AvB18wXx7EXjoJqPzyFLyTfna+I+w8SyEoDOWkgt7eGfRo6TCAvBQpSoLDn7p+GDhMoSoFSFSVJjnEvRDxaCNRGDmpcRI5SvhDcO/EZ6DCBMsuAoqtE2uALwT3vZcxiDkcIZGSmMTLTmH2mMftMY47ONKZmGmOrEFbyMvPFYSxrY2JkZ2L2rYlx88Vx7KVPeGFgvpB8n4YOEyhIgaJ00rhzUiY+Ax0m0OgNbuhCOGnae+S+eTCytzhEoKobW7+zE688XxzF0iqRyqwSGuaLwZeJz0CHCaSFUawRGuYLwV0/DR0mkJUCyQJr9wXY7vsGa48WqOYVK/OK3ecV6+aL49iLMLYyr9h9XrH7vGKPzitW5hUr84rd5xW7zyv26LwCtmMtZmuPYmWPwgRnoMOESGJBZrP0lbz3lfQ0dJhAskdxskdx+x7F7nsUe3SP4mSmcbJHcfsexe0zjTs60zgj/MZZ4RB8Ibibp6HDBGpbK9PeypnNFTdfHMdeeoyXHuN3HuP2mcYdnWmc3GRxQRoo7K2x33NxR2+6OJlpXJICpT33fdZxR2cdl4VAvlL4yVf2+x4uHyyEVyL1eS2cly/EPph6GjpMIC0c2RvhyHwhuOudI4v7DxJIZhovM43fZxq/zzT+6EzjnRTIV1G85Oj2QrijhQiVvdyO9PvdSh/mi+PYSy+RfYzf9zF+38f4o/sYL7OLl9nF77OL32cXf3R28W17u34XJqPk+eIolkFXljKLhH0WAdl0cRh7I1JZkNuNYb8dGfY7p8EcnMqCXA0FuRoK+9VQ2K+GwtGroVB7lFBzRpA5I7j54jCWXhpFZotw5mzDPw0dJlCUAskTjLA/4AhnTmTi0QIlsbFOB9VDoLx3ibSXMQmuhwgk+5JYKeLEcd+XhKP7kij7kigzStxnlLjvS+LRfUmU2SVaKZDdc99nl3h0dgHb4TfRCb/hC8Hd7vxG3H+QQLIviTXHRJlj4r4viUf3JbH2JTFW9lHyCvPFYSxlRokyo8QzR6b7jBKPzigGrpZzTItWdEcuW7YC88GosND+/Ro0Pd0CzCTv42IsPi+fLoxdtfVYnuY16ZwcEcPLrU8GkHcxu0UAJqlg620d0oqYAbDWgDjXb41ViqyQtdOGvlVeZcvAJxIp2RTdoEH37LWhIVVM3lWaCqVCW08i1mSMIa1GrXQuQ6fsNQOFvY1Ba0njXY7EPgUH2kITjbUk7/i4muiMmr5dnY8wBID6ZAZlv5RNpfEuJXrsJjqVfFGBguYBZGcBVEUobzzpusoesw5kBauVjUuZTYxm2KryhkL8ZD+BVTtfn7E9eYdxa7bO5YJ6gymUs5agszMDowMX40zlCxVH4otcYrIqmPFJ6YWRTM/XOCuJoKsccV8ZyaPpzPXbYIyOQ/GQxpkSjmwcv5oAbNCg7gdl89K+DT5gbczjDyBGH72kIUFDgFfzEGU62WrJR056o5pPXWGxmGgNLrpcz4VsSDkPjBESQ+tQGVSIHXhMlp0cSU8nGyVNBSaVVmgw24lUBMVCRqfkJ8tSZ2WjnGSAxyWfJssGYdMgWYehZ7ovZ1+tQMMGb4eNwNvE8sAB21FYkB73g5z1XuQ4hIMYeQBswQ4NC/YhpAXnaW0m31ViNBYW0nZYFXoK3aHOjgjbdYjtMibItgsIZxOtpKmAVGCDBrOdSEVQrAyVNXqyHepCoufXxiRnq0V6tK6O3WzXESHAgJq2U7UCBs/Ii8NGkEBrF6UFKauanAZNi0GMZbwRMT4AtmCHhgXn6Otji8ltVcCK8TlMFkzk/lEJpXZEWLBDbJ0xQbZgQmmIKkuaCggFdkgy24hEgloqnNEHaUGrxPRoyNiV0CyIYpFMHbtZsCNCgAGxtmNMIRRb2FHoSILskxUWBBR0LG7MNPAoV6PYah6zfOy2s3pYjW8QtuNReXL7yXeVZJhU2o6OR1GdRepiZNiOoW4XMTW2HfoRlDwRoR2YVFchyWwjUhEU7ZQNkTJQKN/eEORttORRLumkFgGgddFFDwzRt1GFSKGSvM1Vi2AeTCltKiNXWbNqh5hj4BOdzTqlQ5Y0aL6SLw0NArTSYA7wjbyMj8hOzcIDcg6dB9FYi+LAc6k02ZfpobmAvAyQmSmtSSIytKGyBSSASdVexuy6wEmLToFmpYyx0vQ0daVlMgYSdKijh5xTU5CzOlSOLtqwSMTkbCcqCG8NXGBnrGJBSJGMJicKyuV2CO5gEcp8TkdfZt0BnUJ2bToNUnCHon/oLrbYMtBODGm4IbiAiSwCdlwUg1MfX2NrjQk1rIxsYB8BoNuvyhyQQeNRvCihYyBj2mR9Gx/yR3Tgy26OdeLUmCvlfXVaZIqSh+FMtoiEPrcEQOOnTChm0doHu0gETZqOGyrSfJ1YISdDwblDpcomBRFIJJ62c1NCGoRywkSFhsRbmQbJ6TWSS+GIpBMWiVjtU9pQafTqxdUd6F2bTx8LrX0iqiJRDMEWvwdlV2dVFzXD9CiC0drIwEeTbqq/tcAfAAc+Q/StyygrMvAxaIDRR1BbuK4tqYoD35EPlgzXaNxq0W9rGfjonHNpBZfxcQT+gFrgY0jIG2Xgo3NEIJoR+B2QgS+wFviQJYVavDjwMXo2TtRrzCql4KduGZiHU+iJCtlJ6ynwsejRoS4kWuALhAO/Yxz4W2MV/3cy5LH48EanEfID4JAfUAt5zMyj8CxNqxSuo6qQ7RQ5oAh5rLUQK17SoFb2ogoVBNTCEfgD4MAfUAt8jOCtiTLwwQX9Sxrh7+bAx/ehZJsR/rSV7Hwa4U8rUB9zC3+YItFadYS/QDj8BdbCv59tyfCn9SZaBxHYcIcc576WtBlpE2BQkd/HNPWxZJFMK4sR/gLh8BdYC39HARnUFP4YP+i6ni4K48DfqquEfxkN5RaNzk278haes5SnchCzUfYOHn2fSW6aIZaaOdbVFFMlRErTllO+UmWH/qvM0JDIEjE2ByepSMQMzkUEZA4GCo2xuqyVKnQtIXQbuUEWa9uSCowvWwskFnShGBKAMRSDnwYNOzZmrLOdnN+TRZyXNCpSSmrqqBf0PK/OXY9ax7GuoEEtta+iTQ2wmjOjc2WA4hZTkTS06WTQ3tFjU5Z2WigdUG9YaIylvR/WYAeKmqlnF0Ql31mkNFvrE229NC14ysAjh3U1yExHttEqSKrhTCVAsYRMufQWXFsCFKxqzq61ZQBcWxhaMALWGbUZ7LUl0vaKtaNuRHJK7WVtwZIPaTVImqzxSdYWrGpCVLQWHB9HbRlQqy0R6gklGXFtwQLSpWRHbemArC0Ca7UlTVUlUn+iRQ0B4ryXC6dCBZfLsumMUz0J1EfVhXCrJwLhetIxridbAzWreVuXslxVInVVKY+qMgCuKgNqVQUzM2X/s34LDUURNJhldD7LwIqIWZeCpEFc69BH0DaWiG5VZQBcVQbUqgo5i85JVhVwgYB5VJXtfJsSrEW2lLUFg6Ok5FFbAGhXNtnquKCLWtQWgXBtEVirLRgFgaem2gKxE1CRU6Eu9HHTqo10Cue0ExXqsp9W2GSXkOqKotUWgXBtEVirLbRtkm2fTx8L6/ey7i9qQ/lTssJslVYqTJbhn9YA+5gR/gPg8GeIvsXqoOxkc/iLlSLttYfykBAHfiYd1m3tToPUWDbiOPAzZTekz7yMjyPwB9QCn/yE2lsR+BQ/VucR+B2QgS+wFvhYlqOYhSn8KZd7LzcScimH0zaepZ2cbGTrmSjD6TQlgYSeilbXIwkIhJNAxzgJ5Dn8ESqoW1GGP32kLXoO/wFw+A+ohT9mhkpW99pIiZpqLod2pu2e7GT4l3OS0v93mqWlYqDlHKUF/gA48AfUAj/LkMedmLEbIb+dY5s4lrZlcckhL4IdDpRT2Y+t/JJTKopgFwgHu8BasM8tJM0IAogAJrUoGfhVdyalNFF5p7KfwjxT/1zXDy3MBcJhLrAW5rS3Zlvgax6LQkCXMCdVORVkmG8VRWFOvx92bU+5H7NJrB/TOBJPtxpZjtmAJFObSgzuSvPXjtnoQdlIbUc/ZhNAP2YTUD1mA4A1r6vOgwuFSBhORdwynXAMx3PU+RirJI3N5MPjmI2hccxGtwUvDm4AIOKV3D8m4XQOAwJgKezEMRsgH2i9Xr5tH/mYTUD1mA0AVFGW9P2YrQxqbDk+KMdspAJPWwzjmM0VaxapozG1ANUDNpoHVjJxWKly9bFSseUE1g/T9lYvvmBoe1ZNxzCO9pnacqliQEyIcVoIAVNoGloU0XYwI2NPU0B167aMlHVdfRZGPo5OmqRJwcqDGWfhKzENyNG5pG1Hs/TMtFJqHM8IoG8QM8TbxDyE2CZmPnLSG9V8agpLKk2HNI4W/8aL5MDI2CZmiF13TJbd26wIAHGwzMCk0goNZjuRiqCO3MGpybJYhCKtiu1PICgFetrhgqQJdUcc1TAixBhQ0zyNZH3dmSBGUPo4sCFpaM9ZWtYhvI0eBzYO6zG03/XwFReGGoox/gDYsh0alu1DSMt2PnLSG9WwwryeDm+c2CB0ctNfrCnF1NiOWNhTZpc0FRAK7NBgsBOgiBUQt20zmu0orjBlFAU3NZLAAtgmYcGOCAEGxBpONqbawzuRLCGB90oe1QCCSOJIFUCKtA9bvkXnjD5ZRP0A2HYdGrbrQ0jbdT5jujt1sJLQPE62oyWUllu8jAg7dogtNSbL1vQoFiqIyO3ApMwKSWYbkYqg9Lhs6zOw6ocMNxOGAhJKBqeW3khfcFOn4egxnChPpoCYrFMcTWyhQj8Q6l61VmgHJWIUyCQV1SQbFJkroq1XDBRzRWVrXu00FEIF8La00QwlWiej7JVfKNDDDf4c1H6bkIIpBVVeoO0Kqv3CwcCnLUMka/Rl1zBqWlAU8UMO5UguYZGjFwZojjqUrlNi1DDVkTJio+6m2NJSFx1OLT5kyugLpyJAukg+2olqY9Via+rD0AxNkUttbHu2o91Lv9TybYenx28ujy+Io1ZGhMsNqEVZLs85xBqDxMjWrZYaodQe2+hEFHtFb9QxA6IfRThtawbARQD9yA8C6FHMEEcxDyGimPnISW9UwwpLxsoo9tS2ZHl+zciIYoY4QsdkOYozPWBkvaSpwKTSCo2o2olEgnp0cUoZx9FQf4KSXdm+cFlnvdDvORKt9jrwiX5RoXzUAwJADV7Z5wyp7JkCsvDiso2K1WZYGKCu39BDCIKI4pqOOMtISD9NTnICohrqJWlMyw5d4TSLhGiaqHR2dZMabld04mv/iV7VLr50/CaUBbyvB/IByRP3GQO4+o0mmeI4OfZ0BhrDWOkX0fhbOnUztedLobLsUP0ZSrGYRYTQQEarxMCnYQlBM5um2IuOQl096cGCJvSf6DQMMvBKpgyJCA40Ozr2KPJHW3emKlBo4NwmSRpnfTkTScpWr9e0l2zqciyroqUKQArYLDhJRDq2WByVkbAwrkcauW5QEDsX5VNAJJPTc6/Agg+qdk6GTFnVylqwJfXt9VK0RYcqTjZM5fdDGn27aJnmU1FfmuWoRsZiZISXgFpGsdVjMHjUaXQcJEE2zstcZenRjjwgX1cAnp4ZDnpkQQFwlurQyFJT789ji8ltVcCKCdlN+clSggjibIkRkZ861HOPmGDPT4DQEImnTBkQCuyQZLYRqQjqytG8l/mJXjZnS5FvuYfebocWXuYnT8ctKUiaCEfRMj+FkZnClJOCyEaedK/dlI08UoqTrRwQQ8eVU06SRnD0erm6rcnZiJpt2x46rTmpIyIzDajlJ/qRqLbN28bxg6cfaQRxQNHETEZLmhR07X57fupQyU+emHk9MhAUi0YkyyzV7cE0WwMVq9HxnKknB5ylBrYU0bKechUmACWYkYc8pb9iZs5VHjaKOQsamaUcPcVbH/OtWaoDMksJrGUpP+UnsNBBdqNFjpzilJ+6sJKqzkhmKaGFlqV2einaou15k6ZHg+nXcVjBiBN9IN6ZMD0a7Kkzj06LXNUREWoDanmFRrK57lURI3RtYzlL0gQKdpGxIvzAiKND+qkc0l/dZvWlx84iFw6A81aHRt7qQ8js1fmMSe9UwwrzYXo0GJhL0YqlBSMie3WIM9OYLGevQE+UR5HhOjCptEKS2UakIig6c/QLQWYvtO/WlPPflploFzmWesvZi96kVh8oaDR5xcK41HbOXrSOcGUl33JYB2QmE1jLZ5n2zpKf8hkdRFjZ1Ho6+miH6ZzPEhybniGXVFhstOdJelajk0dd941bVuuIyGoDalkNI2Ex0epgIs8w44TFZ5nVSNiQRddFO9W5rgZ6VutQ/XUlmBkjeq8pn3UL8bdbkxU7QtCy6JP5bGBLEao+z8b5LMMhXOl+W66izddcnwTo+aws5aKSND6akGVWgzyoi2lktQ7IrCawltXowCXUHzBwbgO75KKsuYkenfPTepwFH1R9djK3CY203LbT0af2U5o/1bd+0jterZpfhZrR6MGBQn3LSn0B6F/xZ/PK1UaGZQk9TfI5MktF0sbPkRnt6OHRz5FFtwbksC3Vmfe62mCobV1gyRVrr/1LV/v7YeUrTsube81mIAXWcNNIx2aoMnWgH559f7d+PUZpb4ztl1+JN9a6VdGSmt6Ty5j5Wjshu9YzT+PJuH6J9E44OFXh+a+3d6er+9PXUtbtfTmsGQl6uu/M+4C399lEj3PZDb/Xn+Xn6FFiZKGZX9jwK154dn5IHXQa9dvvCO7Az188//lLMYm0mQOdAaDnmsbsc3/2fxEq4ovg/8n3D/ebKHq1/9wLiHe30RZP5/WH0+PD/ZsP15e3b59JY5kn5DT4v4fMi9Ovlx+u4dyC7+Pd69PVw93l+69/y72b6afRzr1fmuWBi50TBw0FEn29/+WbD+V2hB56FLd88frq9qufru5m8P7q9u2MvL28uXqYodPV7T9Od/cPUMrp9ndb8vv7GbkB+emrx9v7091p/uYPlw+n2xm6upmv/3z54WZL8/a04fDd6frt6f3p/vTw6/arR5rOWTO7RD7ZcuXb00YPw1D395cPvz7evt/KsL8BOvmIxLWjfbx92FI/v7r9cI50N+x//nIH97u7erfTVNHC+ZlFOgZpbvMNNHC6f0uaxkCPD7+e19Pp+vQ/D3e/3F7db90Es7osujg9bEyNkf52unrz4XT3cEbpM+UtOG+oPp7u4D7rb0Y/0kOm3ycq+hFV8+Nv//x8xMF3z19+/+P3Lwbw8odX4+LH738YFz+9/P23r16++Jen0xXzM3rw+3E4bmVA1rw9Pbz/GY0jStfr0zt4SbdkIbl8fDcuquPf7WzVWGkzWH37y83pb5fvT9u3j6NVo00hENO2T1puFkeqsp4ReoM4Pb+0e4P4uFXw+fjx4wp//eXu4dmL7SzWt4L9/wIQVeyFCmVuZHN0cmVhbQplbmRvYmoKNiAwIG9iago8PCAvVHlwZSAvUGFnZQovUGFyZW50IDEgMCBSCi9NZWRpYUJveCBbIDAgMCA1OTUgODQyIF0KL1Jlc291cmNlcyAzIDAgUgovQ29udGVudHMgNSAwIFIKPj4KZW5kb2JqCjcgMCBvYmoKPDwgL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9OYW1lIC9GMQovQmFzZUZvbnQgL0hlbHZldGljYQovRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyA+PgplbmRvYmoKOCAwIG9iago8PCAvVHlwZSAvRm9udAovU3VidHlwZSAvVHlwZTEKL05hbWUgL0YzCi9CYXNlRm9udCAvSGVsdmV0aWNhLUJvbGQKL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgPj4KZW5kb2JqCjEgMCBvYmoKPDwgL1R5cGUgL1BhZ2VzCi9Db3VudCAxCi9LaWRzIFs2IDAgUiBdID4+CmVuZG9iagoyIDAgb2JqCjw8IC9UeXBlIC9DYXRhbG9nCi9QYWdlcyAxIDAgUgogPj4KZW5kb2JqCjMgMCBvYmoKPDwgCi9Gb250IDw8IC9GMSA3IDAgUiAvRjMgOCAwIFIgPj4gCi9Qcm9jU2V0IFsgL1BERiAvSW1hZ2VDIC9UZXh0IF0gPj4gCmVuZG9iagp4cmVmCjAgOQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDY1NTYgMDAwMDAgbiAKMDAwMDAwNjYxNCAwMDAwMCBuIAowMDAwMDA2NjY0IDAwMDAwIG4gCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA2NSAwMDAwMCBuIAowMDAwMDA2MjMxIDAwMDAwIG4gCjAwMDAwMDYzMzcgMDAwMDAgbiAKMDAwMDAwNjQ0NCAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9TaXplIDkKL1Jvb3QgMiAwIFIKL0luZm8gNCAwIFIKPj4Kc3RhcnR4cmVmCjY3NTIKJSVFT0YK</ms-pdf>
+        </ns0:druckeMeldescheineResponse>
+    </S:Body>
+</S:Envelope>
+
+--------------------------------------------------
+

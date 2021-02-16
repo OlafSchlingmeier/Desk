@@ -1,0 +1,838 @@
+02.04.2020 09:54:19 @_!%ST6 FR        
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.126 - [Gutschein Storno {formpostorpay}]
+Hotel: VITALHOTEL ambiente, Bad Wilsnack
+Error: 13
+Message: Alias 'FORMS' is not found.
+Procedure: PRINTPASSBILL
+Called from: TBRMAIN.TCOMMANDTOOLBAR3.CLICK PPROCESS.EXECUTE FRSVOUCHERS.FRMVOUCHERBRW.TBRCTRL.ONDELETE FRSVOUCHERS.ONDELETE VAUCHERSDELETE 
+Line: 451
+Code: REPORT FORM (ctMpfrx) OBJECT loSession
+AY = .T.|FF = .F.
+
+
+03.04.2020 11:46:49 @_!%ST6 FR        
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.126 - [Gutschein Storno {formpostorpay}]
+Hotel: VITALHOTEL ambiente, Bad Wilsnack
+Error: 13
+Message: Alias 'QUERY' is not found.
+Procedure: VAUCHERSDELETE
+Called from: TBRMAIN.TCOMMANDTOOLBAR3.CLICK PPROCESS.EXECUTE FRSVOUCHERS.FRMVOUCHERBRW.TBRCTRL.ONDELETE FRSVOUCHERS.ONDELETE 
+Line: 369
+Code: USE IN query
+AY = .F.|FF = .F.
+
+
+03.04.2020 11:56:21 @_!%ST6 FR        
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.126 - [Gutschein Storno {formpostorpay}]
+Hotel: VITALHOTEL ambiente, Bad Wilsnack
+Error: 13
+Message: Alias 'QUERY' is not found.
+Procedure: VAUCHERSDELETE
+Called from: TBRMAIN.TCOMMANDTOOLBAR3.CLICK PPROCESS.EXECUTE FRSVOUCHERS.FRMVOUCHERBRW.TBRCTRL.ONDELETE FRSVOUCHERS.ONDELETE 
+Line: 369
+Code: USE IN query
+AY = .F.|FF = .F.
+
+
+03.04.2020 12:04:19 @_!%ST6 FR        
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.126 - [Gutschein Storno {formpostorpay}]
+Hotel: VITALHOTEL ambiente, Bad Wilsnack
+Error: 13
+Message: Alias 'QUERY' is not found.
+Procedure: VAUCHERSDELETE
+Called from: TBRMAIN.TCOMMANDTOOLBAR3.CLICK PPROCESS.EXECUTE FRSVOUCHERS.FRMVOUCHERBRW.TBRCTRL.ONDELETE FRSVOUCHERS.ONDELETE 
+Line: 369
+Code: USE IN query
+AY = .F.|FF = .F.
+
+
+06.04.2020 20:12:45 @_!%ST6 FR        
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.128 - [Hausgäste {resbrw}]
+Hotel: VITALHOTEL ambiente, Bad Wilsnack
+Error: 13
+Message: Alias 'TBLPOSTCURSOR' is not found.
+Procedure: FORMPOSTORPAY.INIT
+Called from: TBRMAIN.TCOMMANDTOOLBAR2.CLICK PPROCESS.EXECUTE FRSBILLS.FRMBILLS.TBRCTRL.ONPOST FRSBILLS.ONPOST 
+Line: 91
+Code: SELECT tblPostCursor
+AY = .F.|FF = .F.
+
+
+07.04.2020 15:44:33 ::C:\Program Files (x86)\Microsoft Visual FoxPro 9\vfp9.exe:: 
+Microsoft Visual FoxPro :: 
+A member object with this name already exists.
+Line: 580
+1:1771
+2:A member object with this name already exists.
+3:
+4:
+5:
+6:
+7:
+START MAIN MAININITPUBLICS ON...
+
+07.04.2020 15:48:22 @_!%ST6 FR        
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Komprimierung & Index Dateien {frmprogress}]
+Hotel: VITALHOTEL ambiente, Bad Wilsnack
+Error: 1884
+Message: Uniqueness of index TAG3 is violated.
+Procedure: CREATINX
+Called from: TMRCALL.TIMER DOINDEX TBRMAIN.TCOMMANDTOOLBAR1.CLICK PPROCESS.EXECUTE FRMINDEX.TBRCTRL.ONCREATE FRMINDEX.ONCREATE 
+Line: 281
+Code: Index On &l_cKeyExpression Tag &l_cTagExpression CANDIDATE
+AY = .T.|FF = .F.
+
+
+09.04.2020 15:30:40 ::C:\Program Files (x86)\Microsoft Visual FoxPro 9\vfp9.exe:: 
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Project Manager - Citadel] :: 
+A member object with this name already exists.
+Line: 580
+1:1771
+2:A member object with this name already exists.
+3:
+4:
+5:
+6:
+7:
+START MAIN MAININITPUBLICS ON...
+
+09.04.2020 15:33:26 HPSPECTRE SUPERVISOR
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Bestätigen Anmeldung]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1925
+Message: Unknown member REFRESHTIMER.
+Procedure: RESBRW.ONBILL
+Called from: TBRMAIN.TCOMMANDTOOLBAR3.CLICK PPROCESS.EXECUTE RESBRW.TBRCTRL.ONBILL 
+Line: 7
+Code: this.RefreshTimer.Enabled = .T.
+AY = .F.|FF = .F.
+
+
+09.04.2020 15:38:10 HPSPECTRE SUPERVISOR
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Bestätigen Anmeldung]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1925
+Message: Unknown member REFRESHTIMER.
+Procedure: RESBRW.ONBILL
+Called from: TBRMAIN.TCOMMANDTOOLBAR3.CLICK PPROCESS.EXECUTE RESBRW.TBRCTRL.ONBILL 
+Line: 7
+Code: this.RefreshTimer.Enabled = .T.
+AY = .F.|FF = .F.
+
+
+09.04.2020 15:42:07 HPSPECTRE SUPERVISOR
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Hausgäste {resbrw}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 0
+Message: Unknown member FORMS.
+Procedure: RESBRW.ONBILL
+Called from: TBRMAIN.TCOMMANDTOOLBAR3.CLICK PPROCESS.EXECUTE RESBRW.TBRCTRL.ONBILL 
+Line: 7
+Code: this.RefreshTimer.Enabled = .T.
+AY = .F.|FF = .F.
+
+
+09.04.2020 15:47:37 ::C:\Program Files (x86)\Microsoft Visual FoxPro 9\vfp9.exe:: 
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Anmeldung] :: 
+A member object with this name already exists.
+Line: 580
+1:1771
+2:A member object with this name already exists.
+3:
+4:
+5:
+6:
+7:
+START MAIN MAININITPUBLICS ON...
+
+09.04.2020 15:47:52 HPSPECTRE SETUP
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Anmeldung]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1771
+Message: A member object with this name already exists.
+Procedure: SCREEN.OGLOBAL.INITIALIZE
+Called from: START MAIN MAINCREATEGLOBALOBJECTS 
+Line: 1461
+Code: this.NewObject("oRG","ReportGenerator","mylists.prg") && Used in default datasession!
+AY = .T.|FF = .F.
+
+
+09.04.2020 22:37:01 HPSPECTRE SUPERVISOR
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Zimmerplan - Gebäude: Alle {c:\dev\code\vfp\citadel\desk\forms\weekform.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 13
+Message: Alias 'PARAM' is not found.
+Procedure: USERPID
+Called from: TBRMAIN.TCOMMANDTOOLBAR8.CLICK PPROCESS.EXECUTE FWEEKFORM.TBRCTRL.ONBILL FWEEKFORM.ONBILL FWEEKFORM.ONBILLCMD 
+Line: 4
+Code: IF paRam.pa_relogin
+AY = .F.|FF = .F.
+
+
+10.04.2020 13:03:15 HPSPECTRE SUPERVISOR
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Zimmerplan - Gebäude: Alle {c:\dev\code\vfp\citadel\desk\forms\weekform.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1925
+Message: Unknown member SELECTEDRESER.
+Procedure: FWEEKFORM.ONBILLCMD
+Called from: TBRMAIN.TCOMMANDTOOLBAR8.CLICK PPROCESS.EXECUTE FWEEKFORM.TBRCTRL.ONBILL FWEEKFORM.ONBILL 
+Line: 6
+Code: IF NOT ProcReservat("PRCheckIsUserInSameBuildingAsReservation", thisform.SelectedReser.ReserId)
+AY = .F.|FF = .F.
+
+
+10.04.2020 15:28:26 ::C:\Program Files (x86)\Microsoft Visual FoxPro 9\vfp9.exe:: 
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Project Manager - Citadel] :: 
+A member object with this name already exists.
+Line: 580
+1:1771
+2:A member object with this name already exists.
+3:
+4:
+5:
+6:
+7:
+START MAIN MAININITPUBLICS ON...
+
+10.04.2020 15:29:01 HPSPECTRE SUPERVISOR
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Project Manager - Citadel]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 107
+Message: Operator/operand type mismatch.
+Procedure: SQLDELETE
+Called from: START MAIN MAINCREATEGLOBALOBJECTS SCREEN.OGLOBAL.INITIALIZE ON...  ERRORSYS 
+Line: 5
+Code: csql = 'DELETE FROM ' + pctable + ' ' + sqlwhere('',pcwhere)
+AY = .T.|FF = .F.
+
+
+10.04.2020 15:57:07 ::C:\Program Files (x86)\Microsoft Visual FoxPro 9\vfp9.exe:: 
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Project Manager - Citadel] :: 
+A member object with this name already exists.
+Line: 580
+1:1771
+2:A member object with this name already exists.
+3:
+4:
+5:
+6:
+7:
+START MAIN MAININITPUBLICS ON...
+
+10.04.2020 15:57:21 HPSPECTRE SUPERVISOR
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Project Manager - Citadel]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1771
+Message: A member object with this name already exists.
+Procedure: SCREEN.OGLOBAL.INITIALIZE
+Called from: START MAIN MAINCREATEGLOBALOBJECTS 
+Line: 1461
+Code: this.NewObject("oRG","ReportGenerator","mylists.prg") && Used in default datasession!
+AY = .T.|FF = .F.
+
+
+10.04.2020 15:58:31 HPSPECTRE SUPERVISOR
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Reservierung [452,100] {c:\dev\code\vfp\citadel\desk\forms\reservat.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 12
+Message: Variable 'G_LBUILDING' is not found.
+Procedure: FRSRESFIX.SETCONTROLSOURCE
+Called from: TBRMAIN.TCOMMANDTOOLBAR10.CLICK PPROCESS.EXECUTE FSRESERVAT.TFORM12.TBRCTRL.ONCHARGES FSRESERVAT.ONCHARGES FRSRESFIX.INIT 
+Line: 12
+Code: IF g_lbuilding
+AY = .F.|FF = .F.
+
+
+10.04.2020 16:02:07 HPSPECTRE SUPERVISOR
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Reservierung [452,100] {c:\dev\code\vfp\citadel\desk\forms\reservat.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 0
+Message: SQL: Column 'AR_BUILDING' is not found.
+Procedure: FRSRESFIX.SETCONTROLSOURCE
+Called from: TBRMAIN.TCOMMANDTOOLBAR10.CLICK PPROCESS.EXECUTE FSRESERVAT.TFORM12.TBRCTRL.ONCHARGES FSRESERVAT.ONCHARGES FRSRESFIX.INIT 
+Line: 14
+Code: SELECT * FROM rfarticle1 ORDER BY ar_artinum INTO CURSOR rfarticle2 WHERE EMPTY(ar_building) OR ar_buildng = GetBuilding("ROOMTYPE",reservat.rs_roomtyp,.t.)
+AY = .F.|FF = .F.
+
+
+10.04.2020 16:05:48 HPSPECTRE SUPERVISOR
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Reservierung [452,100] {c:\dev\code\vfp\citadel\desk\forms\reservat.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 0
+Message: SQL: Column 'AR_BUILDNG' is not found.
+Procedure: FRSRESFIX.SETCONTROLSOURCE
+Called from: TBRMAIN.TCOMMANDTOOLBAR10.CLICK PPROCESS.EXECUTE FSRESERVAT.TFORM12.TBRCTRL.ONCHARGES FSRESERVAT.ONCHARGES FRSRESFIX.INIT 
+Line: 14
+Code: SELECT * FROM rfarticle1 ORDER BY ar_artinum INTO CURSOR rfarticle2 WHERE EMPTY(ar_buildng ) OR ar_buildng = GetBuilding("ROOMTYPE",reservat.rs_roomtyp,.t.)
+AY = .F.|FF = .F.
+
+
+15.04.2020 16:02:50 HPSPECTRE SETUP
+Dev. (C:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129
+Hotel: Citadel Desk Demo Hotel Warendorf
+Error: 12
+Message: Variable 'GR_CAR' is not found.
+Procedure: SETUPSUPERUSER
+Called from: START MAIN SETUP 
+Line: 345
+Code: IF cagroup.gr_file <> l_cAllOn OR cagroup.gr_financ <> l_cAllOn OR cagroup.gr_maint <> l_cAllOn OR cagroup.gr_other <> l_cAllOn OR cagroup.gr_report <> l_cAllOn OR cagroup.gr_view <> l_cAllOn OR cagroup.gr_manager <> l_cAllOn OR cagroup.gr_reserva <> l_cAllOn OR cagroup.gr_address <> l_cAllOn OR cagroup.gr_interfa <> l_cAllOn OR cagroup.gr_extra <> l_cAllOn OR cagroup.gr_butrese <> l_cAllOn OR cagroup.gr_butplan <> l_cAllOn OR cagroup.gr_butrscr <> l_cAllOn OR cagroup.gr_butrled <> l_cAllOn OR cagroup.gr_butgrou <> l_cAllOn OR cagroup.gr_butaddr <> l_cAllOn OR cagroup.gr_butuser <> l_cAllOn OR cagroup.gr_butbill <> l_cAllOn OR cagroup.gr_butrate <> l_cAllOn OR cagroup.gr_butcout <> l_cAllOn OR cagroup.gr_butadd2 <> l_cAllOn OR cagroup.gr_allott <> l_cAllOn OR cagroup.gr_btcout2 <> l_cAllOn OR cagroup.gr_conplan <> l_cAllOn OR cagroup.gr_condayp <> l_cAllOn OR cagroup.gr_aze <> l_cAllOn OR cagroup.gr_multipr <> l_cAllOn OR cagroup.gr_car <> l_cAllOn OR cagroup.gr_buthous <> l_cAllOn
+AY = .T.|FF = .F.
+
+
+24.04.2020 07:18:56 ::C:\Program Files (x86)\Microsoft Visual FoxPro 9\vfp9.exe:: 
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Project Manager - Citadel] :: 
+A member object with this name already exists.
+Line: 580
+1:1771
+2:A member object with this name already exists.
+3:
+4:
+5:
+6:
+7:
+START MAIN MAININITPUBLICS ON...
+
+24.04.2020 07:19:13 ::C:\Program Files (x86)\Microsoft Visual FoxPro 9\vfp9.exe:: 
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Project Manager - Citadel] :: 
+A member object with this name already exists.
+Line: 580
+1:1771
+2:A member object with this name already exists.
+3:
+4:
+5:
+6:
+7:
+START MAIN MAINCREATEGLOBALOBJECTS SCREEN.OGLOBAL.INITIALIZE ON...  ERRORSYS START MAIN MAININITPUBLICS ON...
+
+24.04.2020 07:19:34 @_!%ST6 SUPERVISOR
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Project Manager - Citadel]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1771
+Message: A member object with this name already exists.
+Procedure: SCREEN.OGLOBAL.INITIALIZE
+Called from: START MAIN MAINCREATEGLOBALOBJECTS 
+Line: 1461
+Code: ...
+AY = .T.|FF = .F.
+
+
+24.04.2020 08:57:20 @_!%ST6 SUPERVISOR
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Reservierung [723,100]]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1925
+Message: Unknown member OCALLINGOBJ.
+Procedure: TBRMAIN.TCOMMANDTOOLBAR1.ISVISIBLE
+Called from: FSRESERVAT.TFORM12.RESGRID.MOUSEUP TBRMAIN.SHOWPOPUP TBRMAIN.POPUPMOREMENU 
+Line: 7
+Code: IF PEMSTATUS(this.Parent.oCallingObj.TbrCtrl, lcCallMethod, 5)
+AY = .F.|FF = .F.
+
+
+28.04.2020 10:01:26 ::C:\Program Files (x86)\Microsoft Visual FoxPro 9\vfp9.exe:: 
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Anmeldung] :: 
+A member object with this name already exists.
+Line: 580
+1:1771
+2:A member object with this name already exists.
+3:
+4:
+5:
+6:
+7:
+START MAIN MAININITPUBLICS ON...
+
+01.05.2020 21:48:33 @_!%ST6 FR        
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Aktionen]
+Hotel: VITALHOTEL ambiente, Bad Wilsnack
+Error: 2076
+Message: Operation is not allowed for CursorAdapter.
+Procedure: FRMROOMPICTURESVIEWER.LOAD
+Called from: ON...  LOGMENU SCREEN.OGLOBAL.EXECSTATMENTINDEFDS DOFORM 
+Line: 32
+Code: GO lnRecno IN (this.Alias)
+AY = .F.|FF = .F.
+
+
+01.05.2020 21:59:51 @_!%ST6 FR        
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.129 - [Bildauswahl]
+Hotel: VITALHOTEL ambiente, Bad Wilsnack
+Error: 12
+Message: Variable 'CURPICTURES' is not found.
+Procedure: FRMROOMPICTURESVIEWER.LOAD
+Called from: ON...  LOGMENU SCREEN.OGLOBAL.EXECSTATMENTINDEFDS DOFORM 
+Line: 25
+Code: GO lnRecno IN (this.Alias)
+AY = .F.|FF = .F.
+
+
+12.05.2020 19:04:02 Database maintaince - PACK command error
+-------------------------------------
+RESERVAT
+-------------------------------------
+ErrorNo:41
+Message:Memo file f:\dev\code\vfp\citadel\desk\data\reservat.fpt is missing or is invalid.
+Procedure:dopack
+LineNo:529
+LineContents:...
+Details:f:\dev\code\vfp\citadel\desk\data\reservat.fpt
+15.05.2020 18:44:36 @_!%ST6 FR        
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.130 - [Gäste {f:\dev\code\vfp\citadel\desk\forms\brwmulsel.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1925
+Message: Unknown member OCALLINGOBJ.
+Procedure: TBRMAIN.TCOMMANDTOOLBAR2.ISVISIBLE
+Called from: FWEEKFORM.ACTIVATE TFORM.ACTIVATE FWEEKFORM.ACTIVATETOOLBAR TBRMAIN.CHANGEMODE TTOOLBAR.CHANGEMODE TBRMAIN.ENABLEVISIBLEALL 
+Line: 7
+Code: IF PEMSTATUS(this.Parent.oCallingObj.TbrCtrl, lcCallMethod, 5)
+AY = .F.|FF = .F.
+
+
+28.05.2020 19:23:57 @_!%ST6 FR        
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.130 - [Journal Erstellte Rechnung Test Listendialog]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1806
+Message: SQL: Column 'RT_BUILDNG' is not found.
+Procedure: PPDO
+Called from: TBRMAIN.TCOMMANDTOOLBAR6.CLICK PPROCESS.EXECUTE MNGFORM.TBRCTRL.ONDO MNGFORM.MNGCTRL.ONCMD6 SCREEN.OGLOBAL.CALLSCRIPT 0000E68902EN PRTREPORT _BN00100 _BN00100.DOPREPROC 
+Line: 109
+Code: &lcSQL INTO CURSOR PreProc
+AY = .F.|FF = .F.
+
+
+07.06.2020 19:46:54 @_!%ST6 SUPERVISOR
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.130 - [Hotel Gebäude {f:\dev\code\vfp\citadel\desk\forms\mngform.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1734
+Message: Property BU_CASHNR is not found.
+Procedure: MNGBUILDING.INIT
+Called from: TBRMAIN.TCOMMANDTOOLBAR3.CLICK PPROCESS.EXECUTE MNGFORM.TBRCTRL.ONEDIT MNGFORM.ONEDIT MNGFORM.MNGCTRL.ONCMD3 
+Line: 32
+Code: this.txtBuildingCashnr.ControlSource = [thisform.DataCopy.bu_CashNr]
+AY = .F.|FF = .F.
+
+
+07.06.2020 19:49:02 @_!%ST6 SUPERVISOR
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Hotel Gebäude {f:\dev\code\vfp\citadel\desk\forms\mngform.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1734
+Message: Property BU_CASHNR is not found.
+Procedure: MNGBUILDING.INIT
+Called from: TBRMAIN.TCOMMANDTOOLBAR3.CLICK PPROCESS.EXECUTE MNGFORM.TBRCTRL.ONEDIT MNGFORM.ONEDIT MNGFORM.MNGCTRL.ONCMD3 
+Line: 32
+Code: this.txtBuildingCashnr.ControlSource = [thisform.DataCopy.bu_CashNr]
+AY = .F.|FF = .F.
+
+
+08.06.2020 06:38:57 @_!%ST6 SUPERVISOR
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Buchung {f:\dev\code\vfp\citadel\desk\forms\postpay.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 12
+Message: Variable 'G_LBUILDNGS' is not found.
+Procedure: FORMPOSTORPAY.M_OK
+Called from: TBRMAIN.TCOMMANDTOOLBAR2.CLICK PPROCESS.EXECUTE FRSBILLS.FRMBILLS.TBRCTRL.ONPOST FRSBILLS.ONPOST FORMPOSTORPAY.CMDOK.CLICK 
+Line: 110
+Code: if not g_lBuildngs
+AY = .F.|FF = .F.
+
+
+08.06.2020 06:51:18 @_!%ST6 SUPERVISOR
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Project Manager - Citadel]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 13
+Message: Alias 'TBLCBARTICURSOR' is not found.
+Procedure: FORMPOSTORPAY.CB_AR_PM.VALID
+Called from: 
+Line: 7
+Code: SET FILTER TO IN tblCBArtiCursor
+AY = .F.|FF = .F.
+
+
+12.06.2020 11:07:13 @_!%ST6 SUPERVISOR
+Dev. (F:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Anmeldung]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1961
+Message: A subdirectory or file d:\test already exists.
+Procedure: 
+Called from: 
+Line: 0
+Code: _screen.oCardReaderHandler.oCr.LoadDataEnv()
+AY = .F.|FF = .F.
+
+
+04.11.2020 18:28:44 ::C:\Program Files (x86)\Microsoft Visual FoxPro 9\vfp9.exe:: 
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Wählen {e:\dev\code\vfp\citadel\desk\forms\brwmulsel.scx}] :: 
+A member object with this name already exists.
+Line: 580
+1:1771
+2:A member object with this name already exists.
+3:
+4:
+5:
+6:
+7:
+START MAIN MAININITPUBLICS ON...
+
+04.11.2020 18:47:41 @_!%ST6 SUPERVISOR
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Mailing]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 0
+Message: Variable 'AB_SELECTED' is not found.
+Procedure: MAILINGFORM.MAKEPARAMSCRIPT
+Called from: MAILINGFORM.BOK.CLICK MAILINGFORM.MAKEREPORT 
+Line: 17
+Code: SCAN FOR ab_selected
+AY = .F.|FF = .F.
+
+
+04.11.2020 22:48:39 ::C:\Program Files (x86)\Microsoft Visual FoxPro 9\vfp9.exe:: 
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Index] :: 
+A member object with this name already exists.
+Line: 580
+1:1771
+2:A member object with this name already exists.
+3:
+4:
+5:
+6:
+7:
+START MAIN MAININITPUBLICS ON...
+
+27.01.2021 16:42:02 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Anmeldung]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 107
+Message: Operator/operand type mismatch.
+Procedure: SEARCHAVAIL.ACTIVATE
+Called from: ON...  LOGMENU SCREEN.OGLOBAL.EXECSTATMENTINDEFDS VEWAVAIL BRWAVAILAB BRWAVAIL.ONSEARCHEX BRWAVAIL.ONSEARCH SEARCHAVAIL.ONSEARCH 
+Line: 3
+Code: ChildTitle(this.Caption + IIF(g_lDevelopment," {" + SYS(1271,thisform) + "}",""))
+AY = .F.|FF = .F.
+
+
+04.02.2021 23:27:33 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Form1 {e:\daten\test\form1.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 12
+Message: Variable 'ZAEHLER' is not found.
+Procedure: TFORM1.TCOMMANDBUTTON1.CLICK
+Called from: 
+Line: 2
+Code: CASE zaehler = 0
+AY = .F.|FF = .F.
+
+
+04.02.2021 23:29:37 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Form1 {e:\daten\test\form1.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 107
+Message: Operator/operand type mismatch.
+Procedure: TFORM1.TCOMMANDBUTTON1.CLICK
+Called from: 
+Line: 2
+Code: CASE thisform.zaehler = 0
+AY = .F.|FF = .F.
+
+
+04.02.2021 23:31:02 ::C:\Program Files (x86)\Microsoft Visual FoxPro 9\vfp9.exe:: 
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Anmeldung] :: 
+A member object with this name already exists.
+Line: 580
+1:1771
+2:A member object with this name already exists.
+3:
+4:
+5:
+6:
+7:
+START MAIN MAININITPUBLICS ON...
+
+04.02.2021 23:34:21 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Form1 {e:\daten\test\form1.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 107
+Message: Operator/operand type mismatch.
+Procedure: TFORM1.TCOMMANDBUTTON1.CLICK
+Called from: 
+Line: 2
+Code: CASE thisform.zaehler = 0
+AY = .F.|FF = .F.
+
+
+04.02.2021 23:39:51 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Form1 {e:\daten\test\form1.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 16
+Message: Unrecognized command verb.
+Procedure: SCREEN.OGLOBAL.OFORMSHANDLER.FORMEVENT
+Called from: 
+Line: 1673
+Code: _screen.oCardReaderHandler.oCr.LoadDataEnv()
+AY = .F.|FF = .F.
+
+
+05.02.2021 00:46:56 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Anmeldung]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1309
+Message: e:\daten\test\form1.scx is not an object file.
+Procedure: 
+Called from: 
+Line: 0
+Code: _screen.oCardReaderHandler.oCr.LoadDataEnv()
+AY = .F.|FF = .F.
+
+
+05.02.2021 00:48:21 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Anmeldung]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1309
+Message: e:\daten\test\form1.scx is not an object file.
+Procedure: 
+Called from: 
+Line: 0
+Code: _screen.oCardReaderHandler.oCr.LoadDataEnv()
+AY = .F.|FF = .F.
+
+
+05.02.2021 00:49:52 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Anmeldung]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1309
+Message: e:\daten\test\form1.scx is not an object file.
+Procedure: 
+Called from: 
+Line: 0
+Code: _screen.oCardReaderHandler.oCr.LoadDataEnv()
+AY = .F.|FF = .F.
+
+
+05.02.2021 01:10:20 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan {e:\daten\test\form1.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1925
+Message: Unknown member TFORM1.
+Procedure: TFORM1.TCOMMANDBUTTON2.CLICK
+Called from: 
+Line: 3
+Code: thisform.tform1.height = 520
+AY = .F.|FF = .F.
+
+
+06.02.2021 22:30:09 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Anmeldung]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1309
+Message: e:\daten\test\form1.scx is not an object file.
+Procedure: ERRORSYS
+Called from: ON...  
+Line: 143
+Code: _screen.oCardReaderHandler.oCr.LoadDataEnv()
+AY = .F.|FF = .F.
+
+
+06.02.2021 22:31:00 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Anmeldung]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1309
+Message: e:\daten\test\form1.scx is not an object file.
+Procedure: 
+Called from: 
+Line: 0
+Code: _screen.oCardReaderHandler.oCr.LoadDataEnv()
+AY = .F.|FF = .F.
+
+
+07.02.2021 02:39:51 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 202
+Message: Invalid path or file name.
+Procedure: 
+Called from: 
+Line: 0
+Code: _screen.oCardReaderHandler.oCr.LoadDataEnv()
+AY = .F.|FF = .F.
+
+
+07.02.2021 18:10:54 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 10
+Message: Syntax error.
+Procedure: 
+Called from: 
+Line: 0
+Code: _screen.oCardReaderHandler.oCr.LoadDataEnv()
+AY = .F.|FF = .F.
+
+
+07.02.2021 21:47:25 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan {e:\daten\test\camping.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1940
+Message: Expression is not valid outside of WITH/ENDWITH.
+Procedure: TFORM1.TIMAGE1.MOUSEDOWN
+Called from: 
+Line: 17
+Code: ok_save = .t
+AY = .F.|FF = .F.
+
+
+07.02.2021 21:49:21 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan {e:\daten\test\camping.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 12
+Message: Variable 'CAMPINGNR' is not found.
+Procedure: TFORM1.TIMAGE1.MOUSEDOWN
+Called from: 
+Line: 21
+Code: INSERT INTO Camping (CampingNr, xPos, yPos) VALUES (y, nXCoord, nYCoord)
+AY = .F.|FF = .F.
+
+
+07.02.2021 21:52:40 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan {e:\daten\test\camping.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 12
+Message: Variable 'CAMPINGNR' is not found.
+Procedure: TFORM1.TCOMMANDBUTTON3.CLICK
+Called from: 
+Line: 13
+Code: WAIT WINDOW "Campingplatz: "+camping.campingnr + "  x: "+STR(camping.xPos,4,0)+"  y: "+STR(camping.yPos,4,0)
+AY = .F.|FF = .F.
+
+
+07.02.2021 22:18:19 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan {e:\daten\test\camping.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 1884
+Message: Uniqueness of index TAG1 is violated.
+Procedure: TFORM1.TIMAGE1.MOUSEDOWN
+Called from: 
+Line: 21
+Code: INSERT INTO Camping (CampingID, xPos, yPos) VALUES (y, nXCoord, nYCoord)
+AY = .F.|FF = .F.
+
+
+09.02.2021 12:38:06 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan {e:\daten\test\camping.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 0
+Message: File 'doddefault.prg' does not exist.
+Procedure: TFORM1.RESIZE
+Called from: ON...  ERRORSYS 
+Line: 4
+Code: doddefault()
+AY = .F.|FF = .F.
+
+
+09.02.2021 15:04:58 ::C:\Program Files (x86)\Microsoft Visual FoxPro 9\vfp9.exe:: 
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Anmeldung] :: 
+A member object with this name already exists.
+Line: 580
+1:1771
+2:A member object with this name already exists.
+3:
+4:
+5:
+6:
+7:
+START MAIN MAININITPUBLICS ON...
+
+10.02.2021 10:24:13 @_!%ST6 SUPERVISOR
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Anmeldung]
+Hotel: Citadel Camping, Warendorf
+Error: 1309
+Message: e:\daten\test\camping.scx is not an object file.
+Procedure: 
+Called from: 
+Line: 0
+Code: _screen.oCardReaderHandler.oCr.LoadDataEnv()
+AY = .F.|FF = .F.
+
+
+10.02.2021 19:44:38 @_!%ST6 SUPERVISOR
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan {e:\daten\test\camping.scx}]
+Hotel: Citadel Camping, Warendorf
+Error: 9
+Message: Data type mismatch.
+Procedure: TFORM1.RESIZE
+Called from: 
+Line: 6
+Code: replace campingid 	WITH 7821
+AY = .F.|FF = .F.
+
+
+10.02.2021 22:12:56 @_!%ST6 SUPERVISOR
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan {e:\daten\test\camping.scx}]
+Hotel: Citadel Camping, Warendorf
+Error: 9
+Message: Data type mismatch.
+Procedure: TFORM1.TCOMMANDBUTTON1.CLICK
+Called from: INLOGIN 
+Line: 17
+Code: thisform.timage2.Left = camping.xPos * thisform.sw
+AY = .F.|FF = .F.
+
+
+10.02.2021 22:27:27 @_!%ST6 SUPERVISOR
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan {e:\daten\test\camping.scx}]
+Hotel: Citadel Camping, Warendorf
+Error: 11
+Message: Function argument value, type, or count is invalid.
+Procedure: TFORM1.TCOMMANDBUTTON1.CLICK
+Called from: 
+Line: 26
+Code: thisform.timage2.Top = (camping.yPos*IIF(TYPE("thisform.sh"),thisform.sh,1))-24
+AY = .F.|FF = .F.
+
+
+10.02.2021 22:31:41 @_!%ST6 SUPERVISOR
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan {e:\daten\test\camping.scx}]
+Hotel: Citadel Camping, Warendorf
+Error: 11
+Message: Function argument value, type, or count is invalid.
+Procedure: TFORM1.TCOMMANDBUTTON1.CLICK
+Called from: 
+Line: 31
+Code: WAIT WINDOW "Campingplatz: "+camping.campingid + "  x: "+STR(camping.xPos,4,0)+"  y: "+STR(camping.yPos,4,0) + "  recno= "+STR(RECNO("camping")) +".sw= "+STR(thisform.sw,5,3)+" .sh= "+STR(thisform.sh,5,3)
+AY = .F.|FF = .F.
+
+
+11.02.2021 10:24:48 @_!%ST6 SUPERVISOR
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan {e:\daten\test\camping.scx}]
+Hotel: Citadel Camping, Warendorf
+Error: 1940
+Message: Expression is not valid outside of WITH/ENDWITH.
+Procedure: TFORM1.TIMAGE1.MOUSEDOWN
+Called from: 
+Line: 14
+Code: ok_save=.f
+AY = .F.|FF = .F.
+
+
+11.02.2021 10:28:33 @_!%ST6 SUPERVISOR
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Lageplan {e:\daten\test\camping.scx}]
+Hotel: Citadel Camping, Warendorf
+Error: 1940
+Message: Expression is not valid outside of WITH/ENDWITH.
+Procedure: TFORM1.TIMAGE1.MOUSEDOWN
+Called from: 
+Line: 14
+Code: ok_save=.f
+AY = .F.|FF = .F.
+
+
+16.02.2021 20:39:20 @_!%ST6 FR        
+Dev. (E:\DEV\CODE\VFP\CITADEL\DESK) Citadel Desk 10.01.131 - [Citweb Preise {e:\dev\code\vfp\citadel\desk\forms\mngform.scx}]
+Hotel: Meeressterne GmbH, Koserow auf Usedom
+Error: 12
+Message: Variable 'EDIT_MODE' is not found.
+Procedure: MNGFORM.MNGCTRL.ONCMD3
+Called from: TBRMAIN.TCOMMANDTOOLBAR3.CLICK PPROCESS.EXECUTE MNGFORM.TBRCTRL.ONEDIT MNGFORM.ONEDIT 
+Line: 19
+Code: _screen.oCardReaderHandler.oCr.LoadDataEnv()
+AY = .F.|FF = .F.
+
+
