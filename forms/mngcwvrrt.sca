@@ -23,16 +23,18 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
  	*< CLASSDATA: Baseclass="form" Timestamp="" Scale="" Uniqueid="" />
 
 	*-- OBJECTDATA items order determines ZOrder / El orden de los items OBJECTDATA determina el ZOrder 
+	*< OBJECTDATA: ObjPath="Shape3" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Shape2" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Shape1" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="Ln1" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Ln3" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="Ln2" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="grdCwRates" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lbleq_vroom" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="eq_citucwr" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="eq_vroom" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="chkYieldManagerActive" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="lblDescrip" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="chkInactiv" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="lblRateId" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="Tlabel1" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="lblChannel" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lbleq_ratecod" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="eq_ratecod" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lbleq_adults" UniqueID="" Timestamp="" />
@@ -46,27 +48,16 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	*< OBJECTDATA: ObjPath="lblfrom" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="dtxtFrom" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lblto" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="lblPriceCorrRate" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="eq_citcwcp" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="eq_citcwcr" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="lblPriceCorrPercent" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="dtxtTo" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="cmdgetprices" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="eq_adusta" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="cmdDelete" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="lblOC" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="lblfromOC" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="dtxtfromOC" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="lbltoOC" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="dtxttoOC" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="cmdApplyOC" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="eq_rateid" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="cboOC" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="eq_descrip" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lblminmaxstaydescript" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lblminmaxstay" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="txtMinStay" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="txtMaxStay" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="chkDeleteMinMaxStay" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="cmdShowPrices" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lblfrommms" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="dtxtFromStay" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lbltomms" UniqueID="" Timestamp="" />
@@ -81,12 +72,53 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	*< OBJECTDATA: ObjPath="cmdApplyMP" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="cmdOK" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="cmdCancel" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="Ln3" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="lblDescrip" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="eq_descrip" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="eq_citucwr" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="cmdShowPrices" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="lblChannel" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="lblRateId" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="eq_rateid" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="chkYieldManagerActive" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="eq_adusta" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Tlabel1" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="lblfromOC" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="dtxtfromOC" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="lbltoOC" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="dtxttoOC" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="cmdApplyOC" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="cboOC" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="lblOC" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="lblPriceCorrPercent" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="lblPriceCorrRate" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="eq_citcwcr" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="eq_citcwcp" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="eq_channel" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="dTxtRcto" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Combo1" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tbn14T" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tbn1m" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tbnmin14T" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tbnMin1M" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Tcheckbox1" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Tcheckbox2" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Tcheckbox3" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Tcheckbox4" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Tcheckbox5" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Tcheckbox6" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Tcheckbox7" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tbl1Ew" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tbl2Ew" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tbl3Ew" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tbl4Ew" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tbl5Ew" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Ttext1" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Ttext2" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Ttext3" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Ttext4" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Ttext5" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tbl1kin" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tbl2kin" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tbl3kin" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Ttext6" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Ttext7" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Ttext8" UniqueID="" Timestamp="" />
 
 	*<DefinedPropArrayMethod>
 		*m: compareprices
@@ -112,12 +144,14 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	cmode = 
 	cresult = 
 	DoCreate = .T.
-	Height = 556
+	Height = 760
 	lnocitwebconnection = .F.		&& When .T., no Citweb connection is established, don't allow data to be saved.
+	MaxHeight = 860
+	MaxWidth = 1680
 	Name = "frmmngcwvrrt"
 	npersons = 0
 	ShowTips = .T.
-	Width = 976
+	Width = 1370
 	WindowType = 1
 
 	ADD OBJECT 'cboMealPlan' AS tcombobox WITH ;
@@ -127,14 +161,14 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		ColumnLines = .F., ;
 		ColumnWidths = "100,20", ;
 		Height = 23, ;
-		Left = 705, ;
+		Left = 1260, ;
 		Name = "cboMealPlan", ;
 		RowSource = " ,  ,Room only,RO,Breakfast,BB,Half Board,HB,Full Board,FB,All inclusive,AI", ;
 		RowSourceType = 1, ;
 		Style = 2, ;
 		TabIndex = 54, ;
-		Top = 420, ;
-		ZOrderSet = 33
+		Top = 108, ;
+		ZOrderSet = 41
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="combobox" />
 
 	ADD OBJECT 'cboOC' AS tcombobox WITH ;
@@ -144,14 +178,15 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		ColumnLines = .F., ;
 		ColumnWidths = "100,20", ;
 		Height = 23, ;
-		Left = 873, ;
+		Left = 512, ;
 		Name = "cboOC", ;
 		RowSource = "Open,1,Closed,2", ;
 		RowSourceType = 1, ;
 		Style = 2, ;
 		TabIndex = 37, ;
-		Top = 156, ;
-		ZOrderSet = 33
+		Top = 66, ;
+		Width = 180, ;
+		ZOrderSet = 60
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="combobox" />
 
 	ADD OBJECT 'chkDeleteMinMaxStay' AS tcheckbox WITH ;
@@ -159,188 +194,209 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		AutoSize = .T., ;
 		Caption = "chkDeleteMinMaxStay", ;
 		ForeColor = 255,0,0, ;
-		Left = 621, ;
+		Left = 1176, ;
 		Name = "chkDeleteMinMaxStay", ;
 		TabIndex = 47, ;
-		Top = 315, ;
+		Top = 3, ;
 		Value = .F., ;
-		ZOrderSet = 26
+		ZOrderSet = 33
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
 
 	ADD OBJECT 'chkInactiv' AS tcheckbox WITH ;
 		Alignment = 0, ;
 		AutoSize = .T., ;
 		Caption = "chkInactiv", ;
-		Left = 204, ;
+		Left = 618, ;
 		Name = "chkInactiv", ;
 		TabIndex = 4, ;
-		Top = 15, ;
-		ZOrderSet = 5
+		Top = 92, ;
+		ZOrderSet = 11
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
 
 	ADD OBJECT 'chkYieldManagerActive' AS tcheckbox WITH ;
 		Alignment = 0, ;
 		AutoSize = .T., ;
 		Caption = "chkYieldManagerActive", ;
-		Left = 427, ;
+		Left = 422, ;
 		Name = "chkYieldManagerActive", ;
 		TabIndex = 11, ;
-		Top = 39, ;
-		ZOrderSet = 5
+		Top = 117, ;
+		ZOrderSet = 52
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
 
 	ADD OBJECT 'cmdApplyMinMaxStay' AS tcommandbutton WITH ;
 		Caption = "cmdApplyMinMaxStay", ;
-		Left = 669, ;
+		Left = 1224, ;
 		Name = "cmdApplyMinMaxStay", ;
 		TabIndex = 52, ;
-		Top = 384, ;
-		ZOrderSet = 31
+		Top = 72, ;
+		ZOrderSet = 39
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
 	ADD OBJECT 'cmdApplyMP' AS tcommandbutton WITH ;
 		Caption = "cmdApplyMP", ;
-		Left = 669, ;
+		Left = 1224, ;
 		Name = "cmdApplyMP", ;
 		TabIndex = 59, ;
-		Top = 492, ;
-		ZOrderSet = 38
+		Top = 180, ;
+		ZOrderSet = 46
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
 	ADD OBJECT 'cmdApplyOC' AS tcommandbutton WITH ;
 		Caption = "cmdApplyOC", ;
-		Left = 849, ;
+		Left = 1236, ;
 		Name = "cmdApplyOC", ;
 		TabIndex = 42, ;
-		Top = 228, ;
-		ZOrderSet = 31
+		Top = 696, ;
+		ZOrderSet = 59
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
 	ADD OBJECT 'cmdCancel' AS tcommandbutton WITH ;
 		Caption = "cmdCancel", ;
-		Left = 805, ;
+		Left = 926, ;
 		Name = "cmdCancel", ;
 		TabIndex = 61, ;
-		Top = 527, ;
-		ZOrderSet = 40
+		Top = 132, ;
+		ZOrderSet = 48
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
 	ADD OBJECT 'cmdDelete' AS tcommandbutton WITH ;
 		Caption = "cmdDelete", ;
 		ForeColor = 255,0,0, ;
-		Left = 717, ;
+		Left = 1104, ;
 		Name = "cmdDelete", ;
 		TabIndex = 35, ;
-		Top = 228, ;
-		ZOrderSet = 21
+		Top = 696, ;
+		ZOrderSet = 27
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
 	ADD OBJECT 'cmdgetprices' AS tcommandbutton WITH ;
 		Caption = "cmdGetPrices", ;
-		Left = 621, ;
+		Left = 730, ;
 		Name = "cmdgetprices", ;
 		TabIndex = 34, ;
-		Top = 228, ;
-		ZOrderSet = 20
+		Top = 132, ;
+		ZOrderSet = 26
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
 	ADD OBJECT 'cmdOK' AS tcommandbutton WITH ;
 		Caption = "cmdOK", ;
-		Left = 709, ;
+		Left = 828, ;
 		Name = "cmdOK", ;
 		TabIndex = 60, ;
-		Top = 527, ;
-		ZOrderSet = 39
+		Top = 132, ;
+		ZOrderSet = 47
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
 	ADD OBJECT 'cmdShowPrices' AS tcommandbutton WITH ;
 		Caption = "...", ;
 		Enabled = .F., ;
 		Height = 23, ;
-		Left = 950, ;
+		Left = 1141, ;
 		Name = "cmdShowPrices", ;
 		TabIndex = 26, ;
 		ToolTipText = "Preisen vergleichen", ;
-		Top = 60, ;
+		Top = 62, ;
 		Width = 23, ;
-		ZOrderSet = 31
+		ZOrderSet = 34
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
+	ADD OBJECT 'Combo1' AS combobox WITH ;
+		Height = 24, ;
+		Left = 14, ;
+		Name = "Combo1", ;
+		RowSource = "Gebäude A, Gebäude B,, Gebäude C", ;
+		RowSourceType = 1, ;
+		Top = 125, ;
+		Width = 100, ;
+		ZOrderSet = 68
+		*< END OBJECT: BaseClass="combobox" />
+
 	ADD OBJECT 'dtxtFrom' AS tdatectrl WITH ;
-		Left = 705, ;
+		Left = 461, ;
 		Name = "dtxtFrom", ;
 		TabIndex = 31, ;
-		Top = 180, ;
-		ZOrderSet = 17
+		Top = 18, ;
+		ZOrderSet = 23
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'dtxtFromMP' AS tdatectrl WITH ;
-		Left = 705, ;
+		Left = 1260, ;
 		Name = "dtxtFromMP", ;
 		TabIndex = 56, ;
-		Top = 444, ;
-		ZOrderSet = 35
+		Top = 132, ;
+		ZOrderSet = 43
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'dtxtfromOC' AS tdatectrl WITH ;
-		Left = 873, ;
+		Left = 1260, ;
 		Name = "dtxtfromOC", ;
 		TabIndex = 39, ;
-		Top = 180, ;
-		ZOrderSet = 28
+		Top = 648, ;
+		ZOrderSet = 56
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'dtxtFromStay' AS tdatectrl WITH ;
-		Left = 705, ;
+		Left = 1260, ;
 		Name = "dtxtFromStay", ;
 		TabIndex = 49, ;
-		Top = 336, ;
-		ZOrderSet = 28
+		Top = 24, ;
+		ZOrderSet = 36
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
+	ADD OBJECT 'dTxtRcto' AS textbox WITH ;
+		Enabled = .F., ;
+		Height = 23, ;
+		Left = 286, ;
+		Name = "dTxtRcto", ;
+		Top = 89, ;
+		Width = 100, ;
+		ZOrderSet = 67
+		*< END OBJECT: BaseClass="textbox" />
+
 	ADD OBJECT 'dtxtTo' AS tdatectrl WITH ;
-		Left = 705, ;
+		Left = 590, ;
 		Name = "dtxtTo", ;
 		TabIndex = 33, ;
-		Top = 204, ;
-		ZOrderSet = 19
+		Top = 18, ;
+		ZOrderSet = 25
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'dtxtToMP' AS tdatectrl WITH ;
-		Left = 705, ;
+		Left = 1260, ;
 		Name = "dtxtToMP", ;
 		TabIndex = 58, ;
-		Top = 468, ;
-		ZOrderSet = 37
+		Top = 156, ;
+		ZOrderSet = 45
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'dtxttoOC' AS tdatectrl WITH ;
-		Left = 873, ;
+		Left = 1260, ;
 		Name = "dtxttoOC", ;
 		TabIndex = 41, ;
-		Top = 204, ;
-		ZOrderSet = 30
+		Top = 672, ;
+		ZOrderSet = 58
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'dtxtToStay' AS tdatectrl WITH ;
-		Left = 705, ;
+		Left = 1260, ;
 		Name = "dtxtToStay", ;
 		TabIndex = 51, ;
-		Top = 360, ;
-		ZOrderSet = 30
+		Top = 48, ;
+		ZOrderSet = 38
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'eq_adults' AS tcombobox WITH ;
 		InputMask = ("9"), ;
-		Left = 660, ;
+		Left = 930, ;
 		Name = "eq_adults", ;
 		RowSource = "1,2,3,4,5", ;
 		RowSourceType = 1, ;
 		Style = 2, ;
 		TabIndex = 15, ;
-		Top = 36, ;
-		Width = 48, ;
-		ZOrderSet = 9
+		Top = 83, ;
+		Width = 80, ;
+		ZOrderSet = 15
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="combobox" />
 
 	ADD OBJECT 'eq_adusta' AS ttext WITH ;
@@ -348,13 +404,13 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Format = "KR", ;
 		Height = 23, ;
 		InputMask = "9", ;
-		Left = 733, ;
+		Left = 930, ;
 		Name = "eq_adusta", ;
 		TabIndex = 17, ;
-		Top = 36, ;
+		Top = 108, ;
 		Value = 0, ;
-		Width = 27, ;
-		ZOrderSet = 24
+		Width = 80, ;
+		ZOrderSet = 53
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'eq_channel' AS jcombobox WITH ;
@@ -363,27 +419,28 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		jboundcolumn = 2, ;
 		jcolumnwidths = 240,0, ;
 		jsql = SELECT code, id FROM cchannells ORDER BY 1 ASC, ;
-		Left = 345, ;
+		Left = 113, ;
 		lsqlcursorfromalias = .T., ;
 		Name = "eq_channel", ;
 		Style = 2, ;
 		TabIndex = 6, ;
-		Top = 12, ;
+		Top = 41, ;
 		Visible = .F., ;
-		Width = 72
+		Width = 141, ;
+		ZOrderSet = 66
 		*< END OBJECT: ClassLib="..\libs\jbase.vcx" BaseClass="combobox" />
 
 	ADD OBJECT 'eq_citcwcp' AS ttext WITH ;
 		Alignment = 0, ;
 		Enabled = .F., ;
 		Format = "KR", ;
-		Left = 877, ;
+		Left = 1068, ;
 		Name = "eq_citcwcp", ;
 		TabIndex = 25, ;
-		Top = 60, ;
+		Top = 62, ;
 		Value = 0, ;
 		Width = 70, ;
-		ZOrderSet = 24
+		ZOrderSet = 65
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'eq_citcwcr' AS ttext WITH ;
@@ -391,24 +448,24 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Enabled = .F., ;
 		Format = "KR", ;
 		Height = 23, ;
-		Left = 877, ;
+		Left = 1068, ;
 		Name = "eq_citcwcr", ;
 		TabIndex = 23, ;
-		Top = 36, ;
+		Top = 37, ;
 		Value = 0, ;
 		Width = 70, ;
-		ZOrderSet = 24
+		ZOrderSet = 64
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'eq_citucwr' AS tcheckbox WITH ;
 		Alignment = 0, ;
 		AutoSize = .T., ;
 		Caption = "Preis Korrigieren", ;
-		Left = 836, ;
+		Left = 1027, ;
 		Name = "eq_citucwr", ;
 		TabIndex = 21, ;
-		Top = 15, ;
-		ZOrderSet = 5
+		Top = 18, ;
+		ZOrderSet = 8
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
 
 	ADD OBJECT 'eq_descrip' AS ttext WITH ;
@@ -416,13 +473,13 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Format = "KR", ;
 		Height = 23, ;
 		InputMask = (REPLICATE('X',40)), ;
-		Left = 96, ;
+		Left = 113, ;
 		Name = "eq_descrip", ;
 		TabIndex = 10, ;
-		Top = 36, ;
+		Top = 17, ;
 		Value = 0, ;
-		Width = 324, ;
-		ZOrderSet = 24
+		Width = 273, ;
+		ZOrderSet = 28
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'eq_ratecod' AS jcbomain WITH ;
@@ -431,17 +488,19 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		csqlunion = , ;
 		cwhere = , ;
 		Format = "K", ;
+		Height = 23, ;
 		InputMask = (REPLICATE("!",10)), ;
 		jcolumnwidths = , ;
 		lappendblank = .F., ;
-		Left = 660, ;
+		Left = 113, ;
 		lsqlcursorfromalias = .T., ;
 		Name = "eq_ratecod", ;
 		RowSourceType = 6, ;
 		Style = 2, ;
 		TabIndex = 13, ;
-		Top = 12, ;
-		ZOrderSet = 7
+		Top = 89, ;
+		Width = 165, ;
+		ZOrderSet = 13
 		*< END OBJECT: ClassLib="..\libs\jbase.vcx" BaseClass="combobox" />
 
 	ADD OBJECT 'eq_rateid' AS ttext WITH ;
@@ -449,14 +508,14 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Format = "KR", ;
 		Height = 23, ;
 		InputMask = (REPLICATE("X",16)), ;
-		Left = 465, ;
+		Left = 305, ;
 		Name = "eq_rateid", ;
 		TabIndex = 8, ;
-		Top = 12, ;
+		Top = 41, ;
 		Value = 0, ;
 		Visible = .F., ;
-		Width = 99, ;
-		ZOrderSet = 24
+		Width = 81, ;
+		ZOrderSet = 51
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'eq_vroom' AS tcombobox WITH ;
@@ -465,26 +524,27 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		ColumnCount = 2, ;
 		ColumnLines = .F., ;
 		ColumnWidths = "50,150", ;
-		Left = 96, ;
+		Left = 113, ;
 		Name = "eq_vroom", ;
 		RowSourceType = 6, ;
 		Style = 2, ;
 		TabIndex = 3, ;
-		Top = 12, ;
-		ZOrderSet = 4
+		Top = 65, ;
+		Width = 273, ;
+		ZOrderSet = 9
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="combobox" />
 
 	ADD OBJECT 'grdCwRates' AS grdbasecommon WITH ;
 		ColumnCount = 26, ;
-		Height = 492, ;
+		Height = 384, ;
 		HighlightStyle = 0, ;
-		Left = 12, ;
+		Left = 24, ;
 		lsetcursorsource = .F., ;
 		Name = "grdCwRates", ;
 		TabIndex = 1, ;
-		Top = 60, ;
-		Width = 605, ;
-		ZOrderSet = 2, ;
+		Top = 228, ;
+		Width = 1332, ;
+		ZOrderSet = 6, ;
 		Grdbasesortcolumn1.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn1.HEADER1.Caption = "", ;
 		Grdbasesortcolumn1.HEADER1.Name = "HEADER1", ;
@@ -722,306 +782,312 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="grid" />
 
 	ADD OBJECT 'lblChannel' AS tlabel WITH ;
+		Alignment = 1, ;
 		AutoSize = .T., ;
-		Caption = "Channel", ;
-		Left = 287, ;
+		Caption = "Kanal", ;
+		Left = 68, ;
 		Name = "lblChannel", ;
 		TabIndex = 5, ;
-		Top = 16, ;
+		Top = 45, ;
 		Visible = .F., ;
-		Width = 49, ;
-		ZOrderSet = 6
+		Width = 34, ;
+		ZOrderSet = 49
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblDescrip' AS tlabel WITH ;
+		Alignment = 1, ;
 		AutoSize = .T., ;
 		Caption = "lblDescrip", ;
-		Left = 12, ;
+		Height = 17, ;
+		Left = 44, ;
 		Name = "lblDescrip", ;
 		TabIndex = 9, ;
-		Top = 40, ;
+		Top = 20, ;
 		Width = 58, ;
-		ZOrderSet = 6
+		ZOrderSet = 10
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lbleq_adults' AS tlabel WITH ;
+		Alignment = 1, ;
 		AutoSize = .T., ;
 		Caption = "lbleq_adults", ;
-		Left = 576, ;
+		Left = 858, ;
 		Name = "lbleq_adults", ;
 		TabIndex = 14, ;
-		Top = 39, ;
+		Top = 89, ;
 		Width = 70, ;
-		ZOrderSet = 8
+		ZOrderSet = 14
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lbleq_ratecod' AS tlabel WITH ;
+		Alignment = 1, ;
 		AutoSize = .T., ;
 		Caption = "lbleq_ratecod", ;
-		Left = 576, ;
+		Left = 25, ;
 		Name = "lbleq_ratecod", ;
 		TabIndex = 12, ;
-		Top = 15, ;
+		Top = 92, ;
 		Width = 77, ;
-		ZOrderSet = 6
+		ZOrderSet = 12
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lbleq_vroom' AS tlabel WITH ;
+		Alignment = 1, ;
 		AutoSize = .T., ;
 		Caption = "lbleq_vroom", ;
-		Left = 12, ;
+		Left = 32, ;
 		Name = "lbleq_vroom", ;
 		TabIndex = 2, ;
-		Top = 15, ;
+		Top = 68, ;
 		Width = 70, ;
-		ZOrderSet = 3
+		ZOrderSet = 7
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblfrom' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblfrom", ;
-		Left = 621, ;
+		Left = 420, ;
 		Name = "lblfrom", ;
 		TabIndex = 30, ;
-		Top = 183, ;
+		Top = 21, ;
 		Width = 40, ;
-		ZOrderSet = 16
+		ZOrderSet = 22
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblfrommms' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblfrommms", ;
-		Left = 621, ;
+		Left = 1176, ;
 		Name = "lblfrommms", ;
 		TabIndex = 48, ;
-		Top = 339, ;
+		Top = 27, ;
 		Width = 69, ;
-		ZOrderSet = 27
+		ZOrderSet = 35
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblfromOC' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblfromOC", ;
 		Height = 17, ;
-		Left = 813, ;
+		Left = 1200, ;
 		Name = "lblfromOC", ;
 		TabIndex = 38, ;
-		Top = 183, ;
+		Top = 651, ;
 		Width = 58, ;
-		ZOrderSet = 27
+		ZOrderSet = 55
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblMealPlan' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblMealPlan", ;
-		Left = 621, ;
+		Left = 1176, ;
 		Name = "lblMealPlan", ;
 		TabIndex = 53, ;
-		Top = 423, ;
+		Top = 111, ;
 		Width = 66, ;
-		ZOrderSet = 32
+		ZOrderSet = 40
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblminmaxstay' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblminmaxstay", ;
-		Left = 621, ;
+		Left = 420, ;
 		Name = "lblminmaxstay", ;
 		TabIndex = 44, ;
-		Top = 291, ;
+		Top = 93, ;
 		Width = 81, ;
-		ZOrderSet = 23
+		ZOrderSet = 30
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblminmaxstaydescript' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblminmaxstaydescript", ;
-		Left = 621, ;
+		Left = 1011, ;
 		Name = "lblminmaxstaydescript", ;
 		TabIndex = 43, ;
-		Top = 267, ;
+		Top = 732, ;
 		Width = 125, ;
-		ZOrderSet = 22
+		ZOrderSet = 29
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblmpfrom' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblmpfrom", ;
-		Left = 621, ;
+		Left = 1176, ;
 		Name = "lblmpfrom", ;
 		TabIndex = 55, ;
-		Top = 447, ;
+		Top = 135, ;
 		Width = 58, ;
-		ZOrderSet = 34
+		ZOrderSet = 42
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblmpto' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblmpto", ;
-		Left = 621, ;
+		Left = 1176, ;
 		Name = "lblmpto", ;
 		TabIndex = 57, ;
-		Top = 471, ;
+		Top = 159, ;
 		Width = 43, ;
-		ZOrderSet = 36
+		ZOrderSet = 44
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblOC' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblOC", ;
 		Height = 17, ;
-		Left = 813, ;
+		Left = 423, ;
 		Name = "lblOC", ;
 		TabIndex = 36, ;
-		Top = 160, ;
+		Top = 70, ;
 		Width = 33, ;
-		ZOrderSet = 27
+		ZOrderSet = 61
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblPersons' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblPersons", ;
 		Height = 17, ;
-		Left = 756, ;
+		Left = 1131, ;
 		Name = "lblPersons", ;
 		TabIndex = 20, ;
-		Top = 63, ;
+		Top = 672, ;
 		Width = 62, ;
-		ZOrderSet = 12
+		ZOrderSet = 18
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblPrice' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblPrice", ;
-		Left = 621, ;
+		Left = 1008, ;
 		Name = "lblPrice", ;
 		TabIndex = 28, ;
-		Top = 159, ;
+		Top = 627, ;
 		Width = 43, ;
-		ZOrderSet = 14
+		ZOrderSet = 20
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblPriceCorrPercent' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "Kor %", ;
 		Height = 17, ;
-		Left = 836, ;
+		Left = 1027, ;
 		Name = "lblPriceCorrPercent", ;
 		TabIndex = 24, ;
-		Top = 63, ;
+		Top = 68, ;
 		Width = 35, ;
-		ZOrderSet = 23
+		ZOrderSet = 62
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblPriceCorrRate' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "Kor €", ;
 		Height = 17, ;
-		Left = 836, ;
+		Left = 1027, ;
 		Name = "lblPriceCorrRate", ;
 		TabIndex = 22, ;
-		Top = 39, ;
+		Top = 43, ;
 		Width = 31, ;
-		ZOrderSet = 23
+		ZOrderSet = 63
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblPriceFor' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblPriceFor", ;
-		Left = 621, ;
+		Left = 996, ;
 		Name = "lblPriceFor", ;
 		TabIndex = 18, ;
-		Top = 63, ;
+		Top = 672, ;
 		Width = 61, ;
-		ZOrderSet = 10
+		ZOrderSet = 16
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblRateId' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "Rate ID", ;
-		Left = 420, ;
+		Left = 259, ;
 		Name = "lblRateId", ;
 		TabIndex = 7, ;
-		Top = 16, ;
+		Top = 45, ;
 		Visible = .F., ;
 		Width = 43, ;
-		ZOrderSet = 6
+		ZOrderSet = 50
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lblto' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblto", ;
-		Left = 621, ;
+		Left = 565, ;
 		Name = "lblto", ;
 		TabIndex = 32, ;
-		Top = 207, ;
+		Top = 21, ;
 		Width = 25, ;
-		ZOrderSet = 18
+		ZOrderSet = 24
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lbltomms' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lbltomms", ;
-		Left = 621, ;
+		Left = 1176, ;
 		Name = "lbltomms", ;
 		TabIndex = 50, ;
-		Top = 363, ;
+		Top = 51, ;
 		Width = 54, ;
-		ZOrderSet = 29
+		ZOrderSet = 37
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'lbltoOC' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lbltoOC", ;
-		Left = 814, ;
+		Left = 1201, ;
 		Name = "lbltoOC", ;
 		TabIndex = 40, ;
-		Top = 207, ;
+		Top = 675, ;
 		Width = 43, ;
-		ZOrderSet = 29
+		ZOrderSet = 57
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'Ln1' AS ln WITH ;
 		BorderColor = 192,192,192, ;
 		Height = 0, ;
-		Left = 621, ;
+		Left = 1008, ;
 		Name = "Ln1", ;
-		Top = 258, ;
+		Top = 726, ;
 		Width = 352, ;
-		ZOrderSet = 0
+		ZOrderSet = 3
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="line" />
 
 	ADD OBJECT 'Ln2' AS ln WITH ;
 		BorderColor = 192,192,192, ;
 		Height = 0, ;
-		Left = 621, ;
+		Left = 1176, ;
 		Name = "Ln2", ;
-		Top = 413, ;
+		Top = 101, ;
 		Width = 184, ;
-		ZOrderSet = 1
+		ZOrderSet = 5
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="line" />
 
 	ADD OBJECT 'Ln3' AS ln WITH ;
 		BorderColor = 192,192,192, ;
 		Height = 0, ;
-		Left = 621, ;
+		Left = 1176, ;
 		Name = "Ln3", ;
-		Top = 523, ;
+		Top = 211, ;
 		Width = 184, ;
-		ZOrderSet = 1
+		ZOrderSet = 4
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="line" />
 
 	ADD OBJECT 'optpricetype' AS toptiongroup WITH ;
 		BackStyle = 0, ;
 		ButtonCount = 3, ;
 		Height = 67, ;
-		Left = 621, ;
+		Left = 1020, ;
 		Name = "optpricetype", ;
 		TabIndex = 27, ;
-		Top = 84, ;
+		Top = 88, ;
 		Value = 1, ;
-		Width = 180, ;
-		ZOrderSet = 13, ;
+		Width = 147, ;
+		ZOrderSet = 19, ;
 		Option1.AutoSize = .T., ;
 		Option1.Caption = "optmin", ;
 		Option1.ControlSource = "", ;
@@ -1048,55 +1114,352 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Option3.Width = 76
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="optiongroup" />
 
+	ADD OBJECT 'Shape1' AS shape WITH ;
+		BorderWidth = 1, ;
+		Curvature = 30, ;
+		Height = 156, ;
+		Left = 2, ;
+		Name = "Shape1", ;
+		Top = 5, ;
+		Width = 396, ;
+		ZOrderSet = 2
+		*< END OBJECT: BaseClass="shape" />
+
+	ADD OBJECT 'Shape2' AS shape WITH ;
+		BorderWidth = 1, ;
+		Curvature = 30, ;
+		Height = 156, ;
+		Left = 408, ;
+		Name = "Shape2", ;
+		Top = 6, ;
+		Width = 300, ;
+		ZOrderSet = 1
+		*< END OBJECT: BaseClass="shape" />
+
+	ADD OBJECT 'Shape3' AS shape WITH ;
+		BorderWidth = 1, ;
+		Curvature = 30, ;
+		Height = 156, ;
+		Left = 720, ;
+		Name = "Shape3", ;
+		Top = 6, ;
+		Width = 456, ;
+		ZOrderSet = 0
+		*< END OBJECT: BaseClass="shape" />
+
 	ADD OBJECT 'spnPriceForPersons' AS tspinner WITH ;
+		Height = 23, ;
 		KeyboardHighValue = 5, ;
 		KeyboardLowValue = -3, ;
-		Left = 705, ;
+		Left = 1080, ;
 		Name = "spnPriceForPersons", ;
 		SpinnerHighValue = 5.00, ;
 		SpinnerLowValue = -3.00, ;
 		TabIndex = 19, ;
-		Top = 60, ;
+		Top = 669, ;
 		Value = 1, ;
 		Width = 48, ;
-		ZOrderSet = 11
+		ZOrderSet = 17
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="spinner" />
 
-	ADD OBJECT 'Tlabel1' AS tlabel WITH ;
-		Caption = "St.B.", ;
+	ADD OBJECT 'tbl1Ew' AS tlabel WITH ;
+		Alignment = 0, ;
+		Caption = "1. Erw", ;
 		Height = 17, ;
-		Left = 709, ;
+		Left = 727, ;
+		Name = "tbl1Ew", ;
+		Top = 14, ;
+		Width = 38, ;
+		WordWrap = .F., ;
+		ZOrderSet = 80
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
+
+	ADD OBJECT 'tbl1kin' AS tlabel WITH ;
+		Alignment = 1, ;
+		Caption = "1. Kin", ;
+		Height = 17, ;
+		Left = 890, ;
+		Name = "tbl1kin", ;
+		Top = 12, ;
+		Width = 38, ;
+		WordWrap = .F., ;
+		ZOrderSet = 90
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
+
+	ADD OBJECT 'tbl2Ew' AS tlabel WITH ;
+		Caption = "2. Erw", ;
+		Left = 727, ;
+		Name = "tbl2Ew", ;
+		Top = 39, ;
+		Width = 38, ;
+		ZOrderSet = 81
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
+
+	ADD OBJECT 'tbl2kin' AS tlabel WITH ;
+		Alignment = 1, ;
+		Caption = "2. Kin", ;
+		Left = 890, ;
+		Name = "tbl2kin", ;
+		Top = 36, ;
+		Width = 38, ;
+		ZOrderSet = 91
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
+
+	ADD OBJECT 'tbl3Ew' AS tlabel WITH ;
+		Caption = "3. Erw", ;
+		Left = 727, ;
+		Name = "tbl3Ew", ;
+		Top = 64, ;
+		Width = 38, ;
+		ZOrderSet = 82
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
+
+	ADD OBJECT 'tbl3kin' AS tlabel WITH ;
+		Alignment = 1, ;
+		Caption = "3. Kin", ;
+		Left = 890, ;
+		Name = "tbl3kin", ;
+		Top = 61, ;
+		Width = 38, ;
+		ZOrderSet = 92
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
+
+	ADD OBJECT 'tbl4Ew' AS tlabel WITH ;
+		Caption = "4. Erw", ;
+		Height = 16, ;
+		Left = 727, ;
+		Name = "tbl4Ew", ;
+		Top = 90, ;
+		Width = 38, ;
+		ZOrderSet = 83
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
+
+	ADD OBJECT 'tbl5Ew' AS tlabel WITH ;
+		Caption = "5. Erw", ;
+		Left = 727, ;
+		Name = "tbl5Ew", ;
+		Top = 114, ;
+		Width = 38, ;
+		ZOrderSet = 84
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
+
+	ADD OBJECT 'tbn14T' AS tcommandbutton WITH ;
+		BackColor = 0,128,255, ;
+		Caption = "+14 Tage", ;
+		Height = 27, ;
+		Left = 122, ;
+		Name = "tbn14T", ;
+		Top = 125, ;
+		Width = 60, ;
+		ZOrderSet = 69
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
+
+	ADD OBJECT 'tbn1m' AS tcommandbutton WITH ;
+		BackColor = 0,128,255, ;
+		Caption = "+1 Monat", ;
+		Height = 27, ;
+		Left = 192, ;
+		Name = "tbn1m", ;
+		Top = 125, ;
+		Width = 60, ;
+		ZOrderSet = 70
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
+
+	ADD OBJECT 'tbnmin14T' AS tcommandbutton WITH ;
+		BackColor = 255,128,128, ;
+		Caption = "-14 Tage", ;
+		Height = 27, ;
+		Left = 263, ;
+		Name = "tbnmin14T", ;
+		Top = 125, ;
+		Width = 60, ;
+		ZOrderSet = 71
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
+
+	ADD OBJECT 'tbnMin1M' AS tcommandbutton WITH ;
+		BackColor = 255,128,128, ;
+		Caption = "-1 Monat", ;
+		Height = 27, ;
+		Left = 330, ;
+		Name = "tbnMin1M", ;
+		Top = 125, ;
+		Width = 60, ;
+		ZOrderSet = 72
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
+
+	ADD OBJECT 'Tcheckbox1' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "Mo", ;
+		Left = 423, ;
+		Name = "Tcheckbox1", ;
+		Top = 42, ;
+		Width = 36, ;
+		ZOrderSet = 73
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'Tcheckbox2' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "Di", ;
+		Left = 462, ;
+		Name = "Tcheckbox2", ;
+		Top = 42, ;
+		Width = 36, ;
+		ZOrderSet = 74
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'Tcheckbox3' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "Mi", ;
+		Left = 501, ;
+		Name = "Tcheckbox3", ;
+		Top = 42, ;
+		Width = 36, ;
+		ZOrderSet = 75
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'Tcheckbox4' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "Do", ;
+		Left = 540, ;
+		Name = "Tcheckbox4", ;
+		Top = 42, ;
+		Width = 36, ;
+		ZOrderSet = 76
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'Tcheckbox5' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "Fr", ;
+		Left = 579, ;
+		Name = "Tcheckbox5", ;
+		Top = 42, ;
+		Width = 36, ;
+		ZOrderSet = 77
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'Tcheckbox6' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "Sa", ;
+		Left = 618, ;
+		Name = "Tcheckbox6", ;
+		Top = 42, ;
+		Width = 36, ;
+		ZOrderSet = 78
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'Tcheckbox7' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "So", ;
+		Left = 658, ;
+		Name = "Tcheckbox7", ;
+		Top = 42, ;
+		Width = 36, ;
+		ZOrderSet = 79
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'Tlabel1' AS tlabel WITH ;
+		Alignment = 1, ;
+		AutoSize = .T., ;
+		Caption = "Standart-Bel.", ;
+		Height = 17, ;
+		Left = 855, ;
 		Name = "Tlabel1", ;
 		TabIndex = 16, ;
-		Top = 40, ;
-		Width = 23, ;
-		ZOrderSet = 8
+		Top = 114, ;
+		Width = 73, ;
+		ZOrderSet = 54
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
+
+	ADD OBJECT 'Ttext1' AS ttext WITH ;
+		Height = 23, ;
+		Left = 769, ;
+		Name = "Ttext1", ;
+		Top = 8, ;
+		Width = 80, ;
+		ZOrderSet = 85
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
+
+	ADD OBJECT 'Ttext2' AS ttext WITH ;
+		Left = 769, ;
+		Name = "Ttext2", ;
+		Top = 33, ;
+		Width = 80, ;
+		ZOrderSet = 86
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
+
+	ADD OBJECT 'Ttext3' AS ttext WITH ;
+		Left = 769, ;
+		Name = "Ttext3", ;
+		Top = 58, ;
+		Width = 80, ;
+		ZOrderSet = 87
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
+
+	ADD OBJECT 'Ttext4' AS ttext WITH ;
+		Left = 769, ;
+		Name = "Ttext4", ;
+		Top = 83, ;
+		Width = 80, ;
+		ZOrderSet = 88
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
+
+	ADD OBJECT 'Ttext5' AS ttext WITH ;
+		Left = 769, ;
+		Name = "Ttext5", ;
+		Top = 108, ;
+		Width = 80, ;
+		ZOrderSet = 89
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
+
+	ADD OBJECT 'Ttext6' AS ttext WITH ;
+		Height = 23, ;
+		Left = 930, ;
+		Name = "Ttext6", ;
+		Top = 8, ;
+		Width = 80, ;
+		ZOrderSet = 93
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
+
+	ADD OBJECT 'Ttext7' AS ttext WITH ;
+		Left = 930, ;
+		Name = "Ttext7", ;
+		Top = 33, ;
+		Width = 80, ;
+		ZOrderSet = 94
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
+
+	ADD OBJECT 'Ttext8' AS ttext WITH ;
+		Left = 930, ;
+		Name = "Ttext8", ;
+		Top = 58, ;
+		Width = 80, ;
+		ZOrderSet = 95
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'txtMaxStay' AS ttext WITH ;
 		Alignment = 0, ;
 		Format = "KR", ;
 		InputMask = "999", ;
-		Left = 753, ;
+		Left = 563, ;
 		Name = "txtMaxStay", ;
 		TabIndex = 46, ;
-		Top = 288, ;
+		Top = 90, ;
 		Value = 0, ;
 		Width = 40, ;
-		ZOrderSet = 25
+		ZOrderSet = 32
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'txtMinStay' AS ttext WITH ;
 		Alignment = 0, ;
 		Format = "KR", ;
 		InputMask = "999", ;
-		Left = 705, ;
+		Left = 512, ;
 		Name = "txtMinStay", ;
 		TabIndex = 45, ;
-		Top = 288, ;
+		Top = 90, ;
 		Value = 0, ;
 		Width = 40, ;
-		ZOrderSet = 24
+		ZOrderSet = 31
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'txtPrice' AS ttext WITH ;
@@ -1104,12 +1467,12 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Enabled = .F., ;
 		Format = "KR", ;
 		InputMask = "999999.99", ;
-		Left = 705, ;
+		Left = 1092, ;
 		Name = "txtPrice", ;
 		TabIndex = 29, ;
-		Top = 156, ;
+		Top = 624, ;
 		Value = 0.00, ;
-		ZOrderSet = 15
+		ZOrderSet = 21
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 	
 	PROCEDURE activatebeforefirsttime
