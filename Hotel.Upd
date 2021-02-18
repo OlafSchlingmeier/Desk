@@ -9108,3 +9108,2005 @@ Try do register TAPIExCt.dll
 Registration of CITADEL.EXE succeed for version 9.9.110.
 Finished file update
 07.06.2020/ 19:55:22
+Starting file update
+DB: 0010.0001.0130AP: 0010.0001.0131
+16.02.2021/ 22:34:19
+All files can be opened exclusive, start update!
+File:data\ACTION
+..File exists.
+
+File:data\ADDRESS
+..File exists.
+
+File:data\ADINTRST
+..File exists.
+
+File:data\ADRFEAT
+..File exists.
+
+File:data\ADRHOT
+..File exists.
+
+File:data\ADRMAIN
+..File exists.
+
+File:data\ADRPHONE
+..File exists.
+
+File:data\ADRPRVCY
+..File exists.
+
+File:data\ADRRATES
+..File exists.
+
+File:data\ADRSTINT
+..File exists.
+
+File:data\ADRTOIN
+..File exists.
+
+File:data\ADRTORES
+..File exists.
+
+File:data\ADRTOSI
+..File exists.
+
+File:data\ALTHEAD
+..File exists.
+
+File:data\ALTSPLIT
+..File exists.
+
+File:data\APARTNER
+..File exists.
+
+File:data\ARACCT
+..File exists.
+
+File:data\ARBILSTA
+..File exists.
+
+File:data\ARGENREM
+..File exists.
+
+File:data\ARPCOND
+..File exists.
+
+File:data\ARPOST
+..File exists.
+
+File:data\ARREMD
+..File exists.
+
+File:data\ARREMLET
+..File exists.
+
+File:data\ARTICLE
+..File exists.
+
+File:data\ASGEMPL
+..File exists.
+
+File:data\ASTAT
+..File exists.
+
+File:data\AVAILAB
+..File exists.
+
+File:data\AZEPICK
+..File exists.
+
+File:data\BANKEN
+..File exists.
+
+File:data\BANQUET
+..File exists.
+
+File:data\BASELPER
+..File exists.
+
+File:data\BGDDAYS
+..File exists.
+
+File:data\BGDPAYMS
+..File exists.
+
+File:data\BILLINST
+..File exists.
+
+File:data\BILLNUM
+..File exists.
+
+File:data\BPROENER
+..File exists.
+
+File:data\BQBESTHL
+..File exists.
+
+File:data\BSACCT
+..File exists.
+
+File:data\BSCARD
+..File exists.
+
+File:data\BSPENDIN
+..File exists.
+
+File:data\BSPOST
+..File exists.
+
+File:data\BUDGET
+..File exists.
+
+File:data\BUILDING
+..File exists.
+..New field: BU_CASHNR, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 6 records from Tmp00001.Dbf.
+
+File:data\BUILDPIC
+..File exists.
+
+File:data\CASHIER
+..File exists.
+
+File:data\CITCOLOR
+..File exists.
+
+File:data\CMRTAVL
+..File exists.
+
+File:data\CRLOG
+..File exists.
+
+File:data\CWRATES
+..File exists.
+
+File:data\CWVRRT
+..File exists.
+
+File:data\DENIAL
+..File exists.
+
+File:data\DEPOSIT
+..File exists.
+
+File:data\DOCUMENT
+..File exists.
+
+File:data\EATTACHM
+..File exists.
+
+File:data\EINBOX
+..File exists.
+
+File:data\EINBOXSN
+..File exists.
+
+File:data\ELPAY
+..File exists.
+
+File:data\EMPLOYEE
+..File exists.
+
+File:data\EMPLOYEH
+..File exists.
+
+File:data\EMPROP
+..File exists.
+
+File:data\ESENT
+..File exists.
+
+File:data\ESENTRCP
+..File exists.
+
+File:data\EVENTS
+..File exists.
+
+File:data\EVINT
+..File exists.
+
+File:data\EXTERROR
+..File exists.
+
+File:data\EXTOFFER
+..File exists.
+
+File:data\EXTRESER
+..File exists.
+
+File:data\EXTSTAT
+..File exists.
+
+File:data\EXTVOUCH
+..File exists.
+
+File:data\FINACCNT
+..File exists.
+
+File:data\FPRINTER
+..File exists.
+
+File:data\GRID
+..File exists.
+
+File:data\GRIDPROP
+..File exists.
+
+File:data\GROUP
+..File exists.
+..GR_CAR is not used anymore, and was automaticly deleted!
+..Create Tmp00001.Dbf.
+..Appended 4 records from Tmp00001.Dbf.
+
+File:data\GROUPRES
+..File exists.
+
+File:data\HAUPTGRP
+..File exists.
+
+File:data\HBANQUET
+..File exists.
+
+File:data\HBILLINS
+..File exists.
+
+File:data\HDEPOSIT
+..File exists.
+
+File:data\HISTORS
+..File exists.
+
+File:data\HISTPOST
+..File exists.
+
+File:data\HISTRES
+..File exists.
+
+File:data\HISTSTAT
+..File exists.
+
+File:data\HOTEL
+..File exists.
+
+File:data\HOUTOFOR
+..File exists.
+
+File:data\HOUTOFSR
+..File exists.
+
+File:data\HPOSTCNG
+..File exists.
+
+File:data\HPOSTIFC
+..File exists.
+
+File:data\HPWINDOW
+..File exists.
+
+File:data\HRESADDR
+..File exists.
+
+File:data\HRESCARD
+..File exists.
+
+File:data\HRESEXT
+..File exists.
+
+File:data\HRESFEAT
+..File exists.
+
+File:data\HRESFIX
+..File exists.
+
+File:data\HRESPLIT
+..File exists.
+
+File:data\HRESRART
+..File exists.
+
+File:data\HRESRATE
+..File exists.
+
+File:data\HRESROOM
+..File exists.
+
+File:data\HRESYILD
+..File exists.
+
+File:data\HSHEET
+..File exists.
+..Skipping HSHEET, it's user defined.
+
+File:data\HSHEET
+..File exists.
+..Skipping HSHEET, it's user defined.
+
+File:data\HSHEET
+..File exists.
+..Skipping HSHEET, it's user defined.
+
+File:data\HYICOND
+..File exists.
+
+File:data\HYIOFFER
+..File exists.
+
+File:data\ID
+..File exists.
+
+File:data\IDMAIN
+..File exists.
+
+File:data\IFCLOST
+..File exists.
+
+File:data\IFCPTT
+..File exists.
+
+File:data\IMPORT
+..File exists.
+
+File:data\INFOSCR
+..File exists.
+
+File:data\JETWEB
+..File exists.
+
+File:data\JOB
+..File exists.
+
+File:data\LANGUAGE
+..File exists.
+
+File:data\LASTSTAY
+..File exists.
+
+File:data\LEDGPAYM
+..File exists.
+
+File:data\LEDGPOST
+..File exists.
+
+File:data\LISTS
+..File exists.
+
+File:data\LOGGER
+..File exists.
+
+File:data\MANAGER
+..File exists.
+
+File:data\MENU
+..File exists.
+
+File:data\MESSAGES
+..File exists.
+
+File:data\MNGBUILD
+..File exists.
+
+File:data\OBERGRP
+..File exists.
+
+File:data\ORSTAT
+..File exists.
+
+File:data\OUTDEBTS
+..File exists.
+
+File:data\OUTOFORD
+..File exists.
+
+File:data\OUTOFSER
+..File exists.
+
+File:data\PARAM
+..File exists.
+..Field change from: PA_PAYONLD, N,    2,  0.
+..Field change to  : PA_PAYONLD, N,    3,  0.
+..Field change from: PA_RNDPAY, N,    2,  0.
+..Field change to  : PA_RNDPAY, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 1 records from Tmp00001.Dbf.
+
+File:data\PARAM2
+..File exists.
+..Field change from: PA_BMSPAY, N,    2,  0.
+..Field change to  : PA_BMSPAY, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 1 records from Tmp00001.Dbf.
+
+File:data\PAYMETHO
+..File exists.
+
+File:data\PERIOD
+..File exists.
+
+File:data\PHNOTE
+..File exists.
+
+File:data\PHONE
+..File exists.
+
+File:data\PIART
+..File exists.
+
+File:data\PICHK
+..File exists.
+
+File:data\PICKLIST
+..File exists.
+
+File:data\PICTURES
+..File exists.
+
+File:data\PIPAY
+..File exists.
+
+File:data\POSARTI
+..File exists.
+
+File:data\POSPAYM
+..File exists.
+
+File:data\POST
+..File exists.
+
+File:data\POSTCHNG
+..File exists.
+
+File:data\POSTCXL
+..File exists.
+..Field change from: PS_PAYNUM, N,    2,  0.
+..Field change to  : PS_PAYNUM, N,    3,  0.
+..BN_PAYNUM is not used anymore, and was automaticly deleted!
+..Create Tmp00001.Dbf.
+..Appended 0 records from Tmp00001.Dbf.
+
+File:data\POSTDISC
+..File exists.
+
+File:data\PRICEAVG
+..File exists.
+
+File:data\PRTYPES
+..File exists.
+
+File:data\PSWINDOW
+..File exists.
+
+File:data\RATEARTI
+..File exists.
+
+File:data\RATECODE
+..File exists.
+
+File:data\RATEPROP
+..File exists.
+
+File:data\RCYIELD
+..File exists.
+
+File:data\REFERRAL
+..File exists.
+
+File:data\RESADDR
+..File exists.
+
+File:data\RESCARD
+..File exists.
+
+File:data\RESCFGUE
+..File exists.
+
+File:data\RESCHG
+..File exists.
+
+File:data\RESERVAT
+..File exists.
+
+File:data\RESFEAT
+..File exists.
+
+File:data\RESFIX
+..File exists.
+
+File:data\RESIFCBR
+..File exists.
+
+File:data\RESIFCIN
+..File exists.
+
+File:data\RESPICT
+..File exists.
+
+File:data\RESRART
+..File exists.
+
+File:data\RESRATE
+..File exists.
+
+File:data\RESRMSHR
+..File exists.
+
+File:data\RESROOMS
+..File exists.
+
+File:data\RESSPLIT
+..File exists.
+
+File:data\RESYIELD
+..File exists.
+
+File:data\ROOM
+..File exists.
+
+File:data\ROOMFEAT
+..File exists.
+
+File:data\ROOMPICT
+..File exists.
+
+File:data\ROOMPLAN
+..File exists.
+
+File:data\ROOMTPIC
+..File exists.
+
+File:data\ROOMTYPE
+..File exists.
+
+File:data\RPOSTIFC
+..File exists.
+
+File:data\RSIFSYNC
+..File exists.
+
+File:data\RTYPEDEF
+..File exists.
+
+File:data\SCREENS
+..File exists.
+
+File:data\SEASON
+..File exists.
+
+File:data\SHARING
+..File exists.
+
+File:data\SUBGRP
+..File exists.
+
+File:data\TERMINAL
+..File exists.
+
+File:data\TIMETYPE
+..File exists.
+
+File:data\TITLE
+..File exists.
+
+File:TPOS\TPAUDIT
+..File exists.
+
+File:TPOS\TPJOUR
+..File exists.
+
+File:TPOS\TPJRNDAY
+..File exists.
+
+File:TPOS\TPOPEN
+..File exists.
+
+File:TPOS\TPPAY
+..File exists.
+
+File:TPOS\TPPAYDAY
+..File exists.
+
+File:TPOS\TPTMPJOU
+..File exists.
+
+File:TPOS\TPTMPPAY
+..File exists.
+
+File:data\UGIMP
+..File exists.
+
+File:data\USER
+..File exists.
+
+File:data\USERFAV
+..File exists.
+
+File:data\USERMSG
+..File exists.
+
+File:data\VOUCHER
+..File exists.
+
+File:data\WAKEUP
+..File exists.
+
+File:data\WORKBRK
+..File exists.
+
+File:data\WORKBRKD
+..File exists.
+
+File:data\WORKINT
+..File exists.
+
+File:data\YICOND
+..File exists.
+
+File:data\YIELDMNG
+..File exists.
+
+File:data\YIOFFER
+..File exists.
+
+File:data\YMNGPROP
+..File exists.
+
+File:data\ZIPCODE
+..File exists.
+
+Try do register citadel.exe as automation server
+Try do register TAPIExCt.dll
+Registration of CITADEL.EXE failed.
+
+You don't have sufficient rights to register DLL/EXE. 
+Please, contact your vendor dealer.
+Finished file update
+16.02.2021/ 22:34:38
+Starting file update
+DB: 0010.0001.0130AP: 0010.0001.0131
+16.02.2021/ 22:36:02
+All files can be opened exclusive, start update!
+File:data\ACTION
+..File exists.
+
+File:data\ADDRESS
+..File exists.
+
+File:data\ADINTRST
+..File exists.
+
+File:data\ADRFEAT
+..File exists.
+
+File:data\ADRHOT
+..File exists.
+
+File:data\ADRMAIN
+..File exists.
+
+File:data\ADRPHONE
+..File exists.
+
+File:data\ADRPRVCY
+..File exists.
+
+File:data\ADRRATES
+..File exists.
+
+File:data\ADRSTINT
+..File exists.
+
+File:data\ADRTOIN
+..File exists.
+
+File:data\ADRTORES
+..File exists.
+
+File:data\ADRTOSI
+..File exists.
+
+File:data\ALTHEAD
+..File exists.
+
+File:data\ALTSPLIT
+..File exists.
+
+File:data\APARTNER
+..File exists.
+
+File:data\ARACCT
+..File exists.
+
+File:data\ARBILSTA
+..File exists.
+
+File:data\ARGENREM
+..File exists.
+
+File:data\ARPCOND
+..File exists.
+
+File:data\ARPOST
+..File exists.
+
+File:data\ARREMD
+..File exists.
+
+File:data\ARREMLET
+..File exists.
+
+File:data\ARTICLE
+..File exists.
+
+File:data\ASGEMPL
+..File exists.
+
+File:data\ASTAT
+..File exists.
+
+File:data\AVAILAB
+..File exists.
+
+File:data\AZEPICK
+..File exists.
+
+File:data\BANKEN
+..File exists.
+
+File:data\BANQUET
+..File exists.
+
+File:data\BASELPER
+..File exists.
+
+File:data\BGDDAYS
+..File exists.
+
+File:data\BGDPAYMS
+..File exists.
+
+File:data\BILLINST
+..File exists.
+
+File:data\BILLNUM
+..File exists.
+
+File:data\BPROENER
+..File exists.
+
+File:data\BQBESTHL
+..File exists.
+
+File:data\BSACCT
+..File exists.
+
+File:data\BSCARD
+..File exists.
+
+File:data\BSPENDIN
+..File exists.
+
+File:data\BSPOST
+..File exists.
+
+File:data\BUDGET
+..File exists.
+
+File:data\BUILDING
+..File exists.
+..New field: BU_CASHNR, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 6 records from Tmp00001.Dbf.
+
+File:data\BUILDPIC
+..File exists.
+
+File:data\CASHIER
+..File exists.
+
+File:data\CITCOLOR
+..File exists.
+
+File:data\CMRTAVL
+..File exists.
+
+File:data\CRLOG
+..File exists.
+
+File:data\CWRATES
+..File exists.
+
+File:data\CWVRRT
+..File exists.
+
+File:data\DENIAL
+..File exists.
+
+File:data\DEPOSIT
+..File exists.
+
+File:data\DOCUMENT
+..File exists.
+
+File:data\EATTACHM
+..File exists.
+
+File:data\EINBOX
+..File exists.
+
+File:data\EINBOXSN
+..File exists.
+
+File:data\ELPAY
+..File exists.
+
+File:data\EMPLOYEE
+..File exists.
+
+File:data\EMPLOYEH
+..File exists.
+
+File:data\EMPROP
+..File exists.
+
+File:data\ESENT
+..File exists.
+
+File:data\ESENTRCP
+..File exists.
+
+File:data\EVENTS
+..File exists.
+
+File:data\EVINT
+..File exists.
+
+File:data\EXTERROR
+..File exists.
+
+File:data\EXTOFFER
+..File exists.
+
+File:data\EXTRESER
+..File exists.
+
+File:data\EXTSTAT
+..File exists.
+
+File:data\EXTVOUCH
+..File exists.
+
+File:data\FINACCNT
+..File exists.
+
+File:data\FPRINTER
+..File exists.
+
+File:data\GRID
+..File exists.
+
+File:data\GRIDPROP
+..File exists.
+
+File:data\GROUP
+..File exists.
+..GR_CAR is not used anymore, and was automaticly deleted!
+..Create Tmp00001.Dbf.
+..Appended 4 records from Tmp00001.Dbf.
+
+File:data\GROUPRES
+..File exists.
+
+File:data\HAUPTGRP
+..File exists.
+
+File:data\HBANQUET
+..File exists.
+
+File:data\HBILLINS
+..File exists.
+
+File:data\HDEPOSIT
+..File exists.
+
+File:data\HISTORS
+..File exists.
+
+File:data\HISTPOST
+..File exists.
+
+File:data\HISTRES
+..File exists.
+
+File:data\HISTSTAT
+..File exists.
+
+File:data\HOTEL
+..File exists.
+
+File:data\HOUTOFOR
+..File exists.
+
+File:data\HOUTOFSR
+..File exists.
+
+File:data\HPOSTCNG
+..File exists.
+
+File:data\HPOSTIFC
+..File exists.
+
+File:data\HPWINDOW
+..File exists.
+
+File:data\HRESADDR
+..File exists.
+
+File:data\HRESCARD
+..File exists.
+
+File:data\HRESEXT
+..File exists.
+
+File:data\HRESFEAT
+..File exists.
+
+File:data\HRESFIX
+..File exists.
+
+File:data\HRESPLIT
+..File exists.
+
+File:data\HRESRART
+..File exists.
+
+File:data\HRESRATE
+..File exists.
+
+File:data\HRESROOM
+..File exists.
+
+File:data\HRESYILD
+..File exists.
+
+File:data\HSHEET
+..File exists.
+..Skipping HSHEET, it's user defined.
+
+File:data\HSHEET
+..File exists.
+..Skipping HSHEET, it's user defined.
+
+File:data\HSHEET
+..File exists.
+..Skipping HSHEET, it's user defined.
+
+File:data\HYICOND
+..File exists.
+
+File:data\HYIOFFER
+..File exists.
+
+File:data\ID
+..File exists.
+
+File:data\IDMAIN
+..File exists.
+
+File:data\IFCLOST
+..File exists.
+
+File:data\IFCPTT
+..File exists.
+
+File:data\IMPORT
+..File exists.
+
+File:data\INFOSCR
+..File exists.
+
+File:data\JETWEB
+..File exists.
+
+File:data\JOB
+..File exists.
+
+File:data\LANGUAGE
+..File exists.
+
+File:data\LASTSTAY
+..File exists.
+
+File:data\LEDGPAYM
+..File exists.
+
+File:data\LEDGPOST
+..File exists.
+
+File:data\LISTS
+..File exists.
+
+File:data\LOGGER
+..File exists.
+
+File:data\MANAGER
+..File exists.
+
+File:data\MENU
+..File exists.
+
+File:data\MESSAGES
+..File exists.
+
+File:data\MNGBUILD
+..File exists.
+
+File:data\OBERGRP
+..File exists.
+
+File:data\ORSTAT
+..File exists.
+
+File:data\OUTDEBTS
+..File exists.
+
+File:data\OUTOFORD
+..File exists.
+
+File:data\OUTOFSER
+..File exists.
+
+File:data\PARAM
+..File exists.
+..Field change from: PA_PAYONLD, N,    2,  0.
+..Field change to  : PA_PAYONLD, N,    3,  0.
+..Field change from: PA_RNDPAY, N,    2,  0.
+..Field change to  : PA_RNDPAY, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 1 records from Tmp00001.Dbf.
+
+File:data\PARAM2
+..File exists.
+..Field change from: PA_BMSPAY, N,    2,  0.
+..Field change to  : PA_BMSPAY, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 1 records from Tmp00001.Dbf.
+
+File:data\PAYMETHO
+..File exists.
+
+File:data\PERIOD
+..File exists.
+
+File:data\PHNOTE
+..File exists.
+
+File:data\PHONE
+..File exists.
+
+File:data\PIART
+..File exists.
+
+File:data\PICHK
+..File exists.
+
+File:data\PICKLIST
+..File exists.
+
+File:data\PICTURES
+..File exists.
+
+File:data\PIPAY
+..File exists.
+
+File:data\POSARTI
+..File exists.
+
+File:data\POSPAYM
+..File exists.
+
+File:data\POST
+..File exists.
+
+File:data\POSTCHNG
+..File exists.
+
+File:data\POSTCXL
+..File exists.
+..Field change from: PS_PAYNUM, N,    2,  0.
+..Field change to  : PS_PAYNUM, N,    3,  0.
+..BN_PAYNUM is not used anymore, and was automaticly deleted!
+..Create Tmp00001.Dbf.
+..Appended 0 records from Tmp00001.Dbf.
+
+File:data\POSTDISC
+..File exists.
+
+File:data\PRICEAVG
+..File exists.
+
+File:data\PRTYPES
+..File exists.
+
+File:data\PSWINDOW
+..File exists.
+
+File:data\RATEARTI
+..File exists.
+
+File:data\RATECODE
+..File exists.
+
+File:data\RATEPROP
+..File exists.
+
+File:data\RCYIELD
+..File exists.
+
+File:data\REFERRAL
+..File exists.
+
+File:data\RESADDR
+..File exists.
+
+File:data\RESCARD
+..File exists.
+
+File:data\RESCFGUE
+..File exists.
+
+File:data\RESCHG
+..File exists.
+
+File:data\RESERVAT
+..File exists.
+
+File:data\RESFEAT
+..File exists.
+
+File:data\RESFIX
+..File exists.
+
+File:data\RESIFCBR
+..File exists.
+
+File:data\RESIFCIN
+..File exists.
+
+File:data\RESPICT
+..File exists.
+
+File:data\RESRART
+..File exists.
+
+File:data\RESRATE
+..File exists.
+
+File:data\RESRMSHR
+..File exists.
+
+File:data\RESROOMS
+..File exists.
+
+File:data\RESSPLIT
+..File exists.
+
+File:data\RESYIELD
+..File exists.
+
+File:data\ROOM
+..File exists.
+
+File:data\ROOMFEAT
+..File exists.
+
+File:data\ROOMPICT
+..File exists.
+
+File:data\ROOMPLAN
+..File exists.
+
+File:data\ROOMTPIC
+..File exists.
+
+File:data\ROOMTYPE
+..File exists.
+
+File:data\RPOSTIFC
+..File exists.
+
+File:data\RSIFSYNC
+..File exists.
+
+File:data\RTYPEDEF
+..File exists.
+
+File:data\SCREENS
+..File exists.
+
+File:data\SEASON
+..File exists.
+
+File:data\SHARING
+..File exists.
+
+File:data\SUBGRP
+..File exists.
+
+File:data\TERMINAL
+..File exists.
+
+File:data\TIMETYPE
+..File exists.
+
+File:data\TITLE
+..File exists.
+
+File:TPOS\TPAUDIT
+..File exists.
+
+File:TPOS\TPJOUR
+..File exists.
+
+File:TPOS\TPJRNDAY
+..File exists.
+
+File:TPOS\TPOPEN
+..File exists.
+
+File:TPOS\TPPAY
+..File exists.
+
+File:TPOS\TPPAYDAY
+..File exists.
+
+File:TPOS\TPTMPJOU
+..File exists.
+
+File:TPOS\TPTMPPAY
+..File exists.
+
+File:data\UGIMP
+..File exists.
+
+File:data\USER
+..File exists.
+
+File:data\USERFAV
+..File exists.
+
+File:data\USERMSG
+..File exists.
+
+File:data\VOUCHER
+..File exists.
+
+File:data\WAKEUP
+..File exists.
+
+File:data\WORKBRK
+..File exists.
+
+File:data\WORKBRKD
+..File exists.
+
+File:data\WORKINT
+..File exists.
+
+File:data\YICOND
+..File exists.
+
+File:data\YIELDMNG
+..File exists.
+
+File:data\YIOFFER
+..File exists.
+
+File:data\YMNGPROP
+..File exists.
+
+File:data\ZIPCODE
+..File exists.
+
+Try do register citadel.exe as automation server
+Try do register TAPIExCt.dll
+Registration of CITADEL.EXE failed.
+
+You don't have sufficient rights to register DLL/EXE. 
+Please, contact your vendor dealer.
+Finished file update
+16.02.2021/ 22:36:18
+Starting file update
+DB: 0010.0001.0129AP: 0010.0001.0131
+16.02.2021/ 22:40:01
+All files can be opened exclusive, start update!
+File:data\ACTION
+..File exists.
+
+File:data\ADDRESS
+..File exists.
+
+File:data\ADINTRST
+..File exists.
+
+File:data\ADRFEAT
+..File exists.
+
+File:data\ADRHOT
+..File exists.
+
+File:data\ADRMAIN
+..File exists.
+
+File:data\ADRPHONE
+..File exists.
+
+File:data\ADRPRVCY
+..File exists.
+
+File:data\ADRRATES
+..File exists.
+
+File:data\ADRSTINT
+..File exists.
+
+File:data\ADRTOIN
+..File exists.
+
+File:data\ADRTORES
+..File exists.
+
+File:data\ADRTOSI
+..File exists.
+
+File:data\ALTHEAD
+..File exists.
+
+File:data\ALTSPLIT
+..File exists.
+
+File:data\APARTNER
+..File exists.
+
+File:data\ARACCT
+..File exists.
+
+File:data\ARBILSTA
+..File exists.
+
+File:data\ARGENREM
+..File exists.
+
+File:data\ARPCOND
+..File exists.
+
+File:data\ARPOST
+..File exists.
+..Field change from: AP_PAYNUM, N,    2,  0.
+..Field change to  : AP_PAYNUM, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 250 records from Tmp00001.Dbf.
+
+File:data\ARREMD
+..File exists.
+
+File:data\ARREMLET
+..File exists.
+
+File:data\ARTICLE
+..File exists.
+
+File:data\ASGEMPL
+..File exists.
+
+File:data\ASTAT
+..File exists.
+
+File:data\AVAILAB
+..File exists.
+
+File:data\AZEPICK
+..File exists.
+
+File:data\BANKEN
+..File exists.
+
+File:data\BANQUET
+..File exists.
+
+File:data\BASELPER
+..File exists.
+
+File:data\BGDDAYS
+..File exists.
+
+File:data\BGDPAYMS
+..File exists.
+
+File:data\BILLINST
+..File exists.
+
+File:data\BILLNUM
+..File exists.
+..Field change from: BN_PAYNUM, N,    2,  0.
+..Field change to  : BN_PAYNUM, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 30302 records from Tmp00001.Dbf.
+
+File:data\BPROENER
+..File exists.
+
+File:data\BQBESTHL
+..File exists.
+
+File:data\BSACCT
+..File exists.
+
+File:data\BSCARD
+..File exists.
+
+File:data\BSPENDIN
+..File exists.
+
+File:data\BSPOST
+..File exists.
+
+File:data\BUDGET
+..File exists.
+
+File:data\BUILDING
+..File exists.
+..New field: BU_CASHNR, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 0 records from Tmp00001.Dbf.
+
+File:data\BUILDPIC
+..File exists.
+
+File:data\CASHIER
+..File exists.
+
+File:data\CITCOLOR
+..File exists.
+
+File:data\CMRTAVL
+..File exists.
+
+File:data\CRLOG
+..File exists.
+
+File:data\CWRATES
+..File exists.
+
+File:data\CWVRRT
+..File exists.
+
+File:data\DENIAL
+..File exists.
+
+File:data\DEPOSIT
+..File exists.
+..Field change from: DP_PAYNUM, N,    2,  0.
+..Field change to  : DP_PAYNUM, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 21 records from Tmp00001.Dbf.
+
+File:data\DOCUMENT
+..File exists.
+
+File:data\EATTACHM
+..File exists.
+
+File:data\EINBOX
+..File exists.
+
+File:data\EINBOXSN
+..File exists.
+
+File:data\ELPAY
+..File exists.
+
+File:data\EMPLOYEE
+..File exists.
+
+File:data\EMPLOYEH
+..File exists.
+
+File:data\EMPROP
+..File exists.
+
+File:data\ESENT
+..File exists.
+
+File:data\ESENTRCP
+..File exists.
+
+File:data\EVENTS
+..File exists.
+
+File:data\EVINT
+..File exists.
+
+File:data\EXTERROR
+..File exists.
+
+File:data\EXTOFFER
+..File exists.
+
+File:data\EXTRESER
+..File exists.
+
+File:data\EXTSTAT
+..File exists.
+
+File:data\EXTVOUCH
+..File exists.
+
+File:data\FINACCNT
+..File exists.
+
+File:data\FPRINTER
+..File exists.
+
+File:data\GRID
+..File exists.
+
+File:data\GRIDPROP
+..File exists.
+
+File:data\GROUP
+..File exists.
+
+File:data\GROUPRES
+..File exists.
+
+File:data\HAUPTGRP
+..File exists.
+
+File:data\HBANQUET
+..File exists.
+
+File:data\HBILLINS
+..File exists.
+
+File:data\HDEPOSIT
+..File exists.
+..Field change from: DP_PAYNUM, N,    2,  0.
+..Field change to  : DP_PAYNUM, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 0 records from Tmp00001.Dbf.
+
+File:data\HISTORS
+..File exists.
+
+File:data\HISTPOST
+..File exists.
+..Field change from: HP_PAYNUM, N,    2,  0.
+..Field change to  : HP_PAYNUM, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 429114 records from Tmp00001.Dbf.
+
+File:data\HISTRES
+..File exists.
+
+File:data\HISTSTAT
+..File exists.
+
+File:data\HOTEL
+..File exists.
+
+File:data\HOUTOFOR
+..File exists.
+
+File:data\HOUTOFSR
+..File exists.
+
+File:data\HPOSTCNG
+..File exists.
+
+File:data\HPOSTIFC
+..File exists.
+
+File:data\HPWINDOW
+..File exists.
+
+File:data\HRESADDR
+..File exists.
+
+File:data\HRESCARD
+..File exists.
+
+File:data\HRESEXT
+..File exists.
+
+File:data\HRESFEAT
+..File exists.
+
+File:data\HRESFIX
+..File exists.
+
+File:data\HRESPLIT
+..File exists.
+
+File:data\HRESRART
+..File exists.
+
+File:data\HRESRATE
+..File exists.
+
+File:data\HRESROOM
+..File exists.
+
+File:data\HRESYILD
+..File exists.
+
+File:data\HSHEET
+..File exists.
+..Skipping HSHEET, it's user defined.
+
+File:data\HSHEET
+..File exists.
+..Skipping HSHEET, it's user defined.
+
+File:data\HSHEET
+..File exists.
+..Skipping HSHEET, it's user defined.
+
+File:data\HYICOND
+..File exists.
+
+File:data\HYIOFFER
+..File exists.
+
+File:data\ID
+..File exists.
+
+File:data\IDMAIN
+..File exists.
+
+File:data\IFCLOST
+..File exists.
+..Field change from: PS_PAYNUM, N,    2,  0.
+..Field change to  : PS_PAYNUM, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 346868 records from Tmp00001.Dbf.
+
+File:data\IFCPTT
+..File exists.
+
+File:data\IMPORT
+..File exists.
+
+File:data\INFOSCR
+..File exists.
+
+File:data\JETWEB
+..File exists.
+
+File:data\JOB
+..File exists.
+
+File:data\LANGUAGE
+..File exists.
+
+File:data\LASTSTAY
+..File exists.
+
+File:data\LEDGPAYM
+..File exists.
+..Field change from: LP_PAYNUM, N,    2,  0.
+..Field change to  : LP_PAYNUM, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 0 records from Tmp00001.Dbf.
+
+File:data\LEDGPOST
+..File exists.
+..Field change from: LD_PAYNUM, N,    2,  0.
+..Field change to  : LD_PAYNUM, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 92046 records from Tmp00001.Dbf.
+
+File:data\LISTS
+..File exists.
+
+File:data\LOGGER
+..File exists.
+
+File:data\MANAGER
+..File exists.
+
+File:data\MENU
+..File exists.
+
+File:data\MESSAGES
+..File exists.
+
+File:data\MNGBUILD
+..File exists.
+
+File:data\OBERGRP
+..File exists.
+
+File:data\ORSTAT
+..File exists.
+
+File:data\OUTDEBTS
+..File exists.
+
+File:data\OUTOFORD
+..File exists.
+
+File:data\OUTOFSER
+..File exists.
+
+File:data\PARAM
+..File exists.
+..Field change from: PA_PAYONLD, N,    2,  0.
+..Field change to  : PA_PAYONLD, N,    3,  0.
+..Field change from: PA_RNDPAY, N,    2,  0.
+..Field change to  : PA_RNDPAY, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 1 records from Tmp00001.Dbf.
+
+File:data\PARAM2
+..File exists.
+..Field change from: PA_BMSPAY, N,    2,  0.
+..Field change to  : PA_BMSPAY, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 1 records from Tmp00001.Dbf.
+
+File:data\PAYMETHO
+..File exists.
+..Field change from: PM_PAYNUM, N,    2,  0.
+..Field change to  : PM_PAYNUM, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 21 records from Tmp00001.Dbf.
+
+File:data\PERIOD
+..File exists.
+
+File:data\PHNOTE
+..File exists.
+
+File:data\PHONE
+..File exists.
+
+File:data\PIART
+..File exists.
+
+File:data\PICHK
+..File exists.
+
+File:data\PICKLIST
+..File exists.
+
+File:data\PICTURES
+..File exists.
+
+File:data\PIPAY
+..File exists.
+
+File:data\POSARTI
+..File exists.
+
+File:data\POSPAYM
+..File exists.
+
+File:data\POST
+..File exists.
+..Field change from: PS_PAYNUM, N,    2,  0.
+..Field change to  : PS_PAYNUM, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 5113 records from Tmp00001.Dbf.
+
+File:data\POSTCHNG
+..File exists.
+
+File:data\POSTCXL
+..File exists.
+..Field change from: PS_PAYNUM, N,    2,  0.
+..Field change to  : PS_PAYNUM, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 0 records from Tmp00001.Dbf.
+
+File:data\POSTDISC
+..File exists.
+
+File:data\PRICEAVG
+..File exists.
+
+File:data\PRTYPES
+..File exists.
+
+File:data\PSWINDOW
+..File exists.
+
+File:data\RATEARTI
+..File exists.
+
+File:data\RATECODE
+..File exists.
+..Field change from: RC_PAYNUM, N,    2,  0.
+..Field change to  : RC_PAYNUM, N,    3,  0.
+..Create Tmp00001.Dbf.
+..Appended 155 records from Tmp00001.Dbf.
+
+File:data\RATEPROP
+..File exists.
+
+File:data\RCYIELD
+..File exists.
+
+File:data\REFERRAL
+..File exists.
+
+File:data\RESADDR
+..File exists.
+
+File:data\RESCARD
+..File exists.
+
+File:data\RESCFGUE
+..File exists.
+
+File:data\RESCHG
+..File exists.
+
+File:data\RESERVAT
+..File exists.
+
+File:data\RESFEAT
+..File exists.
+
+File:data\RESFIX
+..File exists.
+
+File:data\RESIFCBR
+..File exists.
+
+File:data\RESIFCIN
+..File exists.
+
+File:data\RESPICT
+..File exists.
+
+File:data\RESRART
+..File exists.
+
+File:data\RESRATE
+..File exists.
+
+File:data\RESRMSHR
+..File exists.
+
+File:data\RESROOMS
+..File exists.
+
+File:data\RESSPLIT
+..File exists.
+
+File:data\RESYIELD
+..File exists.
+
+File:data\ROOM
+..File exists.
+
+File:data\ROOMFEAT
+..File exists.
+
+File:data\ROOMPICT
+..File exists.
+
+File:data\ROOMPLAN
+..File exists.
+
+File:data\ROOMTPIC
+..File exists.
+
+File:data\ROOMTYPE
+..File exists.
+
+File:data\RPOSTIFC
+..File exists.
+
+File:data\RSIFSYNC
+..File exists.
+
+File:data\RTYPEDEF
+..File exists.
+
+File:data\SCREENS
+..File exists.
+
+File:data\SEASON
+..File exists.
+
+File:data\SHARING
+..File exists.
+
+File:data\SUBGRP
+..File exists.
+
+File:data\TERMINAL
+..File exists.
+
+File:data\TIMETYPE
+..File exists.
+
+File:data\TITLE
+..File exists.
+
+File:TPOS\TPAUDIT
+..File exists.
+
+File:TPOS\TPJOUR
+..File exists.
+
+File:TPOS\TPJRNDAY
+..File exists.
+
+File:TPOS\TPOPEN
+..File exists.
+
+File:TPOS\TPPAY
+..File exists.
+
+File:TPOS\TPPAYDAY
+..File exists.
+
+File:TPOS\TPTMPJOU
+..File exists.
+
+File:TPOS\TPTMPPAY
+..File exists.
+
+File:data\UGIMP
+..File exists.
+
+File:data\USER
+..File exists.
+
+File:data\USERFAV
+..File exists.
+
+File:data\USERMSG
+..File exists.
+
+File:data\VOUCHER
+..File exists.
+
+File:data\WAKEUP
+..File exists.
+
+File:data\WORKBRK
+..File exists.
+
+File:data\WORKBRKD
+..File exists.
+
+File:data\WORKINT
+..File exists.
+
+File:data\YICOND
+..File exists.
+
+File:data\YIELDMNG
+..File exists.
+
+File:data\YIOFFER
+..File exists.
+
+File:data\YMNGPROP
+..File exists.
+
+File:data\ZIPCODE
+..File exists.
+
+Try do register citadel.exe as automation server
+Try do register TAPIExCt.dll
+Registration of CITADEL.EXE failed.
+
+You don't have sufficient rights to register DLL/EXE. 
+Please, contact your vendor dealer.
+Finished file update
+16.02.2021/ 22:46:15
