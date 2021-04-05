@@ -33,10 +33,12 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	*< OBJECTDATA: ObjPath="chkYieldManagerActive" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="chkInactiv" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lblRateId" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Tlabel10" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="Tlabel1" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lblChannel" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lbleq_ratecod" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="eq_ratecod" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tcbChild" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lbleq_adults" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="eq_adults" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="lblPriceFor" UniqueID="" Timestamp="" />
@@ -89,7 +91,6 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	*< OBJECTDATA: ObjPath="cmdShowPrices" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="eq_channel" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="TxtRcbis" UniqueID="" Timestamp="" />
-	*< OBJECTDATA: ObjPath="tboBuilding" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="Tcommandbutton1" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="Tcommandbutton2" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="Tcommandbutton3" UniqueID="" Timestamp="" />
@@ -101,6 +102,14 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	*< OBJECTDATA: ObjPath="chkFr" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="chkSa" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="chkSo" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tcbEw1" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tcbEw2" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tcbEw3" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tcbEw4" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tcbEw5" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tcbKin1" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tcbKin2" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="tcbKin3" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="Tlabel2" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="Tlabel3" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="Tlabel4" UniqueID="" Timestamp="" />
@@ -124,6 +133,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	*< OBJECTDATA: ObjPath="TgridPCal.Column2.Text1" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="TgridPCal.Column3.Header1" UniqueID="" Timestamp="" />
 	*< OBJECTDATA: ObjPath="TgridPCal.Column3.Text1" UniqueID="" Timestamp="" />
+	*< OBJECTDATA: ObjPath="Cbobuilding1" UniqueID="" Timestamp="" />
 
 	*<DefinedPropArrayMethod>
 		*m: compareprices
@@ -138,6 +148,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		*m: ongetprices
 		*m: onnewrateid
 		*m: onpersonschange
+		*m: preiseingabe		&& Schaltet die Felder txtEw1-txtEw5.enabled auf .t. wenn die Anzahl Personen >= Ew? ist und tcbew1-tcbew5 = .t. ist
 		*m: setmaxadults
 		*p: cmode
 		*p: cresult
@@ -145,7 +156,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		*p: npersons
 	*</DefinedPropArrayMethod>
 
-	Caption = "frmmngcwvrrt"
+	Caption = ","
 	cmode = 
 	cresult = 
 	DoCreate = .T.
@@ -156,6 +167,12 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	ShowTips = .T.
 	Width = 1234
 	WindowType = 1
+
+	ADD OBJECT 'Cbobuilding1' AS cbobuilding WITH ;
+		Left = 13, ;
+		Name = "Cbobuilding1", ;
+		Top = 141
+		*< END OBJECT: ClassLib="..\libs\cit_ctrl.vcx" BaseClass="combobox" />
 
 	ADD OBJECT 'cboMealPlan' AS tcombobox WITH ;
 		BoundColumn = 2, ;
@@ -170,7 +187,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		RowSourceType = 1, ;
 		Style = 2, ;
 		TabIndex = 54, ;
-		Top = 372, ;
+		Top = 416, ;
 		Visible = .F., ;
 		ZOrderSet = 52
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="combobox" />
@@ -201,7 +218,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1040, ;
 		Name = "chkDeleteMinMaxStay", ;
 		TabIndex = 47, ;
-		Top = 270, ;
+		Top = 314, ;
 		Value = .F., ;
 		Visible = .F., ;
 		ZOrderSet = 45
@@ -213,6 +230,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 462, ;
 		Name = "chkDi", ;
 		Top = 41, ;
+		Value = .T., ;
 		Width = 34, ;
 		ZOrderSet = 73
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
@@ -223,6 +241,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 548, ;
 		Name = "chkDo", ;
 		Top = 40, ;
+		Value = .T., ;
 		Width = 34, ;
 		ZOrderSet = 75
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
@@ -233,6 +252,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 601, ;
 		Name = "chkFr", ;
 		Top = 41, ;
+		Value = .T., ;
 		Width = 34, ;
 		ZOrderSet = 76
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
@@ -241,10 +261,10 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Alignment = 0, ;
 		AutoSize = .T., ;
 		Caption = "chkInactiv", ;
-		Left = 601, ;
+		Left = 1021, ;
 		Name = "chkInactiv", ;
 		TabIndex = 4, ;
-		Top = 92, ;
+		Top = 65, ;
 		ZOrderSet = 8
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
 
@@ -254,6 +274,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 504, ;
 		Name = "chkMi", ;
 		Top = 41, ;
+		Value = .T., ;
 		Width = 34, ;
 		ZOrderSet = 74
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
@@ -261,9 +282,11 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	ADD OBJECT 'chkMo' AS tcheckbox WITH ;
 		Alignment = 0, ;
 		Caption = "Mo", ;
+		Enabled = .T., ;
 		Left = 414, ;
 		Name = "chkMo", ;
 		Top = 41, ;
+		Value = .T., ;
 		Width = 34, ;
 		ZOrderSet = 72
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
@@ -274,6 +297,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 645, ;
 		Name = "chkSa", ;
 		Top = 41, ;
+		Value = .T., ;
 		Width = 34, ;
 		ZOrderSet = 77
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
@@ -284,6 +308,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 688, ;
 		Name = "chkSo", ;
 		Top = 41, ;
+		Value = .T., ;
 		Width = 34, ;
 		ZOrderSet = 78
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
@@ -292,20 +317,21 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Alignment = 0, ;
 		AutoSize = .T., ;
 		Caption = "chkYieldManagerActive", ;
-		Left = 601, ;
+		Left = 420, ;
 		Name = "chkYieldManagerActive", ;
 		TabIndex = 11, ;
-		Top = 68, ;
+		Top = 144, ;
 		ZOrderSet = 7
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
 
 	ADD OBJECT 'cmdApplyMinMaxStay' AS tcommandbutton WITH ;
 		Caption = "cmdApplyMinMaxStay", ;
-		Left = 1092, ;
+		Height = 23, ;
+		Left = 612, ;
 		Name = "cmdApplyMinMaxStay", ;
 		TabIndex = 52, ;
-		Top = 336, ;
-		Visible = .F., ;
+		Top = 89, ;
+		Visible = .T., ;
 		ZOrderSet = 50
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
@@ -314,18 +340,19 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1092, ;
 		Name = "cmdApplyMP", ;
 		TabIndex = 59, ;
-		Top = 444, ;
-		Visible = .F., ;
+		Top = 488, ;
+		Visible = .T., ;
 		ZOrderSet = 57
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
 	ADD OBJECT 'cmdApplyOC' AS tcommandbutton WITH ;
 		Caption = "cmdApplyOC", ;
-		Left = 1086, ;
+		Height = 23, ;
+		Left = 612, ;
 		Name = "cmdApplyOC", ;
 		TabIndex = 42, ;
-		Top = 197, ;
-		Visible = .F., ;
+		Top = 65, ;
+		Visible = .T., ;
 		ZOrderSet = 38
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
@@ -333,10 +360,10 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		BackColor = 255,0,0, ;
 		Caption = "cmdCancel", ;
 		Height = 23, ;
-		Left = 871, ;
+		Left = 885, ;
 		Name = "cmdCancel", ;
 		TabIndex = 61, ;
-		Top = 84, ;
+		Top = 134, ;
 		Width = 104, ;
 		ZOrderSet = 59
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
@@ -347,18 +374,20 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 997, ;
 		Name = "cmdDelete", ;
 		TabIndex = 35, ;
-		Top = 197, ;
+		Top = 241, ;
 		Visible = .F., ;
 		ZOrderSet = 32
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
 	ADD OBJECT 'cmdgetprices' AS tcommandbutton WITH ;
 		Caption = "cmdGetPrices", ;
-		Left = 901, ;
+		Height = 23, ;
+		Left = 885, ;
 		Name = "cmdgetprices", ;
 		TabIndex = 34, ;
-		Top = 197, ;
-		Visible = .F., ;
+		Top = 96, ;
+		Visible = .T., ;
+		Width = 104, ;
 		ZOrderSet = 30
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
 
@@ -366,10 +395,10 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		BackColor = 0,255,128, ;
 		Caption = "cmdOK", ;
 		Height = 23, ;
-		Left = 871, ;
+		Left = 756, ;
 		Name = "cmdOK", ;
 		TabIndex = 60, ;
-		Top = 108, ;
+		Top = 134, ;
 		Width = 104, ;
 		ZOrderSet = 58
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
@@ -378,7 +407,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Caption = "...", ;
 		Enabled = .F., ;
 		Height = 23, ;
-		Left = 1153, ;
+		Left = 1196, ;
 		Name = "cmdShowPrices", ;
 		TabIndex = 26, ;
 		ToolTipText = "Preisen vergleichen", ;
@@ -399,7 +428,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1076, ;
 		Name = "dtxtFromMP", ;
 		TabIndex = 56, ;
-		Top = 396, ;
+		Top = 440, ;
 		Visible = .F., ;
 		ZOrderSet = 54
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
@@ -408,7 +437,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1070, ;
 		Name = "dtxtfromOC", ;
 		TabIndex = 39, ;
-		Top = 149, ;
+		Top = 193, ;
 		Visible = .F., ;
 		ZOrderSet = 35
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
@@ -417,13 +446,14 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1076, ;
 		Name = "dtxtFromStay", ;
 		TabIndex = 49, ;
-		Top = 288, ;
+		Top = 332, ;
 		Visible = .F., ;
 		ZOrderSet = 47
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'dtxtTo' AS tdatectrl WITH ;
-		Left = 624, ;
+		DateFormat = 0, ;
+		Left = 601, ;
 		Name = "dtxtTo", ;
 		TabIndex = 33, ;
 		Top = 13, ;
@@ -434,7 +464,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1076, ;
 		Name = "dtxtToMP", ;
 		TabIndex = 58, ;
-		Top = 420, ;
+		Top = 464, ;
 		Visible = .F., ;
 		ZOrderSet = 56
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
@@ -443,7 +473,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1070, ;
 		Name = "dtxttoOC", ;
 		TabIndex = 41, ;
-		Top = 173, ;
+		Top = 217, ;
 		Visible = .F., ;
 		ZOrderSet = 37
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
@@ -452,7 +482,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1076, ;
 		Name = "dtxtToStay", ;
 		TabIndex = 51, ;
-		Top = 312, ;
+		Top = 356, ;
 		Visible = .F., ;
 		ZOrderSet = 49
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
@@ -460,14 +490,14 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	ADD OBJECT 'eq_adults' AS tcombobox WITH ;
 		Height = 23, ;
 		InputMask = ("9"), ;
-		Left = 512, ;
+		Left = 524, ;
 		Name = "eq_adults", ;
 		RowSource = "1,2,3,4,5", ;
 		RowSourceType = 1, ;
 		Style = 2, ;
 		TabIndex = 15, ;
 		Top = 115, ;
-		Width = 84, ;
+		Width = 72, ;
 		ZOrderSet = 15
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="combobox" />
 
@@ -476,10 +506,10 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Format = "KR", ;
 		Height = 23, ;
 		InputMask = "9", ;
-		Left = 689, ;
+		Left = 672, ;
 		Name = "eq_adusta", ;
 		TabIndex = 17, ;
-		Top = 114, ;
+		Top = 138, ;
 		Value = 0, ;
 		Width = 27, ;
 		ZOrderSet = 31
@@ -487,6 +517,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 
 	ADD OBJECT 'eq_channel' AS jcombobox WITH ;
 		ColumnLines = .F., ;
+		Comment = "v", ;
 		Height = 23, ;
 		jboundcolumn = 2, ;
 		jcolumnwidths = 240,0, ;
@@ -496,7 +527,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Name = "eq_channel", ;
 		Style = 2, ;
 		TabIndex = 6, ;
-		Top = 36, ;
+		Top = 44, ;
 		Visible = .F., ;
 		Width = 131, ;
 		ZOrderSet = 65
@@ -506,7 +537,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Alignment = 0, ;
 		Enabled = .F., ;
 		Format = "KR", ;
-		Left = 1080, ;
+		Left = 1121, ;
 		Name = "eq_citcwcp", ;
 		TabIndex = 25, ;
 		Top = 35, ;
@@ -520,7 +551,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Enabled = .F., ;
 		Format = "KR", ;
 		Height = 23, ;
-		Left = 999, ;
+		Left = 1032, ;
 		Name = "eq_citcwcr", ;
 		TabIndex = 23, ;
 		Top = 35, ;
@@ -533,10 +564,10 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Alignment = 0, ;
 		AutoSize = .T., ;
 		Caption = "Preis Korrigieren", ;
-		Left = 988, ;
+		Left = 1021, ;
 		Name = "eq_citucwr", ;
 		TabIndex = 21, ;
-		Top = 17, ;
+		Top = 14, ;
 		ZOrderSet = 63
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
 
@@ -570,7 +601,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		RowSourceType = 6, ;
 		Style = 2, ;
 		TabIndex = 13, ;
-		Top = 84, ;
+		Top = 102, ;
 		Width = 204, ;
 		ZOrderSet = 13
 		*< END OBJECT: ClassLib="..\libs\jbase.vcx" BaseClass="combobox" />
@@ -583,7 +614,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 285, ;
 		Name = "eq_rateid", ;
 		TabIndex = 8, ;
-		Top = 36, ;
+		Top = 43, ;
 		Value = 0, ;
 		Visible = .F., ;
 		Width = 99, ;
@@ -602,22 +633,24 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		RowSourceType = 6, ;
 		Style = 2, ;
 		TabIndex = 3, ;
-		Top = 60, ;
+		Top = 73, ;
 		Width = 288, ;
 		ZOrderSet = 6
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="combobox" />
 
 	ADD OBJECT 'grdCwRates' AS grdbasecommon WITH ;
 		ColumnCount = 26, ;
-		Height = 420, ;
+		Height = 192, ;
 		HighlightStyle = 0, ;
-		Left = 12, ;
+		Left = 10, ;
 		lsetcursorsource = .F., ;
 		Name = "grdCwRates", ;
+		RecordSource = "", ;
 		TabIndex = 1, ;
-		Top = 155, ;
-		Width = 605, ;
+		Top = 192, ;
+		Width = 734, ;
 		ZOrderSet = 4, ;
+		Grdbasesortcolumn1.ControlSource = "", ;
 		Grdbasesortcolumn1.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn1.HEADER1.Caption = "", ;
 		Grdbasesortcolumn1.HEADER1.Name = "HEADER1", ;
@@ -625,6 +658,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn1.Tbgrid1.Name = "Tbgrid1", ;
 		Grdbasesortcolumn1.Tbgrid1.ReadOnly = .T., ;
 		Grdbasesortcolumn1.Width = 70, ;
+		Grdbasesortcolumn10.ControlSource = "", ;
 		Grdbasesortcolumn10.ForeColor = 0,128,128, ;
 		Grdbasesortcolumn10.Header1.Alignment = 2, ;
 		Grdbasesortcolumn10.Header1.Caption = "Header1", ;
@@ -635,6 +669,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn10.TBGRID1.Name = "TBGRID1", ;
 		Grdbasesortcolumn10.TBGRID1.ReadOnly = .F., ;
 		Grdbasesortcolumn10.Width = 60, ;
+		Grdbasesortcolumn11.ControlSource = "", ;
 		Grdbasesortcolumn11.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn11.HEADER1.Caption = "Header1", ;
 		Grdbasesortcolumn11.HEADER1.Name = "HEADER1", ;
@@ -642,6 +677,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn11.TBGRID1.Name = "TBGRID1", ;
 		Grdbasesortcolumn11.TBGRID1.ReadOnly = .T., ;
 		Grdbasesortcolumn11.Width = 60, ;
+		Grdbasesortcolumn12.ControlSource = "", ;
 		Grdbasesortcolumn12.ForeColor = 0,128,128, ;
 		Grdbasesortcolumn12.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn12.HEADER1.Caption = "Header1", ;
@@ -653,6 +689,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn12.TBGRID1.ReadOnly = .F., ;
 		Grdbasesortcolumn12.Width = 60, ;
 		Grdbasesortcolumn13.ColumnOrder = 13, ;
+		Grdbasesortcolumn13.ControlSource = "", ;
 		Grdbasesortcolumn13.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn13.HEADER1.Caption = "Header1", ;
 		Grdbasesortcolumn13.HEADER1.Name = "HEADER1", ;
@@ -661,6 +698,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn13.TBGRID1.ReadOnly = .T., ;
 		Grdbasesortcolumn13.Width = 60, ;
 		Grdbasesortcolumn14.ColumnOrder = 14, ;
+		Grdbasesortcolumn14.ControlSource = "", ;
 		Grdbasesortcolumn14.ForeColor = 0,128,128, ;
 		Grdbasesortcolumn14.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn14.HEADER1.Caption = "Header1", ;
@@ -672,6 +710,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn14.TBGRID1.ReadOnly = .F., ;
 		Grdbasesortcolumn14.Width = 60, ;
 		Grdbasesortcolumn15.ColumnOrder = 15, ;
+		Grdbasesortcolumn15.ControlSource = "", ;
 		Grdbasesortcolumn15.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn15.HEADER1.Caption = "Header1", ;
 		Grdbasesortcolumn15.HEADER1.Name = "HEADER1", ;
@@ -681,6 +720,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn15.TBGRID1.ReadOnly = .T., ;
 		Grdbasesortcolumn15.Width = 60, ;
 		Grdbasesortcolumn16.ColumnOrder = 16, ;
+		Grdbasesortcolumn16.ControlSource = "", ;
 		Grdbasesortcolumn16.ForeColor = 0,128,128, ;
 		Grdbasesortcolumn16.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn16.HEADER1.Caption = "Header1", ;
@@ -692,6 +732,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn16.TBGRID1.ReadOnly = .F., ;
 		Grdbasesortcolumn16.Width = 60, ;
 		Grdbasesortcolumn17.ColumnOrder = 17, ;
+		Grdbasesortcolumn17.ControlSource = "", ;
 		Grdbasesortcolumn17.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn17.HEADER1.Caption = "Header1", ;
 		Grdbasesortcolumn17.HEADER1.Name = "HEADER1", ;
@@ -700,6 +741,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn17.TBGRID1.ReadOnly = .T., ;
 		Grdbasesortcolumn17.Width = 60, ;
 		Grdbasesortcolumn18.ColumnOrder = 18, ;
+		Grdbasesortcolumn18.ControlSource = "", ;
 		Grdbasesortcolumn18.ForeColor = 0,128,128, ;
 		Grdbasesortcolumn18.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn18.HEADER1.Caption = "Header1", ;
@@ -711,12 +753,14 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn18.TBGRID1.ReadOnly = .F., ;
 		Grdbasesortcolumn18.Width = 60, ;
 		Grdbasesortcolumn19.ColumnOrder = 19, ;
+		Grdbasesortcolumn19.ControlSource = "", ;
 		Grdbasesortcolumn19.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn19.HEADER1.Caption = "Header1", ;
 		Grdbasesortcolumn19.HEADER1.Name = "HEADER1", ;
 		Grdbasesortcolumn19.Name = "Grdbasesortcolumn19", ;
 		Grdbasesortcolumn19.TBGRID1.Name = "TBGRID1", ;
 		Grdbasesortcolumn19.Width = 40, ;
+		Grdbasesortcolumn2.ControlSource = "", ;
 		Grdbasesortcolumn2.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn2.HEADER1.Caption = "", ;
 		Grdbasesortcolumn2.HEADER1.Name = "HEADER1", ;
@@ -725,6 +769,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn2.Tbgrid1.ReadOnly = .T., ;
 		Grdbasesortcolumn2.Width = 20, ;
 		Grdbasesortcolumn20.ColumnOrder = 20, ;
+		Grdbasesortcolumn20.ControlSource = "", ;
 		Grdbasesortcolumn20.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn20.HEADER1.Caption = "Header1", ;
 		Grdbasesortcolumn20.HEADER1.Name = "HEADER1", ;
@@ -734,6 +779,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn20.TBGRID1.ReadOnly = .T., ;
 		Grdbasesortcolumn20.Width = 40, ;
 		Grdbasesortcolumn21.ColumnOrder = 21, ;
+		Grdbasesortcolumn21.ControlSource = "", ;
 		Grdbasesortcolumn21.ForeColor = 0,128,128, ;
 		Grdbasesortcolumn21.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn21.HEADER1.Caption = "Header1", ;
@@ -745,6 +791,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn21.TBGRID1.ReadOnly = .F., ;
 		Grdbasesortcolumn21.Width = 40, ;
 		Grdbasesortcolumn22.ColumnOrder = 22, ;
+		Grdbasesortcolumn22.ControlSource = "", ;
 		Grdbasesortcolumn22.ForeColor = 0,128,128, ;
 		Grdbasesortcolumn22.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn22.HEADER1.Caption = "Header1", ;
@@ -756,6 +803,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn22.TBGRID1.ReadOnly = .F., ;
 		Grdbasesortcolumn22.Width = 40, ;
 		Grdbasesortcolumn23.ColumnOrder = 23, ;
+		Grdbasesortcolumn23.ControlSource = "", ;
 		Grdbasesortcolumn23.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn23.HEADER1.Caption = "Header1", ;
 		Grdbasesortcolumn23.HEADER1.Name = "HEADER1", ;
@@ -765,6 +813,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn23.TBGRID1.ReadOnly = .T., ;
 		Grdbasesortcolumn23.Width = 50, ;
 		Grdbasesortcolumn24.ColumnOrder = 24, ;
+		Grdbasesortcolumn24.ControlSource = "", ;
 		Grdbasesortcolumn24.ForeColor = 0,128,128, ;
 		Grdbasesortcolumn24.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn24.HEADER1.Caption = "Header1", ;
@@ -776,6 +825,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn24.TBGRID1.ReadOnly = .F., ;
 		Grdbasesortcolumn24.Width = 50, ;
 		Grdbasesortcolumn25.ColumnOrder = 25, ;
+		Grdbasesortcolumn25.ControlSource = "", ;
 		Grdbasesortcolumn25.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn25.HEADER1.Caption = "Header1", ;
 		Grdbasesortcolumn25.HEADER1.Name = "HEADER1", ;
@@ -783,6 +833,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn25.TBGRID1.Name = "TBGRID1", ;
 		Grdbasesortcolumn25.Width = 50, ;
 		Grdbasesortcolumn26.ColumnOrder = 26, ;
+		Grdbasesortcolumn26.ControlSource = "", ;
 		Grdbasesortcolumn26.ForeColor = 0,128,128, ;
 		Grdbasesortcolumn26.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn26.HEADER1.Caption = "Header1", ;
@@ -793,6 +844,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn26.TBGRID1.Name = "TBGRID1", ;
 		Grdbasesortcolumn26.TBGRID1.ReadOnly = .F., ;
 		Grdbasesortcolumn26.Width = 50, ;
+		Grdbasesortcolumn3.ControlSource = "", ;
 		Grdbasesortcolumn3.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn3.HEADER1.Caption = "Header1", ;
 		Grdbasesortcolumn3.HEADER1.Name = "HEADER1", ;
@@ -800,6 +852,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn3.Tbgrid1.Name = "Tbgrid1", ;
 		Grdbasesortcolumn3.Tbgrid1.ReadOnly = .T., ;
 		Grdbasesortcolumn3.Width = 60, ;
+		Grdbasesortcolumn4.ControlSource = "", ;
 		Grdbasesortcolumn4.ForeColor = 0,128,128, ;
 		Grdbasesortcolumn4.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn4.HEADER1.Caption = "Header1", ;
@@ -811,6 +864,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn4.TBGRID1.Name = "TBGRID1", ;
 		Grdbasesortcolumn4.TBGRID1.ReadOnly = .F., ;
 		Grdbasesortcolumn4.Width = 60, ;
+		Grdbasesortcolumn5.ControlSource = "", ;
 		Grdbasesortcolumn5.Header1.Alignment = 2, ;
 		Grdbasesortcolumn5.Header1.Caption = "Header1", ;
 		Grdbasesortcolumn5.Header1.Name = "Header1", ;
@@ -818,6 +872,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn5.Tbgrid1.Name = "Tbgrid1", ;
 		Grdbasesortcolumn5.Tbgrid1.ReadOnly = .T., ;
 		Grdbasesortcolumn5.Width = 60, ;
+		Grdbasesortcolumn6.ControlSource = "", ;
 		Grdbasesortcolumn6.ForeColor = 0,128,128, ;
 		Grdbasesortcolumn6.Header1.Alignment = 2, ;
 		Grdbasesortcolumn6.Header1.Caption = "Header1", ;
@@ -828,6 +883,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn6.Tbgrid1.Name = "Tbgrid1", ;
 		Grdbasesortcolumn6.Tbgrid1.ReadOnly = .F., ;
 		Grdbasesortcolumn6.Width = 60, ;
+		Grdbasesortcolumn7.ControlSource = "", ;
 		Grdbasesortcolumn7.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn7.HEADER1.Caption = "Header1", ;
 		Grdbasesortcolumn7.HEADER1.Name = "HEADER1", ;
@@ -835,6 +891,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn7.TBGRID1.Name = "TBGRID1", ;
 		Grdbasesortcolumn7.TBGRID1.ReadOnly = .T., ;
 		Grdbasesortcolumn7.Width = 60, ;
+		Grdbasesortcolumn8.ControlSource = "", ;
 		Grdbasesortcolumn8.ForeColor = 0,128,128, ;
 		Grdbasesortcolumn8.HEADER1.Alignment = 2, ;
 		Grdbasesortcolumn8.HEADER1.Caption = "Header1", ;
@@ -845,6 +902,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Grdbasesortcolumn8.TBGRID1.Name = "TBGRID1", ;
 		Grdbasesortcolumn8.TBGRID1.ReadOnly = .F., ;
 		Grdbasesortcolumn8.Width = 60, ;
+		Grdbasesortcolumn9.ControlSource = "", ;
 		Grdbasesortcolumn9.Header1.Alignment = 2, ;
 		Grdbasesortcolumn9.Header1.Caption = "Header1", ;
 		Grdbasesortcolumn9.Header1.Name = "Header1", ;
@@ -860,7 +918,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 12, ;
 		Name = "lblChannel", ;
 		TabIndex = 5, ;
-		Top = 40, ;
+		Top = 47, ;
 		Visible = .F., ;
 		Width = 49, ;
 		ZOrderSet = 11
@@ -883,7 +941,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 414, ;
 		Name = "lbleq_adults", ;
 		TabIndex = 14, ;
-		Top = 118, ;
+		Top = 121, ;
 		Width = 70, ;
 		ZOrderSet = 14
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
@@ -894,7 +952,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 12, ;
 		Name = "lbleq_ratecod", ;
 		TabIndex = 12, ;
-		Top = 87, ;
+		Top = 105, ;
 		Width = 77, ;
 		ZOrderSet = 12
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
@@ -905,7 +963,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 12, ;
 		Name = "lbleq_vroom", ;
 		TabIndex = 2, ;
-		Top = 63, ;
+		Top = 76, ;
 		Width = 55, ;
 		ZOrderSet = 5
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
@@ -927,7 +985,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1005, ;
 		Name = "lblfrommms", ;
 		TabIndex = 48, ;
-		Top = 291, ;
+		Top = 335, ;
 		Visible = .F., ;
 		Width = 69, ;
 		ZOrderSet = 46
@@ -940,7 +998,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1008, ;
 		Name = "lblfromOC", ;
 		TabIndex = 38, ;
-		Top = 152, ;
+		Top = 196, ;
 		Visible = .F., ;
 		Width = 58, ;
 		ZOrderSet = 34
@@ -952,7 +1010,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1008, ;
 		Name = "lblMealPlan", ;
 		TabIndex = 53, ;
-		Top = 375, ;
+		Top = 419, ;
 		Visible = .F., ;
 		Width = 66, ;
 		ZOrderSet = 51
@@ -975,7 +1033,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1045, ;
 		Name = "lblminmaxstaydescript", ;
 		TabIndex = 43, ;
-		Top = 257, ;
+		Top = 301, ;
 		Visible = .F., ;
 		Width = 125, ;
 		ZOrderSet = 41
@@ -987,7 +1045,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1016, ;
 		Name = "lblmpfrom", ;
 		TabIndex = 55, ;
-		Top = 399, ;
+		Top = 443, ;
 		Visible = .F., ;
 		Width = 58, ;
 		ZOrderSet = 53
@@ -999,7 +1057,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1031, ;
 		Name = "lblmpto", ;
 		TabIndex = 57, ;
-		Top = 423, ;
+		Top = 467, ;
 		Visible = .F., ;
 		Width = 43, ;
 		ZOrderSet = 55
@@ -1024,7 +1082,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1108, ;
 		Name = "lblPersons", ;
 		TabIndex = 20, ;
-		Top = 232, ;
+		Top = 276, ;
 		Visible = .F., ;
 		Width = 62, ;
 		ZOrderSet = 18
@@ -1036,7 +1094,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 997, ;
 		Name = "lblPrice", ;
 		TabIndex = 28, ;
-		Top = 486, ;
+		Top = 530, ;
 		Visible = .F., ;
 		Width = 43, ;
 		ZOrderSet = 20
@@ -1046,7 +1104,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		AutoSize = .T., ;
 		Caption = "%", ;
 		Height = 17, ;
-		Left = 1064, ;
+		Left = 1099, ;
 		Name = "lblPriceCorrPercent", ;
 		TabIndex = 24, ;
 		Top = 38, ;
@@ -1058,7 +1116,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		AutoSize = .T., ;
 		Caption = "€", ;
 		Height = 17, ;
-		Left = 988, ;
+		Left = 1022, ;
 		Name = "lblPriceCorrRate", ;
 		TabIndex = 22, ;
 		Top = 38, ;
@@ -1072,7 +1130,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 983, ;
 		Name = "lblPriceFor", ;
 		TabIndex = 18, ;
-		Top = 232, ;
+		Top = 276, ;
 		Visible = .F., ;
 		Width = 61, ;
 		ZOrderSet = 16
@@ -1084,7 +1142,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 237, ;
 		Name = "lblRateId", ;
 		TabIndex = 7, ;
-		Top = 40, ;
+		Top = 47, ;
 		Visible = .F., ;
 		Width = 43, ;
 		ZOrderSet = 9
@@ -1093,7 +1151,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	ADD OBJECT 'lblto' AS tlabel WITH ;
 		AutoSize = .T., ;
 		Caption = "lblto", ;
-		Left = 576, ;
+		Left = 567, ;
 		Name = "lblto", ;
 		TabIndex = 32, ;
 		Top = 17, ;
@@ -1107,7 +1165,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1020, ;
 		Name = "lbltomms", ;
 		TabIndex = 50, ;
-		Top = 315, ;
+		Top = 359, ;
 		Visible = .F., ;
 		Width = 54, ;
 		ZOrderSet = 48
@@ -1119,7 +1177,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1009, ;
 		Name = "lbltoOC", ;
 		TabIndex = 40, ;
-		Top = 176, ;
+		Top = 220, ;
 		Visible = .F., ;
 		Width = 43, ;
 		ZOrderSet = 36
@@ -1130,7 +1188,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Height = 0, ;
 		Left = 992, ;
 		Name = "Ln2", ;
-		Top = 365, ;
+		Top = 409, ;
 		Visible = .F., ;
 		Width = 184, ;
 		ZOrderSet = 3
@@ -1142,15 +1200,15 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		BorderStyle = 1, ;
 		ButtonCount = 3, ;
 		Height = 65, ;
-		Left = 988, ;
+		Left = 1021, ;
 		Name = "optpricetype", ;
 		OLEDropEffects = 3, ;
 		TabIndex = 27, ;
 		TerminateRead = .F., ;
 		Themes = .F., ;
-		Top = 62, ;
-		Value = 1, ;
-		Width = 188, ;
+		Top = 92, ;
+		Value = 3, ;
+		Width = 200, ;
 		ZOrderSet = 19, ;
 		Option1.AutoSize = .T., ;
 		Option1.Caption = "optmin", ;
@@ -1160,7 +1218,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Option1.Name = "optmin", ;
 		Option1.Style = 0, ;
 		Option1.Top = 5, ;
-		Option1.Value = 1, ;
+		Option1.Value = 0, ;
 		Option1.Width = 56, ;
 		Option2.AutoSize = .T., ;
 		Option2.Caption = "optmax", ;
@@ -1178,12 +1236,13 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Option3.Name = "optcustom", ;
 		Option3.Style = 0, ;
 		Option3.Top = 43, ;
+		Option3.Value = 1, ;
 		Option3.Width = 76
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="optiongroup" />
 
 	ADD OBJECT 'Sh1' AS sh WITH ;
 		Curvature = 25, ;
-		Height = 108, ;
+		Height = 124, ;
 		Left = 8, ;
 		Name = "Sh1", ;
 		Top = 8, ;
@@ -1193,7 +1252,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 
 	ADD OBJECT 'Sh2' AS sh WITH ;
 		Curvature = 25, ;
-		Height = 135, ;
+		Height = 161, ;
 		Left = 410, ;
 		Name = "Sh2", ;
 		Top = 7, ;
@@ -1203,11 +1262,11 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 
 	ADD OBJECT 'Sh3' AS sh WITH ;
 		Curvature = 25, ;
-		Height = 135, ;
+		Height = 161, ;
 		Left = 751, ;
 		Name = "Sh3", ;
-		Top = 7, ;
-		Width = 437, ;
+		Top = 4, ;
+		Width = 473, ;
 		ZOrderSet = 0
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="shape" />
 
@@ -1219,22 +1278,108 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		SpinnerHighValue = 5.00, ;
 		SpinnerLowValue = -3.00, ;
 		TabIndex = 19, ;
-		Top = 229, ;
+		Top = 273, ;
 		Value = 1, ;
 		Visible = .F., ;
 		Width = 48, ;
 		ZOrderSet = 17
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="spinner" />
 
-	ADD OBJECT 'tboBuilding' AS tcombobox WITH ;
+	ADD OBJECT 'tcbChild' AS tcombobox WITH ;
 		Height = 23, ;
-		Left = 10, ;
-		Name = "tboBuilding", ;
-		RowSource = "alle Gebäude, Gebäude A, Gebäude B", ;
+		InputMask = ("9"), ;
+		Left = 672, ;
+		Name = "tcbChild", ;
+		RowSource = "1,2,3", ;
 		RowSourceType = 1, ;
-		Top = 120, ;
-		ZOrderSet = 67
+		Style = 2, ;
+		TabIndex = 15, ;
+		Top = 115, ;
+		Value = 0, ;
+		Width = 60, ;
+		ZOrderSet = 15
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="combobox" />
+
+	ADD OBJECT 'tcbEw1' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "", ;
+		Left = 864, ;
+		Name = "tcbEw1", ;
+		Top = 15, ;
+		Value = 0, ;
+		Width = 16, ;
+		ZOrderSet = 72
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'tcbEw2' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "", ;
+		Left = 864, ;
+		Name = "tcbEw2", ;
+		Top = 38, ;
+		Width = 16, ;
+		ZOrderSet = 72
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'tcbEw3' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "", ;
+		Left = 864, ;
+		Name = "tcbEw3", ;
+		Top = 62, ;
+		Width = 16, ;
+		ZOrderSet = 72
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'tcbEw4' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "", ;
+		Left = 864, ;
+		Name = "tcbEw4", ;
+		Top = 86, ;
+		Width = 16, ;
+		ZOrderSet = 72
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'tcbEw5' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "", ;
+		Left = 864, ;
+		Name = "tcbEw5", ;
+		Top = 109, ;
+		Width = 16, ;
+		ZOrderSet = 72
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'tcbKin1' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "", ;
+		Left = 993, ;
+		Name = "tcbKin1", ;
+		Top = 14, ;
+		Width = 16, ;
+		ZOrderSet = 72
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'tcbKin2' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "", ;
+		Left = 993, ;
+		Name = "tcbKin2", ;
+		Top = 37, ;
+		Width = 16, ;
+		ZOrderSet = 72
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
+
+	ADD OBJECT 'tcbKin3' AS tcheckbox WITH ;
+		Alignment = 0, ;
+		Caption = "", ;
+		Left = 993, ;
+		Name = "tcbKin3", ;
+		Top = 61, ;
+		Width = 16, ;
+		ZOrderSet = 72
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="checkbox" />
 
 	ADD OBJECT 'Tcommandbutton1' AS tcommandbutton WITH ;
 		BackColor = 128,255,255, ;
@@ -1242,7 +1387,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Height = 23, ;
 		Left = 121, ;
 		Name = "Tcommandbutton1", ;
-		Top = 120, ;
+		Top = 140, ;
 		Width = 60, ;
 		ZOrderSet = 68
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
@@ -1253,7 +1398,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Height = 23, ;
 		Left = 194, ;
 		Name = "Tcommandbutton2", ;
-		Top = 120, ;
+		Top = 140, ;
 		Width = 60, ;
 		ZOrderSet = 69
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
@@ -1264,7 +1409,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Height = 23, ;
 		Left = 266, ;
 		Name = "Tcommandbutton3", ;
-		Top = 120, ;
+		Top = 140, ;
 		Width = 60, ;
 		ZOrderSet = 70
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
@@ -1275,7 +1420,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Height = 23, ;
 		Left = 340, ;
 		Name = "Tcommandbutton4", ;
-		Top = 120, ;
+		Top = 140, ;
 		Width = 60, ;
 		ZOrderSet = 71
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="commandbutton" />
@@ -1284,10 +1429,10 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		ColumnCount = 3, ;
 		DeleteMark = .F., ;
 		Height = 276, ;
-		Left = 660, ;
+		Left = 12, ;
 		Name = "TgridPCal", ;
-		Top = 224, ;
-		Width = 276, ;
+		Top = 384, ;
+		Width = 912, ;
 		Column1.Name = "Column1", ;
 		Column2.Name = "Column2", ;
 		Column3.Name = "Column3"
@@ -1336,11 +1481,23 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		AutoSize = .T., ;
 		Caption = "St.Belegung", ;
 		Height = 17, ;
-		Left = 599, ;
+		Left = 601, ;
 		Name = "Tlabel1", ;
 		TabIndex = 16, ;
-		Top = 117, ;
+		Top = 144, ;
 		Width = 69, ;
+		ZOrderSet = 10
+		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
+
+	ADD OBJECT 'Tlabel10' AS tlabel WITH ;
+		AutoSize = .T., ;
+		Caption = "Max.Kinder", ;
+		Height = 17, ;
+		Left = 601, ;
+		Name = "Tlabel10", ;
+		TabIndex = 16, ;
+		Top = 121, ;
+		Width = 62, ;
 		ZOrderSet = 10
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
@@ -1386,7 +1543,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 
 	ADD OBJECT 'Tlabel7' AS tlabel WITH ;
 		Caption = "1.Kin", ;
-		Left = 871, ;
+		Left = 885, ;
 		Name = "Tlabel7", ;
 		Top = 15, ;
 		Width = 36
@@ -1394,7 +1551,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 
 	ADD OBJECT 'Tlabel8' AS tlabel WITH ;
 		Caption = "2.Kin", ;
-		Left = 871, ;
+		Left = 885, ;
 		Name = "Tlabel8", ;
 		Top = 38, ;
 		Width = 36
@@ -1402,65 +1559,90 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 
 	ADD OBJECT 'Tlabel9' AS tlabel WITH ;
 		Caption = "3.Kin", ;
-		Left = 871, ;
+		Left = 885, ;
 		Name = "Tlabel9", ;
 		Top = 62, ;
 		Width = 36
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="label" />
 
 	ADD OBJECT 'txtEw1' AS ttext WITH ;
+		Alignment = 3, ;
+		Format = "KR", ;
+		InputMask = "999.99", ;
 		Left = 792, ;
 		Name = "txtEw1", ;
 		Top = 12, ;
+		Value = 0.00, ;
 		Width = 70
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'txtEw2' AS ttext WITH ;
+		Alignment = 3, ;
+		Format = "KR", ;
+		InputMask = "999.99", ;
 		Left = 792, ;
 		Name = "txtEw2", ;
 		Top = 35, ;
+		Value = 0.00, ;
 		Width = 70
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'txtEw3' AS ttext WITH ;
+		Alignment = 3, ;
+		Format = "KR", ;
+		InputMask = "999.99", ;
 		Left = 792, ;
 		Name = "txtEw3", ;
 		Top = 59, ;
+		Value = 0.00, ;
 		Width = 70
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'txtEw4' AS ttext WITH ;
+		Alignment = 3, ;
 		Left = 792, ;
 		Name = "txtEw4", ;
 		Top = 83, ;
+		Value = 0.00, ;
 		Width = 70
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'txtEw5' AS ttext WITH ;
+		Alignment = 3, ;
 		Left = 792, ;
 		Name = "txtEw5", ;
 		Top = 107, ;
+		Value = 0.00, ;
 		Width = 70
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'txtKin1' AS ttext WITH ;
-		Left = 905, ;
+		Alignment = 3, ;
+		Format = "KR", ;
+		Left = 919, ;
 		Name = "txtKin1", ;
 		Top = 12, ;
+		Value = 0.00, ;
 		Width = 70
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'txtKin2' AS ttext WITH ;
-		Left = 905, ;
+		Alignment = 3, ;
+		Format = "KR", ;
+		Left = 919, ;
 		Name = "txtKin2", ;
 		Top = 35, ;
+		Value = 0.00, ;
 		Width = 70
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
 	ADD OBJECT 'txtKin3' AS ttext WITH ;
-		Left = 905, ;
+		Alignment = 3, ;
+		Format = "KR", ;
+		Left = 919, ;
 		Name = "txtKin3", ;
 		Top = 59, ;
+		Value = 0.00, ;
 		Width = 70
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
@@ -1468,12 +1650,12 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Alignment = 0, ;
 		Format = "KR", ;
 		InputMask = "999", ;
-		Left = 556, ;
+		Left = 562, ;
 		Name = "txtMaxStay", ;
 		TabIndex = 46, ;
 		Top = 89, ;
 		Value = 0, ;
-		Width = 40, ;
+		Width = 34, ;
 		ZOrderSet = 44
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
@@ -1481,12 +1663,12 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Alignment = 0, ;
 		Format = "KR", ;
 		InputMask = "999", ;
-		Left = 512, ;
+		Left = 524, ;
 		Name = "txtMinStay", ;
 		TabIndex = 45, ;
 		Top = 89, ;
 		Value = 0, ;
-		Width = 40, ;
+		Width = 34, ;
 		ZOrderSet = 43
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
 
@@ -1498,7 +1680,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Left = 1070, ;
 		Name = "txtPrice", ;
 		TabIndex = 29, ;
-		Top = 483, ;
+		Top = 527, ;
 		Value = 0.00, ;
 		Visible = .F., ;
 		ZOrderSet = 21
@@ -1508,7 +1690,7 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Height = 23, ;
 		Left = 312, ;
 		Name = "TxtRcbis", ;
-		Top = 84, ;
+		Top = 102, ;
 		Width = 72, ;
 		ZOrderSet = 66
 		*< END OBJECT: ClassLib="..\libs\main.vcx" BaseClass="textbox" />
@@ -1818,6 +2000,9 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 			l_cCode = ALLTRIM(_screen.oGlobal.aExtServer(i)) + " (" + this.CreateChannelsCursor_GetFriendlyName(_screen.oGlobal.aExtServer(i)) + ")"
 			INSERT INTO cchannells (id, code) VALUES (i, l_cCode)
 		ENDFOR
+		*os 22.02.2022
+		INSERT INTO cchannells (id, code) values (99,"Website")
+		INSERT INTO cchannells (id, code) VALUES (100,"Hotel")
 	ENDPROC
 
 	PROCEDURE createchannelscursor_getfriendlyname
@@ -1887,9 +2072,10 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	ENDPROC
 
 	PROCEDURE Init
+		*mngcwvrrt.scx  frmmngcwrrt.init
 		LPARAMETERS tnMode, tcVirtRoomtype, tcAdditionalMode
-		LOCAL lcRoomTypes, lcRTypeNames, lcMessage
-		SET STEP ON
+		LOCAL lcRoomTypes, lcRTypeNames, lcMessage, curRtype, curChannel
+		*SET STEP ON
 		this.nmode = tnMode
 		IF VARTYPE(tcAdditionalMode)='C'
 			this.cmode = tcAdditionalMode
@@ -1903,11 +2089,11 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		this.oCitwebRates.OnInit(this.nmode, tcVirtRoomtype)
 		
 		IF USED(this.oCitwebRates.cvirtrooms)
-			SELECT *, CAST('' AS C(254)) AS c_fortypes, CAST('' AS C(254)) AS c_fortname ;
+			SELECT *, CAST('' AS C(254)) AS c_fortypes, CAST('' AS C(254)) AS c_fortname, CAST('' As C(1)) as c_channel;
 				FROM (this.oCitwebRates.cvirtrooms) ORDER BY vr_rtname INTO CURSOR curVirtRooms READWRITE
 		ELSE
 			this.lNoCitwebConnection = .T.
-			CREATE CURSOR curVirtRooms (vr_vroom C(3), vr_rtname C(10), c_fortypes C(254), c_fortname C(254))	&& Fake data
+			CREATE CURSOR curVirtRooms (vr_vroom C(3), vr_rtname C(10), c_fortypes C(254), c_fortname C(254), c_Channel c(1))	&& Fake data
 		ENDIF
 		
 		IF NOT EMPTY(tcVirtRoomtype) AND NOT DLocate("curVirtRooms", "vr_vroom = " + SqlCnv(tcVirtRoomtype))
@@ -1924,11 +2110,47 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 					lcRTypeNames = lcRTypeNames + IIF(EMPTY(lcRTypeNames), "", ",") + Get_rt_roomtyp(vc_room)
 				ENDSCAN
 				SELECT curVirtRooms
-				REPLACE c_fortypes WITH lcRoomTypes, c_fortname WITH lcRTypeNames
+				REPLACE c_fortypes WITH lcRoomTypes, c_fortname WITH lcRTypeNames, c_channel WITH "C"
 			ENDSCAN
 		ENDIF
-		
+		*
+		* Hier werden die Zimmertypen aus dem Hotelsystem in die curVirtrooms überspielt 
+		* os geändert 01.03.2021
+		IF this.nmode = NEW_MODE THEN  && nur bei Neuanlage muss der Zimmertyp vom Hotel übermittelt werden
+			* da dann erst durch festlegen des Channel-Kanals feststeht ob Channel oder Web/Hotel
+			* Im Edit-Modus ist dies nicht erforderlich, da der Zimmertyp nicht mehr veränderbar ist
+			curRtype = SYS(2015)  
+			SELECT rd_roomtyp, rd_lang3, rd_rdid, rd_group, rt_buildng, rt_roomtyp ;
+				FROM rtypedef JOIN roomtype ON rd_rdid = rt_rdid  WHERE rd_group = 1 INTO CURSOR curRtype
+			SELECT curRtype
+			GO top
+			SCAN
+				* vr_room wird "" gesetzt da das Feld in CitWeb 3 stellig ist im Hotelprogramm 4 stellig
+				* Beim Einsetzen des Filter wird dann empty(vr_vroom) genommen, damit filter man dann die
+				* Hotelkategorien. Zusätzlich wurde auch das Feld C_channel eingestellt. ist der Wert C = Channel
+				* ist der Wert H = Hotel / Web
+				INSERT INTO curVirtrooms (vr_Vroom, vr_rtname,vr_buildng, c_fortypes, c_fortname, C_Channel) VALUES ;
+					("", curRtype.rd_roomtyp,curRtype.rt_buildng,curRtype.rt_roomtyp,ALLTRIM(curRtype.rd_roomtyp);
+					 + " " +curRtype.rt_buildng, "H")
+				*
+			ENDSCAN
+		ELSE
+			*
+			curChannel = SYS(2015)
+			IF thisform.eq_channel.Value < 99
+				thisform.eq_channel.rowsource = "SELECT code, id FROM cchannells where id < 99 into cursor &curChannel ORDER BY 1 ASC"
+			ELSE
+				thisform.eq_channel.rowsource = "SELECT code, id FROM cchannells where id > 98 into cursor &curChannel ORDER BY 1 ASC"
+				thisform.optpricetype.optmax.Visible = .f.
+				thisform.optpricetype.optmin.Caption = "Standardpreis - Preiscode"  
+				
+			endif
+			*
+		endif
+		* os Änderung ende 
+		*
 		lcMessage = ""
+		
 		IF NOT USED(this.oCitwebRates.cvirtrooms)
 			lcMessage = "virtrooms " + GetLangText("OPENFILE","TXT_CANTBEOPENEDSHARED")
 		ENDIF
@@ -1938,15 +2160,42 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		IF NOT EMPTY(lcMessage)
 			Alert(lcMessage)
 		ENDIF
+		IF thisform.eq_channel.value < 99
+			thisform.lbleq_vroom.Caption = "CitWeb ZT"
+		ELSE
+			thisform.lbleq_vroom.Caption = "Kategorie"
+		endif
 		
 		this.eq_ratecod.Init(.T.)
 		DODEFAULT()
 		
 		this.eq_vroom.Enabled = (this.nmode <> EDIT_MODE)
 		this.nPersons = this.oCitwebRates.oCwvrrt.eq_adults
+		* Hier wird eingestellt welche Erw und Kinder Felder freigeschaltet werden
 		
 		this.grdCwRates.grdBaseSortColumn4.SetFocus()
 		
+		* Hier werden die neuen Felder Ew1 - Ew5 plus checkbox und kin1 - kin3 plus checkbox gesetzt
+		*Thisform.tcbEw1.value = iif(thisform.eq_adults.Value>0 and this.nmode = EDIT_MODE,.t.,.f.)
+		*
+		IF this.nmode = NEW_MODE then
+			*
+			thisform.eq_vroom.Enabled = .t. 
+			thisform.eq_vroom.Value = ""
+		ENDIF
+		*
+		STORE iif(thisform.eq_adults.Value>0 and this.nmode = EDIT_MODE,.t.,.f.) TO Thisform.tcbew1.Value, Thisform.txtEw1.Enabled 
+		STORE iif(thisform.eq_adults.Value>1 and this.nmode = EDIT_MODE,.t.,.f.) TO Thisform.tcbew2.Value, Thisform.txtEw2.Enabled 
+		STORE iif(thisform.eq_adults.Value>2 and this.nmode = EDIT_MODE,.t.,.f.) TO Thisform.tcbew3.Value, Thisform.txtEw3.Enabled 
+		STORE iif(thisform.eq_adults.Value>3 and this.nmode = EDIT_MODE,.t.,.f.) TO Thisform.tcbew4.Value, Thisform.txtEw4.Enabled 
+		STORE iif(thisform.eq_adults.Value>4 and this.nmode = EDIT_MODE,.t.,.f.) TO Thisform.tcbew5.Value, Thisform.txtEw5.Enabled 
+		*
+		STORE .f. TO thisform.tcbkin1.value, thisform.txtkin1.Enabled
+		STORE .f. TO thisform.tcbkin2.value, thisform.txtkin2.Enabled
+		STORE .f. TO thisform.tcbkin3.value, thisform.txtkin3.Enabled
+		*
+		Thisform.preiseingabe(1,5)
+		*
 		RETURN .T.
 	ENDPROC
 
@@ -1996,8 +2245,10 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	PROCEDURE onapplyminmaxstay
 		LOCAL lnRecNo, ldFrom, ldTo, lnMinStay, lnMaxStay
 		
-		ldFrom = this.dtxtFromStay.Value
-		ldTo = this.dtxtToStay.Value
+		*ldFrom = this.dtxtFromStay.Value
+		*ldTo = this.dtxtToStay.Value
+		ldFrom = this.dtxtFrom.Value
+		ldto   = this.dtxtto.Value
 		
 		IF NOT EMPTY(ldFrom) AND NOT EMPTY(ldTo)
 			IF this.chkDeleteMinMaxStay.Value
@@ -2018,8 +2269,10 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	PROCEDURE onapplyopenclosed
 		LOCAL lnRecNo, ldFrom, ldTo, lnOpenClosed
 		
-		ldFrom = this.dtxtfromOC.Value
-		ldTo = this.dtxttoOC.Value
+		*ldFrom = this.dtxtfromOC.Value
+		*ldTo = this.dtxttoOC.Value
+		ldFrom = this.dtxtFrom.value
+		ldto = this.dtxtTo.value
 		
 		IF NOT EMPTY(ldFrom) AND NOT EMPTY(ldTo)
 			lnOpenClosed = INT(VAL(this.cboOC.Value))
@@ -2091,14 +2344,30 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 	ENDPROC
 
 	PROCEDURE ongetprices
-		LOCAL lcNear, ldDate, lcRoomTypes
+		*frmmngcwvrrt -> OnGetPrices 
+		LOCAL lcNear, ldDate, lcRoomTypes, i, hf
 		
 		WAIT WINDOW GetLangText("COMMON","T_PLEASEWAIT") NOWAIT
 		
 		ldDate = curNewPrices.ew_date
 		lcRoomTypes = ALLTRIM(curVirtRooms.c_fortypes)
 		
-		this.oCitwebRates.OnGetPrices(lcRoomTypes, this.nPersons, this.optPriceType.Value)
+		*this.oCitwebRates.OnGetPrices(lcRoomTypes, this.nPersons, this.optPriceType.Value)  && ersetzt durch neu
+		*Neu
+		FOR i = 1 TO 5  && Preise für Erw 1-5
+			hf = "thisform.tcbEw"+TRANSFORM(i)+".value"
+		 	IF &hf = .t.
+		 		this.oCitwebRates.OnGetPrices(lcRoomTypes, i, this.optPriceType.Value)
+		 	ENDIF
+		NEXT i 
+		*
+		FOR i = 1 TO 3  && Preise für Kin 1-3
+			hf= "thisform.tcbkin"+TRANSFORM(i)+".value"
+			IF &hf = .t.
+				this.oCitwebRates.OnGetPrices(lcRoomTypes, i*-1, this.optPriceType.Value)	
+			ENDIF
+		NEXT i
+		* Ende Neu
 		
 		IF EMPTY(ldDate)
 			GO TOP IN curNewPrices
@@ -2188,7 +2457,32 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		RETURN .T.
 	ENDPROC
 
+	PROCEDURE preiseingabe		&& Schaltet die Felder txtEw1-txtEw5.enabled auf .t. wenn die Anzahl Personen >= Ew? ist und tcbew1-tcbew5 = .t. ist
+		LPARAMETERS s1, s2
+		LOCAL i, hf, hf2, x
+		IF s1 > 0 Then
+			IF s2 > 0 then
+				x=s2
+			ELSE
+				s2 = s1
+			ENDIF
+		ELSE
+			RETURN .t.
+		ENDIF
+		FOR i = s1 TO x
+			hf  = "Thisform.txtEw" + TRANSFORM(i) + ".enabled"
+			hf2 = "Thisform.tcbEw" + TRANSFORM(i) + ".value"
+			IF &hf2  AND thisform.eq_adults.Value >= i then
+				&hf = .t.
+			ELSE
+				&hf = .f.
+			ENDIF
+		NEXT i
+		RETURN .t.
+	ENDPROC
+
 	PROCEDURE setcontrolsource
+		*mgncwrrt.scx  frmmngcwvrrt.setcontrolsource
 		SELECT curNewPrices
 		this.grdCwRates.RecordSource = "curNewPrices"
 		this.grdCwRates.grdBaseSortColumn1.ControlSource = "ew_date"
@@ -2257,6 +2551,27 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		RETURN this.cResult
 	ENDPROC
 
+	PROCEDURE Cbobuilding1.AddItem
+		LPARAMETERS cItem
+		
+	ENDPROC
+
+	PROCEDURE Cbobuilding1.Init
+		LPARAMETERS lp_oParent
+		DODEFAULT()
+		IF g_lbuildings 
+			
+			this.Visible =.t.
+			IF thisform.eq_channel.Value < 99  && wenn Channel-Id <99 dann kein Web/Hotel, dann keine Auswahl
+				this.Enabled = .f.
+			ELSE 
+				this.Enabled =.t.
+				this.Value = _screen.oGlobal.oBuilding.ccode
+			endif
+		ENDIF
+		
+	ENDPROC
+
 	PROCEDURE chkDeleteMinMaxStay.InteractiveChange
 		STORE NOT this.Value TO this.Parent.txtMinStay.Enabled, this.Parent.txtMaxStay.Enabled
 	ENDPROC
@@ -2315,9 +2630,81 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		ENDIF
 	ENDPROC
 
+	PROCEDURE eq_adults.Click
+		LOCAL hf
+		hf = ""
+	ENDPROC
+
 	PROCEDURE eq_adults.InteractiveChange
 		thisform.oCitwebRates.oCwvrrt.eq_adults = INT(this.Value)
 		thisform.SetMaxAdults()
+		thisform.preiseingabe(1,5)
+		
+	ENDPROC
+
+	PROCEDURE eq_channel.Click
+		DODEFAULT()
+		IF this.Value < 99
+			thisform.lbleq_vroom.Caption = "CitWeb ZT"
+		ELSE
+			thisform.lbleq_vroom.Caption = "Kategorie"
+		endif
+	ENDPROC
+
+	PROCEDURE eq_channel.Init
+		DODEFAULT()
+		IF this.Value < 99
+			thisform.lbleq_vroom.Caption = "CitWeb ZT"
+			thisform.cbobuilding1.Enabled =.f.
+		ELSE
+			thisform.lbleq_vroom.Caption = "Kategorie"
+			thisform.cbobuilding1.Enabled =.T.
+		ENDIF
+		
+	ENDPROC
+
+	PROCEDURE eq_channel.LostFocus
+		*eq_channel.LostFocus
+		IF Thisform.nmode=NEW_MODE then	
+			IF this.Value > 0
+				thisform.eq_vroom.Enabled = .t.
+			ELSE
+				thisform.eq_vroom.Enabled = .f.
+			ENDIF
+			IF This.Value >98 THEN && dann Web/Hotel
+				SET FILTER TO EMPTY(vr_vroom) IN "curVirtrooms"
+			ELSE
+				SET FILTER TO !EMPTY(vr_vroom) IN "curVirtrooms"
+			endif
+		endif
+			
+	ENDPROC
+
+	PROCEDURE eq_channel.Valid
+		*mngcwvrrt.scx eq_channel.valid
+		* Website = 99, Hotel = 100
+		LOCAL ok_f 
+		ok_f = .t.
+		IF Thisform.nmode=NEW_MODE then	
+			* Wenn Neuanlage, dann darf noch gewählt werden zwischen Channel und Hotel/Website
+			RETURN .t. 
+		ENDIF
+		*
+		IF thisform.ocitwebrates.ocwvrrtold.eq_channel < 99 AND this.Value > 98 Then
+			MESSAGEBOX("Änderung auf Hotel / Website nicht möglich!","Ungültige Eingabe",0+48)
+			ok_f = .f.
+		ENDIF
+		*
+		IF thisform.ocitwebrates.ocwvrrtold.eq_channel >98 AND this.Value < 99 Then
+			MESSAGEBOX("Änderung auf Channel nicht möglich!","Ungültige Eingabe",0+48)
+			ok_f = .f.
+		ENDIF
+		*
+		IF ok_f = .t.
+			This.Value = thisform.ocitwebrates.ocwvrrtold.eq_channel
+			RETURN .f.
+		endif
+		RETURN .t.
 	ENDPROC
 
 	PROCEDURE eq_citcwcr.AddProperty
@@ -2384,6 +2771,50 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		this.Tag = "UP"
 	ENDPROC
 
+	PROCEDURE tcbChild.InteractiveChange
+		*thisform.oCitwebRates.oCwvrrt.eq_adults = INT(this.Value)
+		*thisform.SetMaxAdults()
+		* hier muss später ggf. die Kindermaxdaten die in der Tabel cwvrrt.dbf noch eingerichtet werden muss
+		* hinterlegt werden.
+	ENDPROC
+
+	PROCEDURE tcbEw1.Click
+		STORE this.Value TO thisform.txtew1.Enabled
+		thisform.preiseingabe(1,1)
+	ENDPROC
+
+	PROCEDURE tcbEw2.Click
+		STORE this.Value TO thisform.txtew2.Enabled
+		thisform.preiseingabe(2,2)
+	ENDPROC
+
+	PROCEDURE tcbEw3.Click
+		STORE this.Value TO thisform.txtew3.Enabled
+		thisform.preiseingabe(3,3)
+	ENDPROC
+
+	PROCEDURE tcbEw4.Click
+		STORE this.Value TO thisform.txtew4.Enabled
+		thisform.preiseingabe(4,4)
+	ENDPROC
+
+	PROCEDURE tcbEw5.Click
+		STORE this.Value TO thisform.txtew5.Enabled
+		thisform.preiseingabe(5,5)
+	ENDPROC
+
+	PROCEDURE tcbKin1.Click
+		STORE this.Value TO thisform.txtkin1.Enabled
+	ENDPROC
+
+	PROCEDURE tcbKin2.Click
+		STORE this.Value TO thisform.txtkin2.Enabled
+	ENDPROC
+
+	PROCEDURE tcbKin3.Click
+		STORE this.Value TO thisform.txtkin3.Enabled
+	ENDPROC
+
 	PROCEDURE Tcommandbutton1.Click
 		LOCAL hf
 		SET STEP ON 
@@ -2392,7 +2823,18 @@ DEFINE CLASS frmmngcwvrrt AS tformcommon OF "..\libs\main.vcx"
 		Thisform.tgridPcal.RecordSource = "CurNewPrices"
 		Thisform.tgridPcal.RecordSourceType = 1
 		Thisform.tgridPCal.column1.ControlSource = "ew_date"
+		* Test
+		*thisform.preiseingabe(1,5)
+		*
+		* Verfügbarkeit berrechnen
+		thisform.optPriceType.Value = 1
+		thisform.oCitWebRates.OnGetPrices(ALLTRIM(curVirtRooms.c_fortypes),1,1)
 		hf= " -----"
+		
+	ENDPROC
+
+	PROCEDURE txtEw4.Click
+		
 		
 	ENDPROC
 
